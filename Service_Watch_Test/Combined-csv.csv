@@ -1,0 +1,208 @@
+﻿SPN,Parameter Name (as read in SW data log),Display Type(s),Log Type,TIME ?,Event?,Dependency,"(WinTrac)
+Graph",(WinTrac) Access Level,Event log when alarm code(s) set,Auto Log at Power ON? ,Auto Log at 12:05? ,Event Log When Parameter Changes? ,Additional Reqs,Documentation Notes/Comments
+0x002D,ECU Engine RPM,Graph and Table,Timed,TRUE,FALSE,Engine = ECO GOV,Frequencies (RPM),Technician,"7, 33, 48, 86, 87, 616",NO,NO,NO,,
+0x002E,Engine Speed Request,Graph (stepped) and Table (continuous columns),Timed,TRUE,FALSE,Engine = ECO GOV,Frequencies (RPM),Technician,"33, 616",NO,NO,NO,,"P.Carr 1st Sept 2022 - updated SPN from 0x0181 (not applicable for AMT) to 0x002E (engine speed command)
+
+P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models "
+0x0030,Electric Motor RPM,Graph and Table,Timed,TRUE,FALSE,No Dependency,Frequencies (RPM),Technician,"7, 33, 36, 48, 56, 57, 58, 59, 86, 87, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",NO,NO,NO,,
+0x004A,Engine Preheat Output,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,15,NO,NO,YES,,Helpful for diagnosing fail to crank issues. 
+0x004B,Engine Starter Solenoid Output,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x0058,Power On,Table Only,Event,FALSE,TRUE,No Dependency,,User,,YES,NO,NO,,
+0x0093,Return Air Temperature - Zone 1,Graph and Table,Timed,TRUE,FALSE,No Dependency,"Temperatures (◦C/◦F )
+MT Zone 1",User,"3, 280",NO,NO,NO,,
+0x0094,Discharge Air Temperature - Zone 1,Graph and Table,Timed,TRUE,FALSE,No Dependency,"Temperatures (◦C/◦F )
+MT Zone 1",User,"4, 280",NO,NO,NO,,
+0x0097,Evaporator Coil Temperature - Zone 1,Graph and Table,Timed,TRUE,FALSE,No Dependency,"Temperatures (◦C/◦F )
+MT Zone 1",User,"2, 9, 280",NO,NO,NO,,
+0x0098,Ambient Temperature,Graph and Table,Timed,TRUE,FALSE,No Dependency,"Temperatures (◦C/◦F )
+MT Zone 1",User,"5, 10",NO,NO,NO,,
+0x009B,Compressor Suction Pressure,Graph and Table,Timed,TRUE,FALSE,No Dependency,Pressures (PSI/Bar),Technician,"87, 89",NO,NO,NO,,
+0x009C,Compressor Discharge Pressure,Graph and Table,Timed,TRUE,FALSE,No Dependency,Pressures (PSI/Bar),Technician,"10, 86",NO,NO,NO,,
+0x00A1,ETV Current Position,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"86, 87, 89",NO,NO,NO,,
+0x00AA,Engine Oil Pressure Switch,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"19 , 31, 66",NO,NO,NO,,
+0x00AB,High Pressure Cut Out ,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"10, 86",NO,NO,YES,,
+0x00AC,Oil Level,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,"19, 31, 66, 63",NO,NO,YES,,"P.Carr 26th August 2024: 
+added dependency to event log only when engine selection is ECO GOV. "
+0x00AE,Electric Standby Motor Overload,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"36, 266, 90",NO,NO,YES,,
+0x00AF,Electric Ready,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"36, 266, 91",NO,NO,YES,,
+0x00B2,Service Switch,Table Only,Event,FALSE,TRUE,No Dependency,,User,"89, 10, 272, 631",NO,NO,YES,,16 Aug 22 - removed code 270 from list of alarm codes which result in event log. Related to Defect ID 2276
+0x00BB,Shunt Current,Graph and Table,Timed,TRUE,FALSE,No Dependency,Currents (A),Technician,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265",NO,NO,NO,,
+0x00BC,Battery Voltage,Graph and Table,Timed,TRUE,FALSE,No Dependency,Voltage (V),Technician,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265, 522",NO,NO,NO,,
+0x00BD,Battery Current - Raw,Graph and Table,Timed,TRUE,FALSE,No Dependency,Currents (A),Technician,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",NO,NO,NO,,Raw Unfiltered Battery Current
+0x00C1,ECU Coolant Temperature,Graph and Table,Timed,TRUE,FALSE,Engine = ECO GOV,"Temperatures (◦C/◦F )
+MT Zone 1",Technician,"6, 18, 63",NO,NO,NO,,Coolant temperature if engine is ECO GOV
+0x00C2,Engine ECU Temperature,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,629,NO,NO,NO,,
+0x00C5,ECU Preheat State,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,15,NO,NO,YES,,
+0x00C6,ECU Engine State,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,"17, 20, 63",NO,NO,YES,,
+0x00C7,ECU Engine % Load,Table Only,Timed,TRUE,FALSE,Engine = ECO GOV,,Technician,,NO,NO,NO,,
+0x00CE,Timed Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x00CF,Manual Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x00D0,Low Coil Temperature Demand Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x00D1,Variable Temp. Differential Demand Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x00D2,Modulation Demand Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x00D3,Coolant Level Switch,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,37,NO,NO,NO,,
+0x00F0,Temperature Control Mode,Table Only,Timed & Event,TRUE,TRUE,No Dependency,,User,,YES,NO,YES,,P.Carr 28th Feb 23: changed SPN from FunctionSelection<0xF812> to DebugControlAlgorithmActive<0x00F0>
+0x00FC,ECU Speed Sensor Error,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,7,NO,NO,NO,,
+0x0105,Active Rectifier DC Current,Graph and Table,Timed,TRUE,FALSE,No Dependency,Currents (A),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI
+0x0106,Active Rectifier DC Voltage,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.
+0x0108,Active Rectifier Motor Temperature,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,
+0x0109,ACR Board Temperature 1,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"264, 273, 274, 275, 276, 277, 278, 526, 555",NO,NO,NO,,
+0x010A,ACR Board Temperature 2,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"264, 273, 274, 275, 276, 277, 278, 526, 555",NO,NO,NO,,
+0x010C,ACR Generator LL AC RMS Voltage,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"264, 273, 274, 275, 276, 277, 278, 526, 555",NO,NO,NO,,
+0x010D,ACR Generator LN AC RMS Voltage,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"264, 273, 274, 275, 276, 277, 278, 526, 555",NO,NO,NO,,
+0x010F,ACR Generator AC RMS Current,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"264, 273, 274, 275, 276, 277, 278, 526, 555",NO,NO,NO,,
+0x0116,DCDC 48V Voltage,Graph and Table,Timed,TRUE,FALSE,No Dependency,Voltage (V),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.
+0x0117,DCDC 48V Current,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI.
+0x0118,DCDC 12V Voltage,Graph and Table,Timed,TRUE,FALSE,No Dependency,Voltage (V),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",NO,NO,NO,,
+0x0119,DCDC 12V Current,Graph and Table,Timed,TRUE,FALSE,No Dependency,Currents (A),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",NO,NO,NO,,
+0x0120,Battery Temperature,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"17, 20, 61, 159, 265, 522",NO,YES,NO,Event log whenever BATTERYSTATE<0xA054> changes. ,
+0x0121,DCDC Operation State,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",NO,NO,YES,,
+0x0130,System Control Constraint State,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"21, 22, 23, 24, 26, 32",NO,NO,NO,,
+0x0131,Defrost Controlling Sensor - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x0132,Defrost Termination Method - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,NO,Event log after defrost completion (defrost complete when DefrostFraction<0x0154> = 1 ),
+0x0133,Engine Run Hours,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,"64, 128, 129",NO,YES,NO,,"Service team desire to also power hours at log up, but no more than once per day - future request
+
+P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models "
+0x0134,Motor Run Hours,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"64, 130, 131",NO,YES,NO,,"Service team desire to also power hours at log up, but no more than once per day - future request"
+0x0135,Total Run Hours,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"64, 132, 133",NO,YES,NO,,"Service team desire to also power hours at log up, but no more than once per day - future request"
+0x0155,Control Mode,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x016F,Calculated Power,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,,NO,NO,NO,,
+0x017B,DCDC Operation Command,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",NO,NO,YES,,
+0x017D,Engine State,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,"17, 20, 63",NO,NO,YES,,P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models 
+0x017E,Electric Motor State,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"36, 90, 266",NO,NO,YES,,
+0x017F,Drive State,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"17, 20, 36, 63, 90, 266",NO,NO,YES,,
+0x0180,Drive Selection,Table Only,Timed & Event,TRUE,TRUE,No Dependency,,User,66,NO,NO,YES,,
+0x0182,Fuel Level,Table Only,Timed,TRUE,FALSE,"FuelLvlSensConfig<0xF89B> is NOT ""NONE<0>""",,Technician,"44, 96, 98, 63",NO,NO,NO,"Log to nearest 0.1% increment if possible, if not then nearest 1% increment",Bluebox to MAC fuel level
+0x0183,Door Status - Zone 1,Table Only,Event,FALSE,TRUE,DoorSwitchConfigured<0xF89C> = ENABLE<1>,,User,108,YES,NO,YES,,
+0x0184,Door Status - Zone 2,Table Only,Event,FALSE,TRUE,DoorSwitchConfiguredZ2<0xFA35> = ENABLE<1>,,User,108,YES,NO,YES,,
+0x0185,Door Status - Zone 3,Table Only,Event,FALSE,TRUE,DoorSwitchConfiguredZ3<0xFB83> = ENABLE<1>,,User,108,YES,NO,YES,,
+0x0186,Unit Serial Number,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,"P.Carr 14th June 22: 
+This shall be displayed/recorded in the header file of the data log only (and not as an event log).  Trailer ID & Unit SN are not normal SPNs rather an array type parameter (it includes strings and numbers) so, we are unable to store the values in database if event occurs."
+0x018A,DCDC AC Firmware PN First,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,111,NO,NO,NO,,
+0x018B,DCDC AC Firmware PN Last,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,111,NO,NO,NO,,
+0x0192,Battery Operating State,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"61, 159",NO,NO,YES,,
+0x0196,Condenser Left Fan Feedback,Graph and Table,Timed,TRUE,FALSE,No Dependency,Frequencies (RPM),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+0x0197,Condenser Right Fan Feedback,Graph and Table,Timed,TRUE,FALSE,No Dependency,Frequencies (RPM),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+0x0198,Evaporator Left Fan Feedback - Zone 1,Graph and Table,Timed,TRUE,FALSE,No Dependency,Frequencies (RPM),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+0x0199,Evaporator Right Fan Feedback - Zone 1,Graph and Table,Timed,TRUE,FALSE,No Dependency,Frequencies (RPM),Technician,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",NO,NO,NO,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+0x0205,Spare #1,Graph and Table,Timed,TRUE,FALSE,No Dependency,"Temperatures (◦C/◦F )
+MT Zone 1",User,49,NO,NO,NO,,"P.Carr 11th July 22: 
+No dependency at production launch. 
+
+Future Scope (post launch): allow ""spare sensor"" to be configurable as ""installed/not installed"" via HMI/wintrac. Dependency: only display this parameter in SW data log when Spare temp. sensor is configured as installed"
+0x0310,Restart Attempts Counter Code10 FMI4,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,10,NO,NO,YES,,8th Sept 22: Added by P.Carr to aid in diagnosis of code 10-4 probation duration suspect issues (following discussion/review with ETC Dev. Team on how to diagnose further and for potential field reported issues)
+0x0356,Door Open Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x0380,Pretrip Status,Table Only,Event,FALSE,TRUE,No Dependency,,User,28,NO,NO,YES,,
+0x0387,Pretrip Test Step,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x0397,Flashload Status,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x03A3,Hot Gas Solenoid Z1 Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,52,NO,NO,NO,,
+0x03A4,HGBV Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,45,NO,NO,NO,,
+0x03A7,Intake Air Heater Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,15,NO,NO,NO,,
+0x0437,Bluebox Noise Constraint,Table Only,Event,FALSE,TRUE,NoiseConstraintConfig<0xF911> = PIEK<1>,,Technician,,YES,NO,YES,,
+0x043B,Battery Current - Filtered,Graph and Table,Timed,TRUE,FALSE,No Dependency,Currents (A),Technician,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",NO,NO,NO,,Filtered Battery Current
+0x043C,Trailer ID,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,"P.Carr 14th June 22: 
+This shall be displayed/recorded in the header file of the data log only (and not as an event log).  Trailer ID & Unit SN are not normal SPNs rather an array type parameter (it includes strings and numbers) so, we are unable to store the values in database if event occurs."
+0x048F,Auto Ambient (Mode) Active,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,
+0x0490,Charge Equalization Active,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,event log which indicates when battery charge equalisation procedure has initiated/completed. 
+0x049C,Pretrip Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,"Event log which indicates defrost request
+FUTURE (post launch scope)"
+0x049E,Start of Trip,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,
+0x04AE,UFD Detected,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x04B2,Service Test Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,"Event log which indicates defrost request
+FUTURE (post launch scope)"
+0x04C0,SW Download Status,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x04D2,Third Party 3A Current Draw,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"61, 159",NO,NO,NO,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+0x04FF,OSP Profile Active,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x0517,Alert Defrost - zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x0538,Wake Reason,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,YES,NO,YES,,
+0x0541,Component Flashload Selection,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x0584,Third Party 10A Current Draw,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"61, 159",NO,NO,NO,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+0x0587,Third Party 15A Current Draw,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"61, 159",NO,NO,NO,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+0x058A,Third Party 2A Current Draw,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"61, 159",NO,NO,NO,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+0x059D,Delta T Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x05A5,Condenser Inlet Solenoid Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,107,NO,NO,NO,,
+0x05A6,Liquid Line Solenoid Z1 Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,67,NO,NO,NO,,
+0x05A7,Suction Line Solenoid Z1 Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,110,NO,NO,NO,,
+0x05A8,Receiver Tank Pressure Solenoid Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,105,NO,NO,NO,,
+0x05AD,Purge Valve Current Drawn,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,106,NO,NO,NO,,
+0x05AE,Return Air Temperature - Zone 2,Graph and Table,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,"Temperatures (◦C/◦F )
+MT Zone 2",User,"3, 280",NO,NO,NO,,
+0x05AF,Discharge Air Temperature - Zone 2,Graph and Table,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,"Temperatures (◦C/◦F )
+MT Zone 2",User,"4, 280",NO,NO,NO,,
+0x05B0,Evaporator Coil Temperature - Zone 2,Graph and Table,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,"Temperatures (◦C/◦F )
+MT Zone 2",User,"2, 9, 280",NO,NO,NO,,
+0x05CC,Electric Motor Rotation,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,"7, 21, 22, 23, 24, 26, 32, 36, 48, 273, 274, 276, 277, 526, 555",NO,NO,YES,,"Positive (0)   - represents counter clockwise rotation (default setting)
+Negative (1) - represents clockwise rotation"
+0x05FA,FlashLoad Source,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0x0617,System Output State,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"21, 22, 23, 24, 26, 32",NO,NO,NO,,
+0x0618,Zone 1 Output State,Table Only,Timed,TRUE,FALSE,No Dependency,,Technician,"21, 22, 23, 24, 26, 32",NO,NO,NO,,
+0x0619,Zone 2 Output State,Table Only,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,,Technician,"21, 22, 23, 24, 26, 32",NO,NO,NO,,"P.Carr 29th Jan 24: 
+updating dependency (previously had no dependency). "
+0x0622,Return Air Temperature - Zone 3,Graph and Table,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,"Temperatures (◦C/◦F )
+MT Zone 3",User,"3, 280",NO,NO,NO,,
+0x0623,Discharge Air Temperature - Zone 3,Graph and Table,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,"Temperatures (◦C/◦F )
+MT Zone 3",User,"4, 280",NO,NO,NO,,
+0x0624,Evaporator Coil Temperature - Zone 3,Graph and Table,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,"Temperatures (◦C/◦F )
+MT Zone 3",User,"2, 9, 280",NO,NO,NO,,
+0x0649,Zone 1 Run Time Hours,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,64,NO,YES,NO,,
+0x064A,Zone 2 Run Time Hours,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,64,NO,YES,NO,,
+0x064B,Remote Evap. Type - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,"52, 67, 110, 112, 143",NO,NO,YES,,
+0x0661,Zone 2 - Fan Motor 1 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,112,NO,NO,NO,,
+0x0670,Suction Line Solenoid Z2 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,110,NO,NO,NO,,
+0x0671,Liquid Line Solenoid Z2 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,67,NO,NO,NO,,
+0x0672,Hot Gas Solenoid Z2 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,52,NO,NO,NO,,
+0x0673,Suction Line Solenoid Z3 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,110,NO,NO,NO,,
+0x0674,Liquid Line Solenoid Z3 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,67,NO,NO,NO,,
+0x0675,Hot Gas Solenoid Z3 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,52,NO,NO,NO,,
+0x0678,Zone 2 - Drain Hose Heater Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,143,NO,NO,NO,,
+0x0679,Zone 3 - Drain Hose Heater Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,143,NO,NO,NO,,
+0x068B,Zone 2 - Fan Motor 2 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,112,NO,NO,NO,,
+0x068C,Zone 2 - Fan Motor 3 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,112,NO,NO,NO,,
+0x06A7,Defrost Controlling Sensor - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,,NO,NO,YES,,
+0x06A8,Defrost Termination Method - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,Technician,,NO,NO,NO,Event log after defrost completion (defrost complete when DefrostFractionZ2<0x05EF> = 1 ),"P.Carr 14th June 22: 
+Updated the additional requirement to clarify the correct SPN which defines defrost completion for zone 2 (DefrostFractionZ2<0x05EF>)"
+0x06B2,Timed Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x06B3,Manual Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x06B4,Low Coil Temperature Demand Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x06B5,Variable Temp. Differential Demand Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x06B6,Modulation Demand Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x06B7,Door Open Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x06B8,Alert Defrost - Zone 2,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x0700,Power Down Reason,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,Event Log at Power OFF,17th June 22: Added by P.Carr
+0x076C,Reset Type,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,19th Sept 22: Added by P.Carr to aid in diagnosis of field issues by determining if unit config reset or cold reset has been performed (i.e. after flash loading)
+0x0776,Fixed Delta Modulation Defrost - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,Event log which indicates defrost request - Added 19th October 2022 (Pcarr)
+0x07B2,Zone 3 Output State,Table Only,Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,,Technician,"21, 22, 23, 24, 26, 32",NO,NO,NO,,"P.Carr 6th December 23: 
+updating dependency so that this parameter is only logged when unit is configured with 3 zones. "
+0x07D6,Zone 3 Run Time Hours,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,64,NO,YES,NO,,
+0x07DB,Zone 3 - Fan Motor 1 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,112,NO,NO,NO,,
+0x07DC,Zone 3 - Fan Motor 2 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,112,NO,NO,NO,,
+0x07DD,Zone 3 - Fan Motor 3 Current Drawn,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,112,NO,NO,NO,,
+0x07DF,Variable Temp. Differential Demand Defrost - Zone 3,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x07E3,Timed Defrost - Zone 3,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x07E4,Manual Defrost - Zone 3,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,User,,NO,NO,YES,,Event log which indicates defrost request
+0x0806,App Fail Status,Table Only,Event,FALSE,TRUE,,,Technician,68,NO,NO,YES,,"P.Carr 10th May 23: 
+Added this parameter to aid in fault diagnosis for field units when code 68 sets. Refer to HPE ID 12992"
+0xF80D,Setpoint - Zone 1,Graph (stepped) and Table (continuous columns),Timed,TRUE,FALSE,No Dependency,"Temperatures (◦C/◦F )
+MT Zone 1",User,127,NO,NO,NO,,
+0xF833,Engine Selection,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,NO,YES,,
+0xF838,CS Fresh Cool Null Restart Temperature,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,159,YES,NO,YES,,
+0xF839,CS Frozen Cool Null Restart Temperature,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,159,YES,NO,YES,,
+0xF83C,CS Fresh Heat Null Restart Temperature,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,159,YES,NO,YES,,
+0xF83D,CS Frozen Heat Null Restart Temperature,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,159,YES,NO,YES,,
+0xF848,Charging Stop Current,Table Only,Event,FALSE,TRUE,DebugControlAlgorithmActive<0x00F0> =  CYCLESENTRY<0>,,Technician,159,NO,NO,NO,,P.Carr 28th Feb 23: changed SPN dependency from FunctionSelection<0xF812> to DebugControlAlgorithmActive<0x00F0>
+0xF87D,Charging Start Voltage,Table Only,Event,FALSE,TRUE,DebugControlAlgorithmActive<0x00F0> =  CYCLESENTRY<0>,,Technician,159,NO,NO,YES,,P.Carr 28th Feb 23: changed SPN dependency from FunctionSelection<0xF812> to DebugControlAlgorithmActive<0x00F0>
+0xF89B,Fuel Level Sensor Configuration,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,98,NO,NO,YES,,
+0xF89C,Door Switch Configuration - Zone 1,Table Only,Event,FALSE,TRUE,No Dependency,,User,108,NO,NO,YES,,
+0xF912,TK Model,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,111,NO,NO,YES,,
+0xF96E,Electric Motor Start Counter,Table Only,Event,FALSE,TRUE,No Dependency,,Technician,,NO,YES,NO,,
+0xF96F,Diesel Engine Start Counter,Table Only,Event,FALSE,TRUE,Engine = ECO GOV,,Technician,,NO,YES,NO,,P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models 
+0xF9CE,Setpoint - Zone 2,Graph (stepped) and Table (continuous columns),Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,"Temperatures (◦C/◦F )
+MT Zone 2",User,127,NO,NO,NO,,
+0xFA01,Zone 1 ON/OFF Status,Table Only,Event,FALSE,TRUE,No Dependency,,User,,NO,NO,YES,,
+0xFA02,Zone 2 ON/OFF Status,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,,User,,NO,NO,YES,,
+0xFA35,Door Switch Configuration - Zone 2,Table Only,Event,FALSE,TRUE,No Dependency,,User,108,NO,NO,YES,,
+0xFB69,Zone 3 ON/OFF Status,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,User,,NO,NO,YES,,
+0xFB6A,Remote Evap. Type - Zone 3,Table Only,Event,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,,Technician,"52, 67, 110, 112, 143",NO,NO,YES,,
+0xFB6C,Setpoint - Zone 3,Graph (stepped) and Table (continuous columns),Timed,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,"Temperatures (◦C/◦F )
+MT Zone 3",User,127,NO,NO,NO,,
+0xFB83,Door Switch Configuration - Zone 3,Table Only,Event,FALSE,TRUE,No Dependency,,User,108,NO,NO,YES,,
