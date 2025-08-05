@@ -1,0 +1,349 @@
+SPN,Platforms,Platform_Count,Parameter_Name,Display_Type,Log_Type,Event_Codes,Time_Dependency,Event_Dependency,Additional_Dependencies,Auto_Log_Power,Auto_Log_Time,Event_Log_Changes
+0x0001,RB,1,Software Major Version,N/A,N/A,N/A,FALSE,FALSE,No Dependency,N/A,N/A,N/A
+0x0002,RB,1,Software Minor Version,N/A,N/A,N/A,FALSE,FALSE,No Dependency,N/A,N/A,N/A
+0x0003,RB,1,Software Release Number,N/A,N/A,N/A,FALSE,FALSE,No Dependency,N/A,N/A,N/A
+0x0004,RB,1,Software Build Number,N/A,N/A,N/A,FALSE,FALSE,No Dependency,N/A,N/A,N/A
+0x002d,"AMT, RB",2,ECU Engine RPM,Graph and Table,Timed,"7, 33, 48, 86, 87, 616",TRUE,FALSE,Engine = ECO GOV,N/A,N/A,N/A
+0x002d,DMT,1,N/A,N/A,N/A,"48, 86, 87,672,55",N/A,N/A,Engine = ECO GOV,N/A,N/A,N/A
+0x002d,Navigator,1,N/A,N/A,N/A,"7, 33, 48, 616",TRUE,FALSE,Engine = ECO GOV,N/A,N/A,N/A
+0x002e,AMT,1,Engine Speed Request,Graph (stepped) and Table (continuous columns),Timed,"33, 616",TRUE,FALSE,Engine = ECO GOV,N/A,N/A,N/A
+0x002e,RB,1,Engine Speed Command,N/A,N/A,33,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0030,"AMT, DEET, RB",3,Electric Motor RPM,Graph and Table,Timed,"7, 33, 36, 48, 56, 57, 58, 59, 86, 87, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0030,Navigator,1,N/A,N/A,N/A,"7, 33, 48, 56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0042,DMT,1,N/A,N/A,N/A,"10,93,95,99,236",N/A,N/A,N/A,N/A,N/A,N/A
+0x004a,"AMT, DMT",2,Engine Preheat Output,Table Only,Event,15,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x004a,RB,1,Engine Preheat,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x004b,"AMT, DMT",2,Engine Starter Solenoid Output,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x004d,"Navigator, DEET",2,N/A,N/A,N/A,40,FALSE,TRUE,Engine = MECHANICAL,N/A,N/A,N/A
+0x0058,"AMT, Navigator, DMT, RB",4,Power On,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0093,"AMT, Navigator, DMT",3,Return Air Temperature - Zone 1,Graph and Table,Timed,"3, 280",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0093,"Navigator, RB",2,N/A,N/A,N/A,3,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0094,"AMT, Navigator, DMT",3,Discharge Air Temperature - Zone 1,Graph and Table,Timed,"4, 280",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0094,"Navigator, RB",2,N/A,N/A,N/A,4,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0095,"Navigator, DMT",2,N/A,N/A,N/A,203,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0095,RB,1,Return Display,N/A,N/A,203,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0096,"Navigator, DMT",2,N/A,N/A,N/A,204,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0096,RB,1,Discharge Display,N/A,N/A,204,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0097,"Navigator, RB",2,N/A,N/A,N/A,"2, 9",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0097,AMT,1,Evaporator Coil Temperature - Zone 1,Graph and Table,Timed,"2, 9, 280",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0097,DMT,1,N/A,N/A,N/A,2280,N/A,N/A,No Dependency,N/A,N/A,N/A
+0x0098,"AMT, DMT, RB",3,Ambient Temperature,Graph and Table,Timed,"5, 10",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0098,Navigator,1,N/A,N/A,N/A,5,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x009a,DMT,1,N/A,N/A,N/A,80121,N/A,N/A,N/A,N/A,N/A,N/A
+0x009b,"AMT, Navigator, RB",3,Compressor Suction Pressure,Graph and Table,Timed,"87, 89",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x009b,DMT,1,N/A,N/A,N/A,"87, 89,93,95,99,236",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x009c,"AMT, Navigator, RB",3,Compressor Discharge Pressure,Graph and Table,Timed,"10, 86",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x009c,DMT,1,N/A,N/A,N/A,"10, 86,93,95,99,236",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x009e,"Navigator, DEET",2,N/A,N/A,N/A,"44, 96, 98",TRUE,FALSE,Fuel Level Sensor Type = Solid State or Float,N/A,N/A,N/A
+0x00a1,"AMT, RB",2,ETV Current Position,Table Only,Timed,"86, 87, 89",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00a1,DMT,1,N/A,N/A,N/A,"86, 87, 89,10,93,95,99,236",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x00a1,Navigator,1,N/A,N/A,N/A,"87, 89",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00aa,"AMT, DMT, DEET, RB",4,Engine Oil Pressure Switch,Table Only,Event,"19 , 31, 66",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00aa,Navigator,1,N/A,N/A,N/A,"19 , 31",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00ab,"AMT, Navigator, DMT, RB",4,High Pressure Cut Out,Table Only,Event,"10, 86",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00ac,AMT,1,Oil Level,Table Only,Event,"19, 31, 66, 63",FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x00ac,Navigator,1,N/A,N/A,N/A,"66, 31, 63,",FALSE,TRUE,Engine Type = ECO or Mechanical,N/A,N/A,N/A
+0x00ac,RB,1,Oil Level,N/A,N/A,"66, 31, 63,",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00ae,"AMT, Navigator, DEET, RB",4,Electric Standby Motor Overload,Table Only,Event,"36, 266, 90",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00af,"AMT, Navigator, RB",3,Electric Ready,Table Only,Event,"36, 266, 91",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00af,DMT,1,N/A,N/A,N/A,91366,N/A,N/A,No Dependency,N/A,N/A,N/A
+0x00b1,DMT,1,N/A,N/A,N/A,37,N/A,N/A,N/A,N/A,N/A,N/A
+0x00b1,RB,1,Engine Coolant Level Switch,N/A,N/A,102:37:00,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00b2,"AMT, DMT, RB",3,Service Switch,Table Only,Event,"89, 10, 272, 631",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00b8,"Navigator, DEET",2,N/A,N/A,N/A,"6, 18, 63",TRUE,FALSE,Engine = MECHANICAL,N/A,N/A,N/A
+0x00bb,"AMT, RB",2,Shunt Current,Graph and Table,Timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bb,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143,89,121,529,816",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x00bb,Navigator,1,N/A,N/A,N/A,"40, 45, 52, 61",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bc,"AMT, RB",2,Battery Voltage,Graph and Table,Timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265, 522",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bc,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143, 522,89,121,529,816,520,545",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x00bc,Navigator,1,N/A,N/A,N/A,"40, 45, 52, 61, 265",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bd,AMT,1,Battery Current - Raw,Graph and Table,Timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bd,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143, 522,89,121,529,816",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x00bd,Navigator,1,N/A,N/A,N/A,"40, 45, 52, 61",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bd,RB,1,Battery Current,N/A,N/A,"45, 52, 61",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00bf,"Navigator, DMT, RB",3,N/A,N/A,N/A,89,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00c1,"AMT, Navigator, RB",3,ECU Coolant Temperature,Graph and Table,Timed,"6, 18, 63",TRUE,FALSE,Engine = ECO GOV,N/A,N/A,N/A
+0x00c1,DMT,1,N/A,N/A,N/A,"18, 63,604,704",N/A,N/A,Engine = ECO GOV,N/A,N/A,N/A
+0x00c2,"AMT, Navigator, DEET, RB",4,Engine ECU Temperature,Table Only,Event,629,FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x00c5,"AMT, Navigator, RB",3,ECU Preheat State,Table Only,Event,15,FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x00c6,"AMT, Navigator, RB",3,ECU Engine State,Table Only,Event,"17, 20, 63",FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x00c6,DMT,1,N/A,N/A,N/A,63,N/A,N/A,Engine = ECO GOV,N/A,N/A,N/A
+0x00c7,"AMT, Navigator, DMT, RB",4,ECU Engine % Load,Table Only,Timed,N/A,TRUE,FALSE,Engine = ECO GOV,N/A,N/A,N/A
+0x00ce,"AMT, Navigator, DMT",3,Timed Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00ce,RB,1,Timed Defrost,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00cf,"AMT, Navigator, DMT",3,Manual Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00cf,RB,1,Manual Defrost,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d0,"AMT, Navigator",2,Low Coil Temperature Demand Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d0,RB,1,Low Coil Temperature Demand Defrost,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d1,"AMT, Navigator, DMT",3,Variable Temp. Differential Demand Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d1,RB,1,Variable Temp. Differential Demand Defrost,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d2,"AMT, Navigator",2,Modulation Demand Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d2,RB,1,Modulation Demand Defrost,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00d3,AMT,1,Coolant Level Switch,Table Only,Event,37,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x00eb,"Navigator, RB",2,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x00eb,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x00f0,"AMT, RB",2,Temperature Control Mode,Table Only,Timed & Event,N/A,TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0x00fc,"AMT, Navigator, DEET, RB",4,ECU Speed Sensor Error,Table Only,Event,7,FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x0105,"AMT, DEET, RB",3,Active Rectifier DC Current,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0105,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0106,"AMT, DEET, RB",3,Active Rectifier DC Voltage,Table Only,Event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0106,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0108,"AMT, DEET, RB",3,Active Rectifier Motor Temperature,Table Only,Event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0108,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0109,"AMT, Navigator, DEET, RB",4,ACR Board Temperature 1,Table Only,Event,"264, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x010a,"AMT, Navigator, DEET, RB",4,ACR Board Temperature 2,Table Only,Event,"264, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x010c,"AMT, Navigator, DEET, RB",4,ACR Generator LL AC RMS Voltage,Table Only,Event,"264, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x010d,"AMT, Navigator, DEET, RB",4,ACR Generator LN AC RMS Voltage,Table Only,Event,"264, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x010f,"AMT, Navigator, DEET, RB",4,ACR Generator AC RMS Current,Table Only,Event,"264, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0116,"AMT, DEET, RB",3,DCDC 48V Voltage,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0116,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0117,"AMT, DEET, RB",3,DCDC 48V Current,Table Only,Event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0117,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0118,"AMT, DEET, RB",3,DCDC 12V Voltage,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0118,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0119,"AMT, DEET, RB",3,DCDC 12V Current,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0119,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0120,"AMT, DEET, RB, RB",4,Battery Temperature,Table Only,Event,"17, 20, 61, 159, 265, 522",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0120,Navigator,1,N/A,N/A,N/A,"61, 159, 265",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0121,"AMT, RB",2,DCDC Operation State,Table Only,Event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x012d,"Navigator, DEET",2,N/A,N/A,N/A,"7, 33, 48",TRUE,FALSE,Engine = MECHANICAL,N/A,N/A,N/A
+0x012f,"Navigator, RB",2,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0130,"AMT, Navigator, RB",3,System Control Constraint State,Table Only,Timed,"21, 22, 23, 24, 26, 32",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0131,"AMT, Navigator, DEET",3,Defrost Controlling Sensor - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0131,RB,1,Defrost Controlling Sensor,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0132,"AMT, Navigator, DMT",3,Defrost Termination Method - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0132,RB,1,Defrost Termination Method,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0133,"AMT, RB",2,Engine Run Hours,Table Only,Event,"64, 128, 129",FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x0133,DMT,1,N/A,N/A,N/A,"64, 128, 129",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x0133,Navigator,1,N/A,N/A,N/A,"64, 128, 129",FALSE,TRUE,Engine Type = ECO or Mechanical,N/A,N/A,N/A
+0x0134,"AMT, Navigator, DEET, RB",4,Motor Run Hours,Table Only,Event,"64, 130, 131",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0135,"AMT, Navigator, DMT, RB",4,Total Run Hours,Table Only,Event,"64, 132, 133",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0155,"AMT, DMT, RB",3,Control Mode,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x016f,"AMT, Navigator, DEET, RB",4,Calculated Power,Table Only,Timed,N/A,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0176,"Navigator, RB",2,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0176,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x017b,"AMT, DEET, RB",3,DCDC Operation Command,Table Only,Event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017b,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017d,AMT,1,Engine State,Table Only,Event,"17, 20, 63",FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0x017d,Navigator,1,N/A,N/A,N/A,"17, 20, 63",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017d,RB,1,Engine Operating State,N/A,N/A,"763, 63",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017e,"AMT, Navigator, DEET, RB",4,Electric Motor State,Table Only,Event,"36, 90, 266",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017f,"AMT, RB",2,Drive State,Table Only,Event,"17, 20, 36, 63, 90, 266",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017f,DMT,1,N/A,N/A,N/A,63,N/A,N/A,No Dependency,N/A,N/A,N/A
+0x017f,Navigator,1,N/A,N/A,N/A,"17, 20, 63",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x017f,RB,1,Drive Operating State,N/A,N/A,"763, 63",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0180,"AMT, Navigator, RB",3,Drive Selection,Table Only,Timed & Event,66,TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0x0180,DMT,1,N/A,N/A,N/A,"66,63,366",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x0181,"Navigator, DEET, RB",3,N/A,N/A,N/A,33,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0182,"Navigator, DEET, RB",3,N/A,N/A,N/A,"44, 96, 98",TRUE,FALSE,Fuel Level Sensor Type = Solid State or Float,N/A,N/A,N/A
+0x0182,AMT,1,Fuel Level,Table Only,Timed,"44, 96, 98, 63",TRUE,FALSE,"FuelLvlSensConfig<0xF89B> is NOT ""NONE<0>""",N/A,N/A,N/A
+0x0182,DMT,1,N/A,N/A,N/A,"96, 98, 63",N/A,N/A,Fuel Level Sensor Type = Solid State or Float,N/A,N/A,N/A
+0x0183,"AMT, DMT, Nebula-Galaxy, Nebula-Galaxy",4,Door Status - Zone 1,Table Only,Event,108,FALSE,TRUE,DoorSwitchConfigured<0xF89C> = ENABLE<1>,N/A,N/A,N/A
+0x0183,"Navigator, DEET, RB",3,N/A,N/A,N/A,108,FALSE,TRUE,{ SPN: DRSWC - Compartment Door Switch} configuration = Enabled,N/A,N/A,N/A
+0x0184,"AMT, DMT",2,Door Status - Zone 2,Table Only,Event,108,FALSE,TRUE,DoorSwitchConfiguredZ2<0xFA35> = ENABLE<1>,N/A,N/A,N/A
+0x0184,Navigator,1,N/A,N/A,N/A,108,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0185,"AMT, DMT",2,Door Status - Zone 3,Table Only,Event,108,FALSE,TRUE,DoorSwitchConfiguredZ3<0xFB83> = ENABLE<1>,N/A,N/A,N/A
+0x0185,Navigator,1,N/A,N/A,N/A,108,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0186,"AMT, Navigator, DMT, RB",4,Unit Serial Number,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x018a,AMT,1,DCDC AC Firmware PN First,Table Only,Event,111,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x018b,AMT,1,DCDC AC Firmware PN Last,Table Only,Event,111,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0192,"AMT, Navigator, DMT, DEET, RB",5,Battery Operating State,Table Only,Event,"61, 159",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0196,"AMT, DEET",2,Condenser Left Fan Feedback,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0196,"Navigator, RB",2,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0x0197,"AMT, DEET",2,Condenser Right Fan Feedback,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0197,"Navigator, RB",2,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0x0198,"AMT, DEET",2,Evaporator Left Fan Feedback - Zone 1,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0198,"Navigator, RB",2,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0x0199,"AMT, DEET",2,Evaporator Right Fan Feedback - Zone 1,Graph and Table,Timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0199,"Navigator, RB",2,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0x0200,DMT,1,N/A,N/A,N/A,"18,604,704,10",N/A,N/A,N/A,N/A,N/A,N/A
+0x0201,DMT,1,N/A,N/A,N/A,"18,604,704,10",N/A,N/A,N/A,N/A,N/A,N/A
+0x0202,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x0203,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x0205,"Navigator, DMT, DEET",3,N/A,N/A,N/A,49,TRUE,FALSE,Spare 1 Temperature Sensor configuration = connected/enabled,N/A,N/A,N/A
+0x0205,"AMT, RB",2,Spare #1,Graph and Table,Timed,49,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0206,RB,1,Engine Starter Solenoid Status,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0209,RB,1,Active Alarm,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0260,DMT,1,N/A,N/A,N/A,"10,93,95,99,236",N/A,N/A,N/A,N/A,N/A,N/A
+0x028c,DMT,1,N/A,N/A,N/A,"10,93,95,99",N/A,N/A,N/A,N/A,N/A,N/A
+0x028d,DMT,1,N/A,N/A,N/A,"10,93,95,99",N/A,N/A,N/A,N/A,N/A,N/A
+0x02fb,DMT,1,N/A,N/A,N/A,"10,93,95,99",N/A,N/A,N/A,N/A,N/A,N/A
+0x02fc,DMT,1,N/A,N/A,N/A,"10,93,95",N/A,N/A,N/A,N/A,N/A,N/A
+0x02fd,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x02fe,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x0310,AMT,1,Restart Attempts Counter Code10 FMI4,Table Only,Event,10,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0356,AMT,1,Door Open Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0360,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x0361,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x0380,"AMT, Navigator, DMT, RB",4,Pretrip Status,Table Only,Event,28,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0387,"AMT, RB",2,Pretrip Test Step,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0397,"AMT, DMT, RB",3,Flashload Status,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03a3,"AMT, Navigator, RB",3,Hot Gas Solenoid Z1 Current Drawn,Table Only,Event,52,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03a4,"AMT, Navigator, DMT, RB",4,HGBV Current Drawn,Table Only,Event,45,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03a5,DMT,1,N/A,N/A,N/A,529,N/A,N/A,N/A,N/A,N/A,N/A
+0x03a5,RB,1,Fuel Solenoid Current Drawn,N/A,N/A,24:529,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03a6,Navigator,1,N/A,N/A,N/A,40,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03a7,"AMT, Navigator, RB",3,Intake Air Heater Current Drawn,Table Only,Event,15,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03a7,DMT,1,N/A,N/A,N/A,816,N/A,N/A,No Dependency,N/A,N/A,N/A
+0x03b3,DMT,1,N/A,N/A,N/A,63,N/A,N/A,N/A,N/A,N/A,N/A
+0x03b3,RB,1,Engine Operating State,N/A,N/A,"63, 763",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03b5,RB,1,ECU Engine Oil Level Switch,N/A,N/A,"19, 31, 63, 66",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x03b6,RB,1,ECU Engine Oil Pressure Switch,N/A,N/A,"19, 31",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x042b,RB,1,Ambient Air Temperature,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x042f,RB,1,Barometric Pressure,N/A,N/A,Not available,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0430,DMT,1,N/A,N/A,N/A,607707,N/A,N/A,N/A,N/A,N/A,N/A
+0x0430,RB,1,Fuel Temperature,N/A,N/A,102:607; 102:707,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0432,RB,1,Engine Starter Mode,N/A,N/A,Not available,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0437,AMT,1,Bluebox Noise Constraint,Table Only,Event,N/A,FALSE,TRUE,NoiseConstraintConfig<0xF911> = PIEK<1>,N/A,N/A,N/A
+0x043b,AMT,1,Battery Current - Filtered,Graph and Table,Timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x043b,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143, 522",N/A,N/A,No Dependency,N/A,N/A,N/A
+0x043c,AMT,1,Trailer ID,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x048f,"AMT, Navigator, DEET",3,Auto Ambient (Mode) Active,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x048f,RB,1,Auto Ambient Mode,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0490,"AMT, Navigator, DEET, RB",4,Charge Equalization Active,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x049c,AMT,1,Pretrip Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x049e,"AMT, DMT, RB",3,Start of Trip,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x049f,RB,1,Water in Fuel Status,N/A,N/A,"516, 517",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x04ae,"AMT, DMT, RB",3,UFD Detected,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x04b2,AMT,1,Service Test Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x04c0,"AMT, DMT, RB",3,SW Download Status,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x04d2,"AMT, Navigator, DEET, RB",4,Third Party 3A Current Draw,Table Only,Timed,"61, 159",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x04d2,DMT,1,N/A,N/A,N/A,61,N/A,N/A,No Dependency,N/A,N/A,N/A
+0x04d3,DMT,1,N/A,N/A,N/A,121,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e1,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e2,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e3,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e4,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e5,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e6,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e7,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e8,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04eb,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04ee,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04ff,"AMT, RB",2,OSP Profile Active,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0517,"AMT, Navigator",2,Alert Defrost - zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0517,RB,1,Alert Defrost,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0538,"AMT, DMT, RB",3,Wake Reason,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0541,"AMT, DMT, RB",3,Component Flashload Selection,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0548,RB,1,EngineBreakInMode,N/A,N/A,Not available,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0578,RB,1,Engine Break-in Complete,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0584,"AMT, Navigator",2,Third Party 10A Current Draw,Table Only,Timed,"61, 159",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0587,"AMT, Navigator, RB",3,Third Party 15A Current Draw,Table Only,Timed,"61, 159",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x058a,"AMT, Navigator",2,Third Party 2A Current Draw,Table Only,Timed,"61, 159",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x059d,AMT,1,Delta T Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05a5,AMT,1,Condenser Inlet Solenoid Current Drawn,Table Only,Event,107,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05a6,AMT,1,Liquid Line Solenoid Z1 Current Drawn,Table Only,Event,67,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05a7,AMT,1,Suction Line Solenoid Z1 Current Drawn,Table Only,Event,110,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05a8,AMT,1,Receiver Tank Pressure Solenoid Current Drawn,Table Only,Event,105,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05ad,AMT,1,Purge Valve Current Drawn,Table Only,Event,106,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05ae,"AMT, DMT",2,Return Air Temperature - Zone 2,Graph and Table,Timed,"3, 280",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x05af,"AMT, DMT",2,Discharge Air Temperature - Zone 2,Graph and Table,Timed,"4, 280",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x05b0,"AMT, DMT",2,Evaporator Coil Temperature - Zone 2,Graph and Table,Timed,"2, 9, 280",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x05cc,"AMT, RB",2,Electric Motor Rotation,Table Only,Event,"7, 21, 22, 23, 24, 26, 32, 36, 48, 273, 274, 276, 277, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05cc,Navigator,1,N/A,N/A,N/A,"10, 21, 22, 23, 24, 26, 32, 48, 273, 274, 276, 277, 526, 555",FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x05fa,"AMT, DMT, RB",3,FlashLoad Source,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0617,AMT,1,System Output State,Table Only,Timed,"21, 22, 23, 24, 26, 32",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0618,AMT,1,Zone 1 Output State,Table Only,Timed,"21, 22, 23, 24, 26, 32",TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0x0619,AMT,1,Zone 2 Output State,Table Only,Timed,"21, 22, 23, 24, 26, 32",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0622,"AMT, DMT",2,Return Air Temperature - Zone 3,Graph and Table,Timed,"3, 280",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0623,"AMT, DMT",2,Discharge Air Temperature - Zone 3,Graph and Table,Timed,"4, 280",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0624,"AMT, DMT",2,Evaporator Coil Temperature - Zone 3,Graph and Table,Timed,"2, 9, 280",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0649,AMT,1,Zone 1 Run Time Hours,Table Only,Event,64,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x064a,AMT,1,Zone 2 Run Time Hours,Table Only,Event,64,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x064b,"AMT, DMT",2,Remote Evap. Type - Zone 2,Table Only,Event,"52, 67, 110, 112, 143",FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0661,"AMT, DMT",2,Zone 2 - Fan Motor 1 Current Drawn,Table Only,Event,112,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0670,AMT,1,Suction Line Solenoid Z2 Current Drawn,Table Only,Event,110,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0671,"AMT, DMT",2,Liquid Line Solenoid Z2 Current Drawn,Table Only,Event,67,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0672,AMT,1,Hot Gas Solenoid Z2 Current Drawn,Table Only,Event,52,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0673,AMT,1,Suction Line Solenoid Z3 Current Drawn,Table Only,Event,110,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0674,"AMT, DMT",2,Liquid Line Solenoid Z3 Current Drawn,Table Only,Event,67,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0675,AMT,1,Hot Gas Solenoid Z3 Current Drawn,Table Only,Event,52,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0678,"AMT, DMT",2,Zone 2 - Drain Hose Heater Current Drawn,Table Only,Event,143,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0679,"AMT, DMT",2,Zone 3 - Drain Hose Heater Current Drawn,Table Only,Event,143,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x068b,"AMT, DMT",2,Zone 2 - Fan Motor 2 Current Drawn,Table Only,Event,112,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x068c,"AMT, DMT",2,Zone 2 - Fan Motor 3 Current Drawn,Table Only,Event,112,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06a7,AMT,1,Defrost Controlling Sensor - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06a8,AMT,1,Defrost Termination Method - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b2,AMT,1,Timed Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b3,AMT,1,Manual Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b4,AMT,1,Low Coil Temperature Demand Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b5,AMT,1,Variable Temp. Differential Demand Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b6,AMT,1,Modulation Demand Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b7,AMT,1,Door Open Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x06b8,AMT,1,Alert Defrost - Zone 2,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0700,"AMT, DMT",2,Power Down Reason,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x076c,"AMT, DMT",2,Reset Type,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x0776,AMT,1,Fixed Delta Modulation Defrost - Zone 1,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0x07b2,AMT,1,Zone 3 Output State,Table Only,Timed,"21, 22, 23, 24, 26, 32",TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07d6,AMT,1,Zone 3 Run Time Hours,Table Only,Event,64,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07db,"AMT, DMT",2,Zone 3 - Fan Motor 1 Current Drawn,Table Only,Event,112,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07dc,"AMT, DMT",2,Zone 3 - Fan Motor 2 Current Drawn,Table Only,Event,112,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07dd,"AMT, DMT",2,Zone 3 - Fan Motor 3 Current Drawn,Table Only,Event,112,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07df,AMT,1,Variable Temp. Differential Demand Defrost - Zone 3,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07e3,AMT,1,Timed Defrost - Zone 3,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x07e4,AMT,1,Manual Defrost - Zone 3,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0806,AMT,1,App Fail Status,Table Only,Event,68,FALSE,TRUE,N/A,N/A,N/A,N/A
+0x0871,DMT,1,N/A,N/A,N/A,3,N/A,N/A,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0872,DMT,1,N/A,N/A,N/A,3,N/A,N/A,ZoneConfiguration<0xF824> is greater than 1 && EvapTypeZone2<0x0924> == S6,N/A,N/A,N/A
+0x0873,DMT,1,N/A,N/A,N/A,3,N/A,N/A,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0874,DMT,1,N/A,N/A,N/A,3,N/A,N/A,ZoneConfiguration<0xF824> is greater than 2 && EvapTypeZone3<0x0925> == S6,N/A,N/A,N/A
+0x0875,DMT,1,N/A,N/A,N/A,4,N/A,N/A,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x0876,DMT,1,N/A,N/A,N/A,4,N/A,N/A,ZoneConfiguration<0xF824> is greater than 1 && EvapTypeZone2<0x0924> == S6,N/A,N/A,N/A
+0x0877,DMT,1,N/A,N/A,N/A,4,N/A,N/A,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x0878,DMT,1,N/A,N/A,N/A,4,N/A,N/A,ZoneConfiguration<0xF824> is greater than 2 && EvapTypeZone3<0x0925> == S6,N/A,N/A,N/A
+0x0879,DMT,1,N/A,N/A,N/A,2,N/A,N/A,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0x087a,DMT,1,N/A,N/A,N/A,2,N/A,N/A,ZoneConfiguration<0xF824> is greater than 1 && EvapTypeZone2<0x0924> == S6,N/A,N/A,N/A
+0x087b,DMT,1,N/A,N/A,N/A,2,N/A,N/A,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0x087c,DMT,1,N/A,N/A,N/A,2,N/A,N/A,ZoneConfiguration<0xF824> is greater than 2 && EvapTypeZone3<0x0925> == S6,N/A,N/A,N/A
+0x1006,APU,1,N/A,N/A,N/A,93,0,1,No Dependency,NO,NO,YES
+0x1010,APU,1,N/A,N/A,N/A,25,1,0,No Dependency,NO,NO,NO
+0x1011,APU,1,N/A,N/A,N/A,25,1,0,No Dependency,NO,NO,NO
+0x1012,APU,1,N/A,N/A,N/A,"6, 18, 83",1,0,No Dependency,NO,NO,NO
+0x1013,APU,1,N/A,N/A,N/A,254,1,0,Engine Coolant Config = Arctic,NO,NO,NO
+0x1016,APU,1,N/A,N/A,N/A,"111, 367",1,0,ExhaustATDOption = DPF,NO,NO,NO
+0x1017,APU,1,N/A,N/A,N/A,"25, 61, 370, 375",1,0,No Dependency,NO,NO,NO
+0x1018,APU,1,N/A,N/A,N/A,"17, 19, 20, 33",1,0,No Dependency,NO,NO,NO
+0x1028,APU,1,N/A,N/A,N/A,"2, 93",1,0,No Dependency,NO,NO,NO
+0x1064,APU,1,N/A,N/A,N/A,"93, 155",1,0,No Dependency,NO,NO,NO
+0x1073,APU,1,N/A,N/A,N/A,"20, 33, 63",1,0,No Dependency,NO,NO,NO
+0x1074,APU,1,N/A,N/A,N/A,93,1,0,No Dependency,NO,NO,NO
+0x1075,APU,1,N/A,N/A,N/A,93,1,0,No Dependency,NO,NO,NO
+0x1076,APU,1,N/A,N/A,N/A,93,1,0,No Dependency,NO,NO,NO
+0x1077,APU,1,N/A,N/A,N/A,10,1,0,No Dependency,NO,NO,NO
+0x1079,APU,1,N/A,N/A,N/A,373,1,0,No Dependency,NO,NO,NO
+0x1082,APU,1,N/A,N/A,N/A,"25, 61",0,1,No Dependency,NO,NO,YES
+0x10ea,APU,1,N/A,N/A,N/A,25,1,0,No Dependency,NO,NO,NO
+0x11c1,APU,1,N/A,N/A,N/A,111,0,0,No Dependency,NO,NO,NO
+0x11c2,APU,1,N/A,N/A,N/A,111,0,0,No Dependency,NO,NO,NO
+0x11c3,APU,1,N/A,N/A,N/A,111,0,0,No Dependency,NO,NO,NO
+0x1302,APU,1,N/A,N/A,N/A,374,0,1,"HeaterType <0xF002> is ""STANDARD_CAPACITY_CAN <1>"" OR HeaterType <0xF002> is ""HIGH_CAPACITY_CAN <2>""",NO,NO,YES
+0xf022,APU,1,N/A,N/A,N/A,111,0,1,No Dependency,YES,NO,NO
+0xf80d,"AMT, DMT",2,Setpoint - Zone 1,Graph (stepped) and Table (continuous columns),Timed,127,TRUE,FALSE,No Dependency,N/A,N/A,N/A
+0xf80d,"Navigator, RB",2,N/A,N/A,N/A,127,TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0xf812,DMT,1,N/A,N/A,N/A,66,N/A,N/A,N/A,N/A,N/A,N/A
+0xf812,RB,1,Function Selection,N/A,N/A,N/A,TRUE,TRUE,No Dependency,N/A,N/A,N/A
+0xf812,RB,1,Mode Selection,N/A,N/A,66,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf833,"AMT, DEET",2,Engine Selection,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf833,Navigator,1,N/A,N/A,N/A,111,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf838,"AMT, Navigator, DMT, RB",4,CS Fresh Cool Null Restart Temperature,Table Only,Event,159,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf839,"AMT, Navigator, DMT, RB",4,CS Frozen Cool Null Restart Temperature,Table Only,Event,159,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf83c,"AMT, Navigator, DMT, RB",4,CS Fresh Heat Null Restart Temperature,Table Only,Event,159,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf83d,"AMT, Navigator, DMT, RB",4,CS Frozen Heat Null Restart Temperature,Table Only,Event,159,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf848,"AMT, DMT, RB",3,Charging Stop Current,Table Only,Event,159,FALSE,TRUE,DebugControlAlgorithmActive<0x00F0> = CYCLESENTRY<0>,N/A,N/A,N/A
+0xf848,"Navigator, DEET",2,N/A,N/A,N/A,159,FALSE,TRUE,Mode Selection = Cycle Sentry,N/A,N/A,N/A
+0xf87d,"AMT, DMT, RB",3,Charging Start Voltage,Table Only,Event,159,FALSE,TRUE,DebugControlAlgorithmActive<0x00F0> = CYCLESENTRY<0>,N/A,N/A,N/A
+0xf87d,"Navigator, DEET",2,N/A,N/A,N/A,159,FALSE,TRUE,Mode Selection = Cycle Sentry,N/A,N/A,N/A
+0xf89b,"AMT, DMT",2,Fuel Level Sensor Configuration,Table Only,Event,98,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf89c,"AMT, Navigator, DMT, DEET, RB",5,Door Switch Configuration - Zone 1,Table Only,Event,108,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf912,"AMT, Navigator, DMT, DEET, RB",5,TK Model,Table Only,Event,111,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf96e,"AMT, Navigator, DEET, RB",4,Electric Motor Start Counter,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf96f,AMT,1,Diesel Engine Start Counter,Table Only,Event,N/A,FALSE,TRUE,Engine = ECO GOV,N/A,N/A,N/A
+0xf96f,RB,1,Diesel Engine Start Counter,N/A,N/A,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xf9ce,"AMT, DMT",2,Setpoint - Zone 2,Graph (stepped) and Table (continuous columns),Timed,127,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0xfa01,AMT,1,Zone 1 ON/OFF Status,Table Only,Event,N/A,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xfa02,"AMT, DMT",2,Zone 2 ON/OFF Status,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 1,N/A,N/A,N/A
+0xfa35,"AMT, DMT",2,Door Switch Configuration - Zone 2,Table Only,Event,108,FALSE,TRUE,No Dependency,N/A,N/A,N/A
+0xfb69,"AMT, DMT",2,Zone 3 ON/OFF Status,Table Only,Event,N/A,FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0xfb6a,"AMT, DMT",2,Remote Evap. Type - Zone 3,Table Only,Event,"52, 67, 110, 112, 143",FALSE,TRUE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0xfb6c,"AMT, DMT",2,Setpoint - Zone 3,Graph (stepped) and Table (continuous columns),Timed,127,TRUE,FALSE,ZoneConfiguration<0xF824> is greater than 2,N/A,N/A,N/A
+0xfb83,"AMT, DMT",2,Door Switch Configuration - Zone 3,Table Only,Event,108,FALSE,TRUE,No Dependency,N/A,N/A,N/A

@@ -1,0 +1,425 @@
+SPN,Platforms,Platform_Count,Parameter_Name,Display_Type,Log_Type,Event_Codes,Time_Dependency,Event_Dependency,Additional_Dependencies,Auto_Log_Power,Auto_Log_Time,Event_Log_Changes
+0x0001,RB,1,software major version,N/A,N/A,N/A,false,false,no dependency,N/A,N/A,N/A
+0x0002,RB,1,software minor version,N/A,N/A,N/A,false,false,no dependency,N/A,N/A,N/A
+0x0003,RB,1,software release number,N/A,N/A,N/A,false,false,no dependency,N/A,N/A,N/A
+0x0004,RB,1,software build number,N/A,N/A,N/A,false,false,no dependency,N/A,N/A,N/A
+0x002d,"AMT, RB",2,ecu engine rpm,graph and table,timed,"7, 33, 48, 86, 87, 616",true,false,engine = eco gov,N/A,N/A,N/A
+0x002d,DMT,1,N/A,N/A,N/A,"48, 86, 87,672,55",N/A,N/A,engine = eco gov,N/A,N/A,N/A
+0x002d,Navigator,1,N/A,N/A,N/A,"7, 33, 48, 616",true,false,engine = eco gov,N/A,N/A,N/A
+0x002e,AMT,1,engine speed request,graph (stepped) and table (continuous columns),timed,"33, 616",true,false,engine = eco gov,N/A,N/A,N/A
+0x002e,RB,1,engine speed command,N/A,N/A,33,true,false,no dependency,N/A,N/A,N/A
+0x0030,"AMT, RB",2,electric motor rpm,graph and table,timed,"7, 33, 36, 48, 56, 57, 58, 59, 86, 87, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0030,Navigator,1,N/A,N/A,N/A,"7, 33, 48, 56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0042,DMT,1,N/A,N/A,N/A,"10,93,95,99,236",N/A,N/A,N/A,N/A,N/A,N/A
+0x004a,"AMT, RB",2,engine preheat output,table only,event,15,false,true,no dependency,N/A,N/A,N/A
+0x004b,AMT,1,engine starter solenoid output,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x004d,Navigator,1,N/A,N/A,N/A,40,false,true,engine = mechanical,N/A,N/A,N/A
+0x0058,"AMT, RB",2,power on,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0093,"AMT, RB",2,return air temperature - zone 1,graph and table,timed,"3, 280",true,false,no dependency,N/A,N/A,N/A
+0x0093,DMT,1,N/A,N/A,N/A,"3, 280",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0093,Navigator,1,N/A,N/A,N/A,3,true,false,no dependency,N/A,N/A,N/A
+0x0094,"AMT, RB",2,discharge air temperature - zone 1,graph and table,timed,"4, 280",true,false,no dependency,N/A,N/A,N/A
+0x0094,DMT,1,N/A,N/A,N/A,"4, 280",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0094,Navigator,1,N/A,N/A,N/A,4,true,false,no dependency,N/A,N/A,N/A
+0x0095,DMT,1,N/A,N/A,N/A,203,N/A,N/A,N/A,N/A,N/A,N/A
+0x0095,Navigator,1,N/A,N/A,N/A,203,true,false,no dependency,N/A,N/A,N/A
+0x0095,RB,1,return display,N/A,N/A,203,false,true,no dependency,N/A,N/A,N/A
+0x0096,DMT,1,N/A,N/A,N/A,204,N/A,N/A,N/A,N/A,N/A,N/A
+0x0096,Navigator,1,N/A,N/A,N/A,204,true,false,no dependency,N/A,N/A,N/A
+0x0096,RB,1,discharge display,N/A,N/A,204,false,true,no dependency,N/A,N/A,N/A
+0x0097,"AMT, RB",2,evaporator coil temperature - zone 1,graph and table,timed,"2, 9, 280",true,false,no dependency,N/A,N/A,N/A
+0x0097,DMT,1,N/A,N/A,N/A,2280,N/A,N/A,no dependency,N/A,N/A,N/A
+0x0097,Navigator,1,N/A,N/A,N/A,"2, 9",true,false,no dependency,N/A,N/A,N/A
+0x0098,"AMT, RB",2,ambient temperature,graph and table,timed,"5, 10",true,false,no dependency,N/A,N/A,N/A
+0x0098,DMT,1,N/A,N/A,N/A,"5, 10",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0098,Navigator,1,N/A,N/A,N/A,5,true,false,no dependency,N/A,N/A,N/A
+0x009a,DMT,1,N/A,N/A,N/A,80121,N/A,N/A,N/A,N/A,N/A,N/A
+0x009b,"AMT, RB",2,compressor suction pressure,graph and table,timed,"87, 89",true,false,no dependency,N/A,N/A,N/A
+0x009b,DMT,1,N/A,N/A,N/A,"87, 89,93,95,99,236",N/A,N/A,no dependency,N/A,N/A,N/A
+0x009b,Navigator,1,N/A,N/A,N/A,"87, 89",true,false,no dependency,N/A,N/A,N/A
+0x009c,"AMT, RB",2,compressor discharge pressure,graph and table,timed,"10, 86",true,false,no dependency,N/A,N/A,N/A
+0x009c,DMT,1,N/A,N/A,N/A,"10, 86,93,95,99,236",N/A,N/A,no dependency,N/A,N/A,N/A
+0x009c,Navigator,1,N/A,N/A,N/A,"10, 86",true,false,no dependency,N/A,N/A,N/A
+0x009e,Navigator,1,N/A,N/A,N/A,"44, 96, 98",true,false,fuel level sensor type = solid state or float,N/A,N/A,N/A
+0x00a1,"AMT, RB",2,etv current position,table only,timed,"86, 87, 89",true,false,no dependency,N/A,N/A,N/A
+0x00a1,DMT,1,N/A,N/A,N/A,"86, 87, 89,10,93,95,99,236",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00a1,Navigator,1,N/A,N/A,N/A,"87, 89",true,false,no dependency,N/A,N/A,N/A
+0x00aa,"AMT, RB",2,engine oil pressure switch,table only,event,"19 , 31, 66",false,true,no dependency,N/A,N/A,N/A
+0x00aa,DMT,1,N/A,N/A,N/A,"19 , 31, 66",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00aa,Navigator,1,N/A,N/A,N/A,"19 , 31",false,true,no dependency,N/A,N/A,N/A
+0x00ab,"AMT, RB",2,high pressure cut out,table only,event,"10, 86",false,true,no dependency,N/A,N/A,N/A
+0x00ab,DMT,1,N/A,N/A,N/A,"10, 86",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00ab,Navigator,1,N/A,N/A,N/A,"10, 86",false,true,no dependency,N/A,N/A,N/A
+0x00ac,AMT,1,oil level,table only,event,"19, 31, 66, 63",false,true,engine = eco gov,N/A,N/A,N/A
+0x00ac,Navigator,1,N/A,N/A,N/A,"66, 31, 63,",false,true,engine type = eco or mechanical,N/A,N/A,N/A
+0x00ac,RB,1,oil level,N/A,N/A,"66, 31, 63,",false,true,no dependency,N/A,N/A,N/A
+0x00ae,"AMT, RB",2,electric standby motor overload,table only,event,"36, 266, 90",false,true,no dependency,N/A,N/A,N/A
+0x00ae,Navigator,1,N/A,N/A,N/A,"36, 266, 90",false,true,no dependency,N/A,N/A,N/A
+0x00af,"AMT, RB",2,electric ready,table only,event,"36, 266, 91",false,true,no dependency,N/A,N/A,N/A
+0x00af,DMT,1,N/A,N/A,N/A,91366,N/A,N/A,no dependency,N/A,N/A,N/A
+0x00af,Navigator,1,N/A,N/A,N/A,"36, 266, 91",false,true,no dependency,N/A,N/A,N/A
+0x00b1,DMT,1,N/A,N/A,N/A,37,N/A,N/A,N/A,N/A,N/A,N/A
+0x00b1,RB,1,engine coolant level switch,N/A,N/A,102:37,false,true,no dependency,N/A,N/A,N/A
+0x00b2,"AMT, RB",2,service switch,table only,event,"89, 10, 272, 631",false,true,no dependency,N/A,N/A,N/A
+0x00b2,DMT,1,N/A,N/A,N/A,"89, 10, 272, 631",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00b8,Navigator,1,N/A,N/A,N/A,"6, 18, 63",true,false,engine = mechanical,N/A,N/A,N/A
+0x00bb,"AMT, RB",2,shunt current,graph and table,timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265",true,false,no dependency,N/A,N/A,N/A
+0x00bb,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143,89,121,529,816",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00bb,Navigator,1,N/A,N/A,N/A,"40, 45, 52, 61",true,false,no dependency,N/A,N/A,N/A
+0x00bc,"AMT, RB",2,battery voltage,graph and table,timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265, 522",true,false,no dependency,N/A,N/A,N/A
+0x00bc,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143, 522,89,121,529,816,520,545",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00bc,Navigator,1,N/A,N/A,N/A,"40, 45, 52, 61, 265",true,false,no dependency,N/A,N/A,N/A
+0x00bd,"AMT, RB",2,battery current - raw,graph and table,timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",true,false,no dependency,N/A,N/A,N/A
+0x00bd,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143, 522,89,121,529,816",N/A,N/A,no dependency,N/A,N/A,N/A
+0x00bd,Navigator,1,N/A,N/A,N/A,"40, 45, 52, 61",true,false,no dependency,N/A,N/A,N/A
+0x00bf,DMT,1,N/A,N/A,N/A,89,N/A,N/A,N/A,N/A,N/A,N/A
+0x00bf,Navigator,1,N/A,N/A,N/A,89,true,false,no dependency,N/A,N/A,N/A
+0x00bf,RB,1,etv state,N/A,N/A,89,true,false,no dependency,N/A,N/A,N/A
+0x00c1,"AMT, RB",2,ecu coolant temperature,graph and table,timed,"6, 18, 63",true,false,engine = eco gov,N/A,N/A,N/A
+0x00c1,DMT,1,N/A,N/A,N/A,"18, 63,604,704",N/A,N/A,engine = eco gov,N/A,N/A,N/A
+0x00c1,Navigator,1,N/A,N/A,N/A,"6, 18, 63",true,false,engine = eco gov,N/A,N/A,N/A
+0x00c2,"AMT, RB",2,engine ecu temperature,table only,event,629,false,true,engine = eco gov,N/A,N/A,N/A
+0x00c2,Navigator,1,N/A,N/A,N/A,629,false,true,engine = eco gov,N/A,N/A,N/A
+0x00c5,"AMT, RB",2,ecu preheat state,table only,event,15,false,true,engine = eco gov,N/A,N/A,N/A
+0x00c5,Navigator,1,N/A,N/A,N/A,15,false,true,engine = eco gov,N/A,N/A,N/A
+0x00c6,"AMT, RB",2,ecu engine state,table only,event,"17, 20, 63",false,true,engine = eco gov,N/A,N/A,N/A
+0x00c6,DMT,1,N/A,N/A,N/A,63,N/A,N/A,engine = eco gov,N/A,N/A,N/A
+0x00c6,Navigator,1,N/A,N/A,N/A,"17, 20, 63",false,true,engine = eco gov,N/A,N/A,N/A
+0x00c7,"AMT, RB",2,ecu engine % load,table only,timed,N/A,true,false,engine = eco gov,N/A,N/A,N/A
+0x00ce,"AMT, RB",2,timed defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x00cf,"AMT, RB",2,manual defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x00d0,"AMT, RB",2,low coil temperature demand defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x00d1,"AMT, RB",2,variable temp. differential demand defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x00d2,"AMT, RB",2,modulation demand defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x00d3,AMT,1,coolant level switch,table only,event,37,false,true,no dependency,N/A,N/A,N/A
+0x00eb,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x00eb,Navigator,1,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x00eb,RB,1,system operating state,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x00f0,"AMT, RB",2,temperature control mode,table only,timed & event,N/A,true,true,no dependency,N/A,N/A,N/A
+0x00fc,"AMT, RB",2,ecu speed sensor error,table only,event,7,false,true,engine = eco gov,N/A,N/A,N/A
+0x00fc,Navigator,1,N/A,N/A,N/A,7,false,true,engine = eco gov,N/A,N/A,N/A
+0x0105,"AMT, RB",2,active rectifier dc current,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0105,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0106,"AMT, RB",2,active rectifier dc voltage,table only,event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0106,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0108,"AMT, RB",2,active rectifier motor temperature,table only,event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0108,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0109,"AMT, RB",2,acr board temperature 1,table only,event,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0109,Navigator,1,N/A,N/A,N/A,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010a,"AMT, RB",2,acr board temperature 2,table only,event,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010a,Navigator,1,N/A,N/A,N/A,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010c,"AMT, RB",2,acr generator ll ac rms voltage,table only,event,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010c,Navigator,1,N/A,N/A,N/A,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010d,"AMT, RB",2,acr generator ln ac rms voltage,table only,event,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010d,Navigator,1,N/A,N/A,N/A,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010f,"AMT, RB",2,acr generator ac rms current,table only,event,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x010f,Navigator,1,N/A,N/A,N/A,"264, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0116,"AMT, RB",2,dcdc 48v voltage,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0116,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0117,"AMT, RB",2,dcdc 48v current,table only,event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0117,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x0118,"AMT, RB",2,dcdc 12v voltage,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0118,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0119,"AMT, RB",2,dcdc 12v current,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0119,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0120,"AMT, RB",2,battery temperature,table only,event,"17, 20, 61, 159, 265, 522",false,true,no dependency,N/A,N/A,N/A
+0x0120,Navigator,1,N/A,N/A,N/A,"61, 159, 265",false,true,no dependency,N/A,N/A,N/A
+0x0121,"AMT, RB",2,dcdc operation state,table only,event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x012d,Navigator,1,N/A,N/A,N/A,"7, 33, 48",true,false,engine = mechanical,N/A,N/A,N/A
+0x012f,Navigator,1,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x012f,RB,1,system operating mode,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x0130,"AMT, RB",2,system control constraint state,table only,timed,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x0130,Navigator,1,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x0131,"AMT, RB",2,defrost controlling sensor - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0132,"AMT, RB",2,defrost termination method - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0133,"AMT, RB",2,engine run hours,table only,event,"64, 128, 129",false,true,engine = eco gov,N/A,N/A,N/A
+0x0133,DMT,1,N/A,N/A,N/A,"64, 128, 129",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0133,Navigator,1,N/A,N/A,N/A,"64, 128, 129",false,true,engine type = eco or mechanical,N/A,N/A,N/A
+0x0134,"AMT, RB",2,motor run hours,table only,event,"64, 130, 131",false,true,no dependency,N/A,N/A,N/A
+0x0134,Navigator,1,N/A,N/A,N/A,"64, 130, 131",false,true,no dependency,N/A,N/A,N/A
+0x0135,"AMT, RB",2,total run hours,table only,event,"64, 132, 133",false,true,no dependency,N/A,N/A,N/A
+0x0135,DMT,1,N/A,N/A,N/A,"64, 132, 133",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0135,Navigator,1,N/A,N/A,N/A,"64, 132, 133",false,true,no dependency,N/A,N/A,N/A
+0x0155,"AMT, RB",2,control mode,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x016f,"AMT, RB",2,calculated power,table only,timed,N/A,true,false,no dependency,N/A,N/A,N/A
+0x0176,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x0176,Navigator,1,N/A,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x0176,RB,1,temperature control mode,N/A,N/A,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x017b,"AMT, RB",2,dcdc operation command,table only,event,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x017b,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x017d,AMT,1,engine state,table only,event,"17, 20, 63",false,true,engine = eco gov,N/A,N/A,N/A
+0x017d,Navigator,1,N/A,N/A,N/A,"17, 20, 63",false,true,no dependency,N/A,N/A,N/A
+0x017d,RB,1,engine operating state,N/A,N/A,"763, 63",false,true,no dependency,N/A,N/A,N/A
+0x017e,"AMT, RB",2,electric motor state,table only,event,"36, 90, 266",false,true,no dependency,N/A,N/A,N/A
+0x017e,Navigator,1,N/A,N/A,N/A,"36, 90, 266",false,true,no dependency,N/A,N/A,N/A
+0x017f,"AMT, RB",2,drive state,table only,event,"17, 20, 36, 63, 90, 266",false,true,no dependency,N/A,N/A,N/A
+0x017f,DMT,1,N/A,N/A,N/A,63,N/A,N/A,no dependency,N/A,N/A,N/A
+0x017f,Navigator,1,N/A,N/A,N/A,"17, 20, 63",false,true,no dependency,N/A,N/A,N/A
+0x0180,"AMT, RB",2,drive selection,table only,timed & event,66,true,true,no dependency,N/A,N/A,N/A
+0x0180,DMT,1,N/A,N/A,N/A,"66,63,366",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0180,Navigator,1,N/A,N/A,N/A,66,true,true,no dependency,N/A,N/A,N/A
+0x0181,Navigator,1,N/A,N/A,N/A,33,true,false,no dependency,N/A,N/A,N/A
+0x0181,RB,1,speed request,N/A,N/A,33,true,false,no dependency,N/A,N/A,N/A
+0x0182,AMT,1,fuel level,table only,timed,"44, 96, 98, 63",true,false,"fuellvlsensconfig<0xf89b> is not ""none<0>""",N/A,N/A,N/A
+0x0182,DMT,1,N/A,N/A,N/A,"96, 98, 63",N/A,N/A,fuel level sensor type = solid state or float,N/A,N/A,N/A
+0x0182,Navigator,1,N/A,N/A,N/A,"44, 96, 98",true,false,fuel level sensor type = solid state or float,N/A,N/A,N/A
+0x0182,RB,1,fuel level (tkv5),N/A,N/A,"44, 96, 98",true,false,fuel level sensor type = solid state or float,N/A,N/A,N/A
+0x0183,"AMT, RB",2,door status - zone 1,table only,event,108,false,true,doorswitchconfigured<0xf89c> = enable<1>,N/A,N/A,N/A
+0x0183,DMT,1,N/A,N/A,N/A,108,N/A,N/A,doorswitchconfigured<0xf89c> = enable<1>,N/A,N/A,N/A
+0x0183,Navigator,1,N/A,N/A,N/A,108,false,true,{ spn: drswc - compartment door switch} configuration = enabled,N/A,N/A,N/A
+0x0184,AMT,1,door status - zone 2,table only,event,108,false,true,doorswitchconfiguredz2<0xfa35> = enable<1>,N/A,N/A,N/A
+0x0184,DMT,1,N/A,N/A,N/A,108,N/A,N/A,doorswitchconfiguredz2<0xfa35> = enable<1>,N/A,N/A,N/A
+0x0184,Navigator,1,N/A,N/A,N/A,108,false,true,no dependency,N/A,N/A,N/A
+0x0185,AMT,1,door status - zone 3,table only,event,108,false,true,doorswitchconfiguredz3<0xfb83> = enable<1>,N/A,N/A,N/A
+0x0185,DMT,1,N/A,N/A,N/A,108,N/A,N/A,doorswitchconfiguredz3<0xfb83> = enable<1>,N/A,N/A,N/A
+0x0185,Navigator,1,N/A,N/A,N/A,108,false,true,no dependency,N/A,N/A,N/A
+0x0186,"AMT, RB",2,unit serial number,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x018a,AMT,1,dcdc ac firmware pn first,table only,event,111,false,true,no dependency,N/A,N/A,N/A
+0x018b,AMT,1,dcdc ac firmware pn last,table only,event,111,false,true,no dependency,N/A,N/A,N/A
+0x0192,"AMT, RB",2,battery operating state,table only,event,"61, 159",false,true,no dependency,N/A,N/A,N/A
+0x0192,DMT,1,N/A,N/A,N/A,"61, 159",N/A,N/A,no dependency,N/A,N/A,N/A
+0x0192,Navigator,1,N/A,N/A,N/A,"61, 159",false,true,no dependency,N/A,N/A,N/A
+0x0196,AMT,1,condenser left fan feedback,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0196,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0196,RB,1,condenser left fan feedback,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0197,AMT,1,condenser right fan feedback,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0197,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0197,RB,1,condenser right fan feedback,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0198,AMT,1,evaporator left fan feedback - zone 1,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0198,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0198,RB,1,evaporator fan 2 (left),N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0199,AMT,1,evaporator right fan feedback - zone 1,graph and table,timed,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",true,false,no dependency,N/A,N/A,N/A
+0x0199,Navigator,1,N/A,N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0199,RB,1,evaporator fan 1 (right),N/A,N/A,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",true,true,no dependency,N/A,N/A,N/A
+0x0200,DMT,1,N/A,N/A,N/A,"18,604,704,10",N/A,N/A,N/A,N/A,N/A,N/A
+0x0201,DMT,1,N/A,N/A,N/A,"18,604,704,10",N/A,N/A,N/A,N/A,N/A,N/A
+0x0202,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x0203,DMT,1,N/A,N/A,N/A,"24,32",N/A,N/A,N/A,N/A,N/A,N/A
+0x0205,"AMT, RB",2,spare #1,graph and table,timed,49,true,false,no dependency,N/A,N/A,N/A
+0x0205,DMT,1,N/A,N/A,N/A,49,N/A,N/A,spare 1 temperature sensor configuration = connected/enabled,N/A,N/A,N/A
+0x0205,Navigator,1,N/A,N/A,N/A,49,true,false,spare 1 temperature sensor configuration = connected/enabled,N/A,N/A,N/A
+0x0206,RB,1,engine starter solenoid status,N/A,N/A,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0209,RB,1,active alarm,N/A,N/A,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0260,DMT,1,N/A,N/A,N/A,"10,93,95,99,236",N/A,N/A,N/A,N/A,N/A,N/A
+0x028c,DMT,1,N/A,N/A,N/A,"10,93,95,99",N/A,N/A,N/A,N/A,N/A,N/A
+0x028d,DMT,1,N/A,N/A,N/A,"10,93,95,99",N/A,N/A,N/A,N/A,N/A,N/A
+0x02fb,DMT,1,N/A,N/A,N/A,"10,93,95,99",N/A,N/A,N/A,N/A,N/A,N/A
+0x02fc,DMT,1,N/A,N/A,N/A,"10,93,95",N/A,N/A,N/A,N/A,N/A,N/A
+0x02fd,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x02fe,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x0310,AMT,1,restart attempts counter code10 fmi4,table only,event,10,false,true,no dependency,N/A,N/A,N/A
+0x0356,AMT,1,door open defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0360,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x0361,DMT,1,N/A,N/A,N/A,24530531,N/A,N/A,N/A,N/A,N/A,N/A
+0x0380,"AMT, RB",2,pretrip status,table only,event,28,false,true,no dependency,N/A,N/A,N/A
+0x0380,DMT,1,N/A,N/A,N/A,28,N/A,N/A,no dependency,N/A,N/A,N/A
+0x0387,"AMT, RB",2,pretrip test step,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0397,"AMT, RB",2,flashload status,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x03a3,"AMT, RB",2,hot gas solenoid z1 current drawn,table only,event,52,false,true,no dependency,N/A,N/A,N/A
+0x03a3,Navigator,1,N/A,N/A,N/A,52,false,true,no dependency,N/A,N/A,N/A
+0x03a4,"AMT, RB",2,hgbv current drawn,table only,event,45,false,true,no dependency,N/A,N/A,N/A
+0x03a4,DMT,1,N/A,N/A,N/A,45,N/A,N/A,no dependency,N/A,N/A,N/A
+0x03a4,Navigator,1,N/A,N/A,N/A,45,false,true,no dependency,N/A,N/A,N/A
+0x03a5,DMT,1,N/A,N/A,N/A,529,N/A,N/A,N/A,N/A,N/A,N/A
+0x03a5,RB,1,fuel solenoid current drawn,N/A,N/A,24:529,false,true,no dependency,N/A,N/A,N/A
+0x03a6,Navigator,1,N/A,N/A,N/A,40,false,true,no dependency,N/A,N/A,N/A
+0x03a7,"AMT, RB",2,intake air heater current drawn,table only,event,15,false,true,no dependency,N/A,N/A,N/A
+0x03a7,DMT,1,N/A,N/A,N/A,816,N/A,N/A,no dependency,N/A,N/A,N/A
+0x03a7,Navigator,1,N/A,N/A,N/A,15,false,true,no dependency,N/A,N/A,N/A
+0x03b3,DMT,1,N/A,N/A,N/A,63,N/A,N/A,N/A,N/A,N/A,N/A
+0x03b3,RB,1,engine operating state,N/A,N/A,"63, 763",false,true,no dependency,N/A,N/A,N/A
+0x03b5,RB,1,ecu engine oil level switch,N/A,N/A,"19, 31, 63, 66",false,true,no dependency,N/A,N/A,N/A
+0x03b6,RB,1,ecu engine oil pressure switch,N/A,N/A,"19, 31",false,true,no dependency,N/A,N/A,N/A
+0x042b,RB,1,ambient air temperature,N/A,N/A,N/A,false,true,no dependency,N/A,N/A,N/A
+0x042f,RB,1,barometric pressure,N/A,N/A,not available,false,true,no dependency,N/A,N/A,N/A
+0x0430,DMT,1,N/A,N/A,N/A,607707,N/A,N/A,N/A,N/A,N/A,N/A
+0x0430,RB,1,fuel temperature,N/A,N/A,102:607; 102:707,false,true,no dependency,N/A,N/A,N/A
+0x0432,RB,1,engine starter mode,N/A,N/A,not available,false,true,no dependency,N/A,N/A,N/A
+0x0437,AMT,1,bluebox noise constraint,table only,event,N/A,false,true,noiseconstraintconfig<0xf911> = piek<1>,N/A,N/A,N/A
+0x043b,AMT,1,battery current - filtered,graph and table,timed,"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",true,false,no dependency,N/A,N/A,N/A
+0x043b,DMT,1,N/A,N/A,N/A,"45, 61, 67, 112, 143, 522",N/A,N/A,no dependency,N/A,N/A,N/A
+0x043c,AMT,1,trailer id,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x048f,"AMT, RB",2,auto ambient (mode) active,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0490,"AMT, RB",2,charge equalization active,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x049c,AMT,1,pretrip defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x049e,"AMT, RB",2,start of trip,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x049f,RB,1,water in fuel status,N/A,N/A,"516, 517",false,true,no dependency,N/A,N/A,N/A
+0x04ae,"AMT, RB",2,ufd detected,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x04b2,AMT,1,service test defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x04c0,"AMT, RB",2,sw download status,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x04d2,"AMT, RB",2,third party 3a current draw,table only,timed,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x04d2,DMT,1,N/A,N/A,N/A,61,N/A,N/A,no dependency,N/A,N/A,N/A
+0x04d2,Navigator,1,N/A,N/A,N/A,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x04d3,DMT,1,N/A,N/A,N/A,121,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e1,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e2,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e3,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e4,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e5,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e6,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e7,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04e8,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04eb,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04ee,DMT,1,N/A,N/A,N/A,527;321;323;324;326;327;366,N/A,N/A,N/A,N/A,N/A,N/A
+0x04ff,"AMT, RB",2,osp profile active,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0517,"AMT, RB",2,alert defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0538,"AMT, RB",2,wake reason,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0541,"AMT, RB",2,component flashload selection,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0548,RB,1,enginebreakinmode,N/A,N/A,not available,false,true,no dependency,N/A,N/A,N/A
+0x0578,RB,1,engine break-in complete,N/A,N/A,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0584,AMT,1,third party 10a current draw,table only,timed,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x0584,Navigator,1,N/A,N/A,N/A,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x0587,"AMT, RB",2,third party 15a current draw,table only,timed,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x0587,Navigator,1,N/A,N/A,N/A,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x058a,AMT,1,third party 2a current draw,table only,timed,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x058a,Navigator,1,N/A,N/A,N/A,"61, 159",true,false,no dependency,N/A,N/A,N/A
+0x059d,AMT,1,delta t defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x05a5,AMT,1,condenser inlet solenoid current drawn,table only,event,107,false,true,no dependency,N/A,N/A,N/A
+0x05a6,AMT,1,liquid line solenoid z1 current drawn,table only,event,67,false,true,no dependency,N/A,N/A,N/A
+0x05a7,AMT,1,suction line solenoid z1 current drawn,table only,event,110,false,true,no dependency,N/A,N/A,N/A
+0x05a8,AMT,1,receiver tank pressure solenoid current drawn,table only,event,105,false,true,no dependency,N/A,N/A,N/A
+0x05ad,AMT,1,purge valve current drawn,table only,event,106,false,true,no dependency,N/A,N/A,N/A
+0x05ae,AMT,1,return air temperature - zone 2,graph and table,timed,"3, 280",true,false,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x05ae,DMT,1,N/A,N/A,N/A,"3, 280",N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x05af,AMT,1,discharge air temperature - zone 2,graph and table,timed,"4, 280",true,false,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x05af,DMT,1,N/A,N/A,N/A,"4, 280",N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x05b0,AMT,1,evaporator coil temperature - zone 2,graph and table,timed,"2, 9, 280",true,false,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x05b0,DMT,1,N/A,N/A,N/A,"2, 9, 280",N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x05cc,"AMT, RB",2,electric motor rotation,table only,event,"7, 21, 22, 23, 24, 26, 32, 36, 48, 273, 274, 276, 277, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x05cc,Navigator,1,N/A,N/A,N/A,"10, 21, 22, 23, 24, 26, 32, 48, 273, 274, 276, 277, 526, 555",false,true,no dependency,N/A,N/A,N/A
+0x05fa,"AMT, RB",2,flashload source,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0617,AMT,1,system output state,table only,timed,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x0618,AMT,1,zone 1 output state,table only,timed,"21, 22, 23, 24, 26, 32",true,false,no dependency,N/A,N/A,N/A
+0x0619,AMT,1,zone 2 output state,table only,timed,"21, 22, 23, 24, 26, 32",true,false,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0622,AMT,1,return air temperature - zone 3,graph and table,timed,"3, 280",true,false,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0622,DMT,1,N/A,N/A,N/A,"3, 280",N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0623,AMT,1,discharge air temperature - zone 3,graph and table,timed,"4, 280",true,false,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0623,DMT,1,N/A,N/A,N/A,"4, 280",N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0624,AMT,1,evaporator coil temperature - zone 3,graph and table,timed,"2, 9, 280",true,false,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0624,DMT,1,N/A,N/A,N/A,"2, 9, 280",N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0649,AMT,1,zone 1 run time hours,table only,event,64,false,true,no dependency,N/A,N/A,N/A
+0x064a,AMT,1,zone 2 run time hours,table only,event,64,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x064b,AMT,1,remote evap. type - zone 2,table only,event,"52, 67, 110, 112, 143",false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x064b,DMT,1,N/A,N/A,N/A,"52, 67, 110, 112, 143",N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0661,AMT,1,zone 2 - fan motor 1 current drawn,table only,event,112,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0661,DMT,1,N/A,N/A,N/A,112,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0670,AMT,1,suction line solenoid z2 current drawn,table only,event,110,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0671,AMT,1,liquid line solenoid z2 current drawn,table only,event,67,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0671,DMT,1,N/A,N/A,N/A,67,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0672,AMT,1,hot gas solenoid z2 current drawn,table only,event,52,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0673,AMT,1,suction line solenoid z3 current drawn,table only,event,110,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0674,AMT,1,liquid line solenoid z3 current drawn,table only,event,67,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0674,DMT,1,N/A,N/A,N/A,67,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0675,AMT,1,hot gas solenoid z3 current drawn,table only,event,52,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0678,AMT,1,zone 2 - drain hose heater current drawn,table only,event,143,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0678,DMT,1,N/A,N/A,N/A,143,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0679,AMT,1,zone 3 - drain hose heater current drawn,table only,event,143,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0679,DMT,1,N/A,N/A,N/A,143,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x068b,AMT,1,zone 2 - fan motor 2 current drawn,table only,event,112,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x068b,DMT,1,N/A,N/A,N/A,112,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x068c,AMT,1,zone 2 - fan motor 3 current drawn,table only,event,112,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x068c,DMT,1,N/A,N/A,N/A,112,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06a7,AMT,1,defrost controlling sensor - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06a8,AMT,1,defrost termination method - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b2,AMT,1,timed defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b3,AMT,1,manual defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b4,AMT,1,low coil temperature demand defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b5,AMT,1,variable temp. differential demand defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b6,AMT,1,modulation demand defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b7,AMT,1,door open defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x06b8,AMT,1,alert defrost - zone 2,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0700,AMT,1,power down reason,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x076c,AMT,1,reset type,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x0776,AMT,1,fixed delta modulation defrost - zone 1,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0x07b2,AMT,1,zone 3 output state,table only,timed,"21, 22, 23, 24, 26, 32",true,false,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07d6,AMT,1,zone 3 run time hours,table only,event,64,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07db,AMT,1,zone 3 - fan motor 1 current drawn,table only,event,112,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07db,DMT,1,N/A,N/A,N/A,112,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07dc,AMT,1,zone 3 - fan motor 2 current drawn,table only,event,112,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07dc,DMT,1,N/A,N/A,N/A,112,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07dd,AMT,1,zone 3 - fan motor 3 current drawn,table only,event,112,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07dd,DMT,1,N/A,N/A,N/A,112,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07df,AMT,1,variable temp. differential demand defrost - zone 3,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07e3,AMT,1,timed defrost - zone 3,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x07e4,AMT,1,manual defrost - zone 3,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0806,AMT,1,app fail status,table only,event,68,false,true,N/A,N/A,N/A,N/A
+0x0871,DMT,1,N/A,N/A,N/A,3,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0872,DMT,1,N/A,N/A,N/A,3,N/A,N/A,zoneconfiguration<0xf824> is greater than 1 && evaptypezone2<0x0924> == s6,N/A,N/A,N/A
+0x0873,DMT,1,N/A,N/A,N/A,3,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0874,DMT,1,N/A,N/A,N/A,3,N/A,N/A,zoneconfiguration<0xf824> is greater than 2 && evaptypezone3<0x0925> == s6,N/A,N/A,N/A
+0x0875,DMT,1,N/A,N/A,N/A,4,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x0876,DMT,1,N/A,N/A,N/A,4,N/A,N/A,zoneconfiguration<0xf824> is greater than 1 && evaptypezone2<0x0924> == s6,N/A,N/A,N/A
+0x0877,DMT,1,N/A,N/A,N/A,4,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x0878,DMT,1,N/A,N/A,N/A,4,N/A,N/A,zoneconfiguration<0xf824> is greater than 2 && evaptypezone3<0x0925> == s6,N/A,N/A,N/A
+0x0879,DMT,1,N/A,N/A,N/A,2,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0x087a,DMT,1,N/A,N/A,N/A,2,N/A,N/A,zoneconfiguration<0xf824> is greater than 1 && evaptypezone2<0x0924> == s6,N/A,N/A,N/A
+0x087b,DMT,1,N/A,N/A,N/A,2,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0x087c,DMT,1,N/A,N/A,N/A,2,N/A,N/A,zoneconfiguration<0xf824> is greater than 2 && evaptypezone3<0x0925> == s6,N/A,N/A,N/A
+0x1006,APU,1,N/A,N/A,N/A,93,0,1,no dependency,no,no,yes
+0x1010,APU,1,N/A,N/A,N/A,25,1,0,no dependency,no,no,no
+0x1011,APU,1,N/A,N/A,N/A,25,1,0,no dependency,no,no,no
+0x1012,APU,1,N/A,N/A,N/A,"6, 18, 83",1,0,no dependency,no,no,no
+0x1013,APU,1,N/A,N/A,N/A,254,1,0,engine coolant config = arctic,no,no,no
+0x1016,APU,1,N/A,N/A,N/A,"111, 367",1,0,exhaustatdoption = dpf,no,no,no
+0x1017,APU,1,N/A,N/A,N/A,"25, 61, 370, 375",1,0,no dependency,no,no,no
+0x1018,APU,1,N/A,N/A,N/A,"17, 19, 20, 33",1,0,no dependency,no,no,no
+0x1028,APU,1,N/A,N/A,N/A,"2, 93",1,0,no dependency,no,no,no
+0x1064,APU,1,N/A,N/A,N/A,"93, 155",1,0,no dependency,no,no,no
+0x1073,APU,1,N/A,N/A,N/A,"20, 33, 63",1,0,no dependency,no,no,no
+0x1074,APU,1,N/A,N/A,N/A,93,1,0,no dependency,no,no,no
+0x1075,APU,1,N/A,N/A,N/A,93,1,0,no dependency,no,no,no
+0x1076,APU,1,N/A,N/A,N/A,93,1,0,no dependency,no,no,no
+0x1077,APU,1,N/A,N/A,N/A,10,1,0,no dependency,no,no,no
+0x1079,APU,1,N/A,N/A,N/A,373,1,0,no dependency,no,no,no
+0x1082,APU,1,N/A,N/A,N/A,"25, 61",0,1,no dependency,no,no,yes
+0x10ea,APU,1,N/A,N/A,N/A,25,1,0,no dependency,no,no,no
+0x11c1,APU,1,N/A,N/A,N/A,111,0,0,no dependency,no,no,no
+0x11c2,APU,1,N/A,N/A,N/A,111,0,0,no dependency,no,no,no
+0x11c3,APU,1,N/A,N/A,N/A,111,0,0,no dependency,no,no,no
+0x1302,APU,1,N/A,N/A,N/A,374,0,1,"heatertype <0xf002> is ""standard_capacity_can <1>"" or heatertype <0xf002> is ""high_capacity_can <2>""",no,no,yes
+0xf022,APU,1,N/A,N/A,N/A,111,0,1,no dependency,yes,no,no
+0xf80d,"AMT, RB",2,setpoint - zone 1,graph (stepped) and table (continuous columns),timed,127,true,false,no dependency,N/A,N/A,N/A
+0xf80d,DMT,1,N/A,N/A,N/A,127,N/A,N/A,no dependency,N/A,N/A,N/A
+0xf80d,Navigator,1,N/A,N/A,N/A,127,true,true,no dependency,N/A,N/A,N/A
+0xf812,DMT,1,N/A,N/A,N/A,66,N/A,N/A,N/A,N/A,N/A,N/A
+0xf812,RB,1,function selection,N/A,N/A,N/A,true,true,no dependency,N/A,N/A,N/A
+0xf812,RB,1,mode selection,N/A,N/A,66,false,true,no dependency,N/A,N/A,N/A
+0xf833,AMT,1,engine selection,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0xf833,Navigator,1,N/A,N/A,N/A,111,false,true,no dependency,N/A,N/A,N/A
+0xf838,"AMT, RB",2,cs fresh cool null restart temperature,table only,event,159,false,true,no dependency,N/A,N/A,N/A
+0xf838,Navigator,1,N/A,N/A,N/A,159,false,true,no dependency,N/A,N/A,N/A
+0xf839,"AMT, RB",2,cs frozen cool null restart temperature,table only,event,159,false,true,no dependency,N/A,N/A,N/A
+0xf839,Navigator,1,N/A,N/A,N/A,159,false,true,no dependency,N/A,N/A,N/A
+0xf83c,"AMT, RB",2,cs fresh heat null restart temperature,table only,event,159,false,true,no dependency,N/A,N/A,N/A
+0xf83c,Navigator,1,N/A,N/A,N/A,159,false,true,no dependency,N/A,N/A,N/A
+0xf83d,"AMT, RB",2,cs frozen heat null restart temperature,table only,event,159,false,true,no dependency,N/A,N/A,N/A
+0xf83d,Navigator,1,N/A,N/A,N/A,159,false,true,no dependency,N/A,N/A,N/A
+0xf848,"AMT, RB",2,charging stop current,table only,event,159,false,true,debugcontrolalgorithmactive<0x00f0> = cyclesentry<0>,N/A,N/A,N/A
+0xf848,DMT,1,N/A,N/A,N/A,159,N/A,N/A,debugcontrolalgorithmactive<0x00f0> = cyclesentry<0>,N/A,N/A,N/A
+0xf848,Navigator,1,N/A,N/A,N/A,159,false,true,mode selection = cycle sentry,N/A,N/A,N/A
+0xf87d,"AMT, RB",2,charging start voltage,table only,event,159,false,true,debugcontrolalgorithmactive<0x00f0> = cyclesentry<0>,N/A,N/A,N/A
+0xf87d,DMT,1,N/A,N/A,N/A,159,N/A,N/A,debugcontrolalgorithmactive<0x00f0> = cyclesentry<0>,N/A,N/A,N/A
+0xf87d,Navigator,1,N/A,N/A,N/A,159,false,true,mode selection = cycle sentry,N/A,N/A,N/A
+0xf89b,AMT,1,fuel level sensor configuration,table only,event,98,false,true,no dependency,N/A,N/A,N/A
+0xf89b,DMT,1,N/A,N/A,N/A,98,N/A,N/A,no dependency,N/A,N/A,N/A
+0xf89c,"AMT, RB",2,door switch configuration - zone 1,table only,event,108,false,true,no dependency,N/A,N/A,N/A
+0xf89c,DMT,1,N/A,N/A,N/A,108,N/A,N/A,no dependency,N/A,N/A,N/A
+0xf89c,Navigator,1,N/A,N/A,N/A,108,false,true,no dependency,N/A,N/A,N/A
+0xf912,"AMT, RB",2,tk model,table only,event,111,false,true,no dependency,N/A,N/A,N/A
+0xf912,DMT,1,N/A,N/A,N/A,111,N/A,N/A,no dependency,N/A,N/A,N/A
+0xf912,Navigator,1,N/A,N/A,N/A,111,false,true,no dependency,N/A,N/A,N/A
+0xf96e,"AMT, RB",2,electric motor start counter,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0xf96f,"AMT, RB",2,diesel engine start counter,table only,event,N/A,false,true,engine = eco gov,N/A,N/A,N/A
+0xf9ce,AMT,1,setpoint - zone 2,graph (stepped) and table (continuous columns),timed,127,true,false,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0xf9ce,DMT,1,N/A,N/A,N/A,127,N/A,N/A,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0xfa01,AMT,1,zone 1 on/off status,table only,event,N/A,false,true,no dependency,N/A,N/A,N/A
+0xfa02,AMT,1,zone 2 on/off status,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 1,N/A,N/A,N/A
+0xfa35,AMT,1,door switch configuration - zone 2,table only,event,108,false,true,no dependency,N/A,N/A,N/A
+0xfa35,DMT,1,N/A,N/A,N/A,108,N/A,N/A,no dependency,N/A,N/A,N/A
+0xfb69,AMT,1,zone 3 on/off status,table only,event,N/A,false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0xfb6a,AMT,1,remote evap. type - zone 3,table only,event,"52, 67, 110, 112, 143",false,true,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0xfb6a,DMT,1,N/A,N/A,N/A,"52, 67, 110, 112, 143",N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0xfb6c,AMT,1,setpoint - zone 3,graph (stepped) and table (continuous columns),timed,127,true,false,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0xfb6c,DMT,1,N/A,N/A,N/A,127,N/A,N/A,zoneconfiguration<0xf824> is greater than 2,N/A,N/A,N/A
+0xfb83,AMT,1,door switch configuration - zone 3,table only,event,108,false,true,no dependency,N/A,N/A,N/A
+0xfb83,DMT,1,N/A,N/A,N/A,108,N/A,N/A,no dependency,N/A,N/A,N/A

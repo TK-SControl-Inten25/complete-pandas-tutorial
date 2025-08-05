@@ -1,231 +1,38 @@
 SPN,Platforms,Count
-0x0093,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0094,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0097,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0098,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x009B,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x009C,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x00AB,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x00BC,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0183,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0186,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0205,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x0380,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x03A4,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0xF80D,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
-0x002D,"RB, AMT, Navigator, DEET, DMT",5
-0x004A,"RB, AMT, Navigator, DEET, DMT",5
-0x0058,"RB, AMT, Navigator, DEET, DMT",5
-0x0095,"RB, Navigator, DEET, Nebula-Galaxy, DMT",5
-0x0096,"RB, Navigator, DEET, Nebula-Galaxy, DMT",5
-0x00A1,"RB, AMT, Navigator, DEET, DMT",5
-0x00AA,"RB, AMT, Navigator, DEET, DMT",5
-0x00AF,"RB, AMT, Navigator, DEET, DMT",5
-0x00BB,"RB, AMT, Navigator, DEET, DMT",5
-0x00BD,"RB, AMT, Navigator, DEET, DMT",5
-0x00C1,"RB, AMT, Navigator, DEET, DMT",5
-0x00C6,"RB, AMT, Navigator, DEET, DMT",5
-0x00C7,"RB, AMT, Navigator, DEET, DMT",5
-0x00CE,"RB, AMT, Navigator, DEET, DMT",5
-0x00CF,"RB, AMT, Navigator, DEET, DMT",5
-0x00D1,"RB, AMT, Navigator, DEET, DMT",5
-0x0132,"RB, AMT, Navigator, DEET, DMT",5
-0x0133,"RB, AMT, Navigator, DEET, DMT",5
-0x0135,"RB, AMT, Navigator, DEET, DMT",5
-0x017F,"RB, AMT, Navigator, DEET, DMT",5
-0x0180,"RB, AMT, Navigator, DEET, DMT",5
-0x0182,"RB, AMT, Navigator, DEET, DMT",5
-0x0184,"AMT, Navigator, DEET, Nebula-Galaxy, DMT",5
-0x0192,"RB, AMT, Navigator, DEET, DMT",5
-0x03A7,"RB, AMT, Navigator, DEET, DMT",5
-0x04D2,"RB, AMT, Navigator, DEET, DMT",5
-0xF838,"RB, AMT, Navigator, DEET, DMT",5
-0xF839,"RB, AMT, Navigator, DEET, DMT",5
-0xF83C,"RB, AMT, Navigator, DEET, DMT",5
-0xF83D,"RB, AMT, Navigator, DEET, DMT",5
-0xF848,"RB, AMT, Navigator, DEET, DMT",5
-0xF87D,"RB, AMT, Navigator, DEET, DMT",5
-0xF89C,"RB, AMT, Navigator, DEET, DMT",5
-0xF912,"RB, AMT, Navigator, DEET, DMT",5
-0x0001,"Nebula-Galaxy, DMT, RB, DEET",4
-0x0002,"Nebula-Galaxy, DMT, RB, DEET",4
-0x0003,"Nebula-Galaxy, DMT, RB, DEET",4
-0x0004,"Nebula-Galaxy, DMT, RB, DEET",4
-0x002E,"RB, AMT, DMT, DEET",4
-0x0030,"RB, AMT, DEET, Navigator",4
-0x00AC,"RB, AMT, DEET, Navigator",4
-0x00AE,"RB, AMT, DEET, Navigator",4
-0x00B2,"RB, AMT, DMT, DEET",4
-0x00BF,"RB, Navigator, DMT, DEET",4
-0x00C2,"RB, AMT, DEET, Navigator",4
-0x00C5,"RB, AMT, DEET, Navigator",4
-0x00D0,"RB, AMT, DEET, Navigator",4
-0x00D2,"RB, AMT, DEET, Navigator",4
-0x00EB,"RB, Navigator, DMT, DEET",4
-0x00FC,"RB, AMT, DEET, Navigator",4
-0x0105,"RB, AMT, DEET, Navigator",4
-0x0106,"RB, AMT, DEET, Navigator",4
-0x0108,"RB, AMT, DEET, Navigator",4
-0x0109,"RB, AMT, DEET, Navigator",4
-0x010A,"RB, AMT, DEET, Navigator",4
-0x010C,"RB, AMT, DEET, Navigator",4
-0x010D,"RB, AMT, DEET, Navigator",4
-0x010F,"RB, AMT, DEET, Navigator",4
-0x0116,"RB, AMT, DEET, Navigator",4
-0x0117,"RB, AMT, DEET, Navigator",4
-0x0118,"RB, AMT, DEET, Navigator",4
-0x0119,"RB, AMT, DEET, Navigator",4
-0x0120,"RB, AMT, DEET, Navigator",4
-0x0130,"RB, AMT, DEET, Navigator",4
-0x0131,"RB, AMT, DEET, Navigator",4
-0x0134,"RB, AMT, DEET, Navigator",4
-0x0155,"RB, AMT, DMT, DEET",4
-0x016F,"RB, AMT, DEET, Navigator",4
-0x0176,"RB, Navigator, DMT, DEET",4
-0x017B,"RB, AMT, DEET, Navigator",4
-0x017D,"RB, AMT, DEET, Navigator",4
-0x017E,"RB, AMT, DEET, Navigator",4
-0x0185,"AMT, DMT, DEET, Navigator",4
-0x0196,"RB, AMT, DEET, Navigator",4
-0x0197,"RB, AMT, DEET, Navigator",4
-0x0198,"RB, AMT, DEET, Navigator",4
-0x0199,"RB, AMT, DEET, Navigator",4
-0x048F,"RB, AMT, DEET, Navigator",4
-0x0490,"RB, AMT, DEET, Navigator",4
-0xF96E,"RB, AMT, DEET, Navigator",4
-0xF96F,"RB, AMT, DEET, Navigator",4
-0x009A,"Nebula-Galaxy, DMT, DEET",3
-0x00B1,"RB, DMT, DEET",3
-0x012F,"RB, Navigator, DEET",3
-0x0181,"RB, Navigator, DEET",3
-0x0200,"Nebula-Galaxy, DMT, DEET",3
-0x0201,"Nebula-Galaxy, DMT, DEET",3
-0x0202,"Nebula-Galaxy, DMT, DEET",3
-0x0203,"Nebula-Galaxy, DMT, DEET",3
-0x0209,"RB, DMT, DEET",3
-0x02DE,"Nebula-Galaxy, DMT, DEET",3
-0x02FC,"Nebula-Galaxy, DMT, DEET",3
-0x0387,"Nebula-Galaxy, AMT, RB",3
-0x0397,"RB, AMT, DMT",3
-0x03A3,"RB, AMT, Navigator",3
-0x03A5,"RB, DMT, DEET",3
-0x03B3,"RB, DMT, DEET",3
-0x03B5,"RB, DMT, DEET",3
-0x03B6,"RB, DMT, DEET",3
-0x042B,"RB, DMT, DEET",3
-0x0430,"RB, DMT, DEET",3
-0x0432,"RB, DMT, DEET",3
-0x049E,"RB, AMT, DMT",3
-0x049F,"RB, DMT, DEET",3
-0x04AE,"RB, AMT, DMT",3
-0x04C0,"RB, AMT, DMT",3
-0x04D3,"Nebula-Galaxy, DMT, DEET",3
-0x0517,"RB, AMT, Navigator",3
-0x0538,"RB, AMT, DMT",3
-0x0541,"RB, AMT, DMT",3
-0x0548,"RB, DMT, DEET",3
-0x0587,"RB, AMT, Navigator",3
-0x05AF,"Nebula-Galaxy, AMT, DMT",3
-0x05CC,"RB, AMT, Navigator",3
-0x05FA,"RB, AMT, DMT",3
-0x076C,"AMT, APU, DMT",3
-0xF812,"RB, DMT, DEET",3
-0xF833,"AMT, DEET, Navigator",3
-0xF9CE,"Nebula-Galaxy, AMT, DMT",3
-0x0036,"Nebula-Galaxy, DEET",2
-0x003C,"DMT, DEET",2
-0x0042,"DMT, DEET",2
-0x0044,"Nebula-Galaxy, DEET",2
-0x0047,"Nebula-Galaxy, DEET",2
-0x004B,"AMT, DMT",2
-0x004D,"Navigator, DEET",2
-0x0050,"Nebula-Galaxy, DEET",2
-0x0099,"Nebula-Galaxy, DEET",2
-0x009E,"Navigator, DEET",2
-0x00B8,"Navigator, DEET",2
-0x00F0,"RB, AMT",2
-0x0121,"RB, AMT",2
-0x012D,"Navigator, DEET",2
-0x0177,"Nebula-Galaxy, DEET",2
-0x0260,"DMT, DEET",2
-0x028C,"DMT, DEET",2
-0x028D,"DMT, DEET",2
-0x02E0,"DMT, DEET",2
-0x02E1,"DMT, DEET",2
-0x02EA,"DMT, DEET",2
-0x02FB,"DMT, DEET",2
-0x02FD,"DMT, DEET",2
-0x02FE,"DMT, DEET",2
-0x02FF,"Nebula-Galaxy, DEET",2
-0x0350,"DMT, DEET",2
-0x0356,"AMT, DEET",2
-0x0360,"DMT, DEET",2
-0x0361,"DMT, DEET",2
-0x03B7,"Nebula-Galaxy, DEET",2
-0x03B8,"Nebula-Galaxy, DEET",2
-0x03C4,"Nebula-Galaxy, DEET",2
-0x042E,"DMT, DEET",2
-0x043B,"AMT, DMT",2
-0x043C,"Nebula-Galaxy, AMT",2
-0x04E1,"DMT, DEET",2
-0x04E2,"DMT, DEET",2
-0x04E3,"DMT, DEET",2
-0x04E4,"DMT, DEET",2
-0x04E5,"DMT, DEET",2
-0x04E6,"DMT, DEET",2
-0x04E7,"DMT, DEET",2
-0x04E8,"DMT, DEET",2
-0x04EB,"DMT, DEET",2
-0x04EE,"DMT, DEET",2
-0x04FF,"RB, AMT",2
-0x0514,"DMT, DEET",2
-0x0584,"AMT, Navigator",2
-0x058A,"AMT, Navigator",2
-0x05A6,"Nebula-Galaxy, AMT",2
-0x05AE,"AMT, DMT",2
-0x05B0,"AMT, DMT",2
-0x05E9,"Nebula-Galaxy, DMT",2
-0x05EA,"Nebula-Galaxy, DMT",2
-0x0622,"AMT, DMT",2
-0x0623,"AMT, DMT",2
-0x0624,"AMT, DMT",2
-0x064B,"AMT, DMT",2
-0x0661,"AMT, DMT",2
-0x0671,"AMT, DMT",2
-0x0674,"AMT, DMT",2
-0x0678,"AMT, DMT",2
-0x0679,"AMT, DMT",2
-0x068B,"AMT, DMT",2
-0x068C,"AMT, DMT",2
-0x0700,"AMT, DMT",2
-0x07DB,"AMT, DMT",2
-0x07DC,"AMT, DMT",2
-0x07DD,"AMT, DMT",2
-0xF832,"DMT, DEET",2
-0xF89B,"AMT, DMT",2
-0xFA02,"AMT, DMT",2
-0xFA35,"AMT, DMT",2
-0xFB69,"AMT, DMT",2
-0xFB6A,"AMT, DMT",2
-0xFB6C,"AMT, DMT",2
-0xFB83,"AMT, DMT",2
-????,"Navigator, DEET",2
 "
 0xF812
 0x00F0
 ",Navigator,1
+????,"Navigator, DEET",2
+0x0001,"Nebula-Galaxy, DMT, RB, DEET",4
+0x0002,"Nebula-Galaxy, DMT, RB, DEET",4
+0x0003,"Nebula-Galaxy, DMT, RB, DEET",4
+0x0004,"Nebula-Galaxy, DMT, RB, DEET",4
+0x002D,"RB, AMT, Navigator, DEET, DMT",5
+0x002E,"RB, AMT, DMT, DEET",4
 0x002F,DEET,1
+0x0030,"RB, AMT, DEET, Navigator",4
+0x0036,"Nebula-Galaxy, DEET",2
 0x0037,Nebula-Galaxy,1
 0x0039,Nebula-Galaxy,1
+0x003C,"DMT, DEET",2
 0x003D,DEET,1
+0x0042,"DMT, DEET",2
 0x0043,DEET,1
+0x0044,"Nebula-Galaxy, DEET",2
+0x0047,"Nebula-Galaxy, DEET",2
 0x0049,DEET,1
+0x004A,"RB, AMT, Navigator, DEET, DMT",5
+0x004B,"AMT, DMT",2
 "0x004B
 0x0206",DEET,1
 0x004C,DEET,1
+0x004D,"Navigator, DEET",2
 0x004F,Nebula-Galaxy,1
+0x0050,"Nebula-Galaxy, DEET",2
 0x0051,DEET,1
 0x0052,DEET,1
+0x0058,"RB, AMT, Navigator, DEET, DMT",5
 0x0059,DEET,1
 0x005D,DEET,1
 0x005E,DEET,1
@@ -254,38 +61,124 @@ SPN,Platforms,Count
 0x0080,DEET,1
 0x0081,DEET,1
 0x0082,DEET,1
+0x0093,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x0094,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x0095,"RB, Navigator, DEET, Nebula-Galaxy, DMT",5
+0x0096,"RB, Navigator, DEET, Nebula-Galaxy, DMT",5
+0x0097,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x0098,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x0099,"Nebula-Galaxy, DEET",2
+0x009A,"Nebula-Galaxy, DMT, DEET",3
+0x009B,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x009C,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
 0x009D,DEET,1
+0x009E,"Navigator, DEET",2
+0x00A1,"RB, AMT, Navigator, DEET, DMT",5
 0x00A2,DEET,1
 0x00A4,DEET,1
+0x00AA,"RB, AMT, Navigator, DEET, DMT",5
+0x00AB,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x00AC,"RB, AMT, DEET, Navigator",4
+0x00AE,"RB, AMT, DEET, Navigator",4
+0x00AF,"RB, AMT, Navigator, DEET, DMT",5
 0x00B0,DEET,1
+0x00B1,"RB, DMT, DEET",3
+0x00B2,"RB, AMT, DMT, DEET",4
 0x00B3,Nebula-Galaxy,1
 0x00B6,Nebula-Galaxy,1
+0x00B8,"Navigator, DEET",2
+0x00BB,"RB, AMT, Navigator, DEET, DMT",5
+0x00BC,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x00BD,"RB, AMT, Navigator, DEET, DMT",5
 0x00BE,DEET,1
+0x00BF,"RB, Navigator, DMT, DEET",4
 0x00C0,DEET,1
+0x00C1,"RB, AMT, Navigator, DEET, DMT",5
+0x00C2,"RB, AMT, DEET, Navigator",4
+0x00C5,"RB, AMT, DEET, Navigator",4
+0x00C6,"RB, AMT, Navigator, DEET, DMT",5
+0x00C7,"RB, AMT, Navigator, DEET, DMT",5
 0x00CB,DEET,1
 0x00CC,DEET,1
+0x00CE,"RB, AMT, Navigator, DEET, DMT",5
+0x00CF,"RB, AMT, Navigator, DEET, DMT",5
+0x00D0,"RB, AMT, DEET, Navigator",4
+0x00D1,"RB, AMT, Navigator, DEET, DMT",5
+0x00D2,"RB, AMT, DEET, Navigator",4
 0x00D3,AMT,1
 0x00DC,DEET,1
 0x00DD,DEET,1
 0x00DF,DEET,1
+0x00EB,"RB, Navigator, DMT, DEET",4
+0x00F0,"RB, AMT",2
+0x00FC,"RB, AMT, DEET, Navigator",4
+0x0105,"RB, AMT, DEET, Navigator",4
+0x0106,"RB, AMT, DEET, Navigator",4
+0x0108,"RB, AMT, DEET, Navigator",4
+0x0109,"RB, AMT, DEET, Navigator",4
+0x010A,"RB, AMT, DEET, Navigator",4
+0x010C,"RB, AMT, DEET, Navigator",4
+0x010D,"RB, AMT, DEET, Navigator",4
+0x010F,"RB, AMT, DEET, Navigator",4
+0x0116,"RB, AMT, DEET, Navigator",4
+0x0117,"RB, AMT, DEET, Navigator",4
+0x0118,"RB, AMT, DEET, Navigator",4
+0x0119,"RB, AMT, DEET, Navigator",4
+0x0120,"RB, AMT, DEET, Navigator",4
+0x0121,"RB, AMT",2
 0x0126,DEET,1
 0x0127,DEET,1
 0x0128,DEET,1
 0x012A,DEET,1
 0x012B,DEET,1
 0x012C,DEET,1
+0x012D,"Navigator, DEET",2
+0x012F,"RB, Navigator, DEET",3
+0x0130,"RB, AMT, DEET, Navigator",4
+0x0131,"RB, AMT, DEET, Navigator",4
+0x0132,"RB, AMT, Navigator, DEET, DMT",5
+0x0133,"RB, AMT, Navigator, DEET, DMT",5
+0x0134,"RB, AMT, DEET, Navigator",4
+0x0135,"RB, AMT, Navigator, DEET, DMT",5
 0x0136,DEET,1
 0x0154,DEET,1
+0x0155,"RB, AMT, DMT, DEET",4
+0x016F,"RB, AMT, DEET, Navigator",4
+0x0176,"RB, Navigator, DMT, DEET",4
+0x0177,"Nebula-Galaxy, DEET",2
 0x017A,DEET,1
+0x017B,"RB, AMT, DEET, Navigator",4
+0x017D,"RB, AMT, DEET, Navigator",4
+0x017E,"RB, AMT, DEET, Navigator",4
+0x017F,"RB, AMT, Navigator, DEET, DMT",5
+0x0180,"RB, AMT, Navigator, DEET, DMT",5
+0x0181,"RB, Navigator, DEET",3
+0x0182,"RB, AMT, Navigator, DEET, DMT",5
+0x0183,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x0184,"AMT, Navigator, DEET, Nebula-Galaxy, DMT",5
+0x0185,"AMT, DMT, DEET, Navigator",4
+0x0186,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
 0x018A,AMT,1
 0x018B,AMT,1
 0x018E,DEET,1
+0x0192,"RB, AMT, Navigator, DEET, DMT",5
+0x0196,"RB, AMT, DEET, Navigator",4
+0x0197,"RB, AMT, DEET, Navigator",4
+0x0198,"RB, AMT, DEET, Navigator",4
+0x0199,"RB, AMT, DEET, Navigator",4
 0x019A,DEET,1
+0x0200,"Nebula-Galaxy, DMT, DEET",3
+0x0201,"Nebula-Galaxy, DMT, DEET",3
+0x0202,"Nebula-Galaxy, DMT, DEET",3
+0x0203,"Nebula-Galaxy, DMT, DEET",3
+0x0205,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
 0x0206,RB,1
+0x0209,"RB, DMT, DEET",3
 0x020D,DEET,1
 0x0220,DEET,1
 0x0221,DEET,1
 0x0222,DEET,1
+0x0260,"DMT, DEET",2
 0x0262,DEET,1
 0x026F,DEET,1
 0x0270,DEET,1
@@ -306,7 +199,12 @@ SPN,Platforms,Count
 0x0289,DEET,1
 0x028A,DEET,1
 0x028B,DEET,1
+0x028C,"DMT, DEET",2
+0x028D,"DMT, DEET",2
+0x02DE,"Nebula-Galaxy, DMT, DEET",3
 0x02DF,DEET,1
+0x02E0,"DMT, DEET",2
+0x02E1,"DMT, DEET",2
 0x02E2,DEET,1
 0x02E3,DEET,1
 0x02E4,DEET,1
@@ -315,6 +213,7 @@ SPN,Platforms,Count
 0x02E7,DEET,1
 0x02E8,DEET,1
 0x02E9,DEET,1
+0x02EA,"DMT, DEET",2
 0x02EB,DEET,1
 0x02EC,DEET,1
 0x02ED,DEET,1
@@ -326,26 +225,48 @@ SPN,Platforms,Count
 0x02F4,DEET,1
 0x02F5,DEET,1
 0x02F6,DEET,1
+0x02FB,"DMT, DEET",2
+0x02FC,"Nebula-Galaxy, DMT, DEET",3
+0x02FD,"DMT, DEET",2
+0x02FE,"DMT, DEET",2
+0x02FF,"Nebula-Galaxy, DEET",2
 0x0310,AMT,1
+0x0350,"DMT, DEET",2
 0x0351,DEET,1
 0x0355,DEET,1
+0x0356,"AMT, DEET",2
+0x0360,"DMT, DEET",2
+0x0361,"DMT, DEET",2
 0x0362,DEET,1
 0x0363,DEET,1
 0x0364,DEET,1
 0x037C,DEET,1
+0x0380,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x0387,"Nebula-Galaxy, AMT, RB",3
 0x0389,DEET,1
 0x038A,DEET,1
 0x038B,DEET,1
 0x038C,DEET,1
+0x0397,"RB, AMT, DMT",3
 0x03A2,DEET,1
+0x03A3,"RB, AMT, Navigator",3
+0x03A4,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0x03A5,"RB, DMT, DEET",3
 0x03A6,Navigator,1
+0x03A7,"RB, AMT, Navigator, DEET, DMT",5
 0x03A8,APU,1
 0x03AE,DEET,1
+0x03B3,"RB, DMT, DEET",3
+0x03B5,"RB, DMT, DEET",3
+0x03B6,"RB, DMT, DEET",3
+0x03B7,"Nebula-Galaxy, DEET",2
+0x03B8,"Nebula-Galaxy, DEET",2
 0x03BA,DEET,1
 0x03BC,DEET,1
 0x03C0,DEET,1
 0x03C2,DEET,1
 0x03C3,DEET,1
+0x03C4,"Nebula-Galaxy, DEET",2
 0x03C8,DEET,1
 0x03C9,DEET,1
 0x03CA,DEET,1
@@ -427,20 +348,58 @@ SPN,Platforms,Count
 0x0416,DEET,1
 0x0417,DEET,1
 0x0418,DEET,1
+0x042B,"RB, DMT, DEET",3
+0x042E,"DMT, DEET",2
 0x042F,RB,1
+0x0430,"RB, DMT, DEET",3
+0x0432,"RB, DMT, DEET",3
 0x0437,AMT,1
+0x043B,"AMT, DMT",2
+0x043C,"Nebula-Galaxy, AMT",2
 0x0469,Nebula-Galaxy,1
+0x048F,"RB, AMT, DEET, Navigator",4
+0x0490,"RB, AMT, DEET, Navigator",4
 0x049C,AMT,1
+0x049E,"RB, AMT, DMT",3
+0x049F,"RB, DMT, DEET",3
+0x04AE,"RB, AMT, DMT",3
 0x04B2,AMT,1
+0x04C0,"RB, AMT, DMT",3
+0x04D2,"RB, AMT, Navigator, DEET, DMT",5
+0x04D3,"Nebula-Galaxy, DMT, DEET",3
+0x04E1,"DMT, DEET",2
+0x04E2,"DMT, DEET",2
+0x04E3,"DMT, DEET",2
+0x04E4,"DMT, DEET",2
+0x04E5,"DMT, DEET",2
+0x04E6,"DMT, DEET",2
+0x04E7,"DMT, DEET",2
+0x04E8,"DMT, DEET",2
+0x04EB,"DMT, DEET",2
+0x04EE,"DMT, DEET",2
+0x04FF,"RB, AMT",2
+0x0514,"DMT, DEET",2
+0x0517,"RB, AMT, Navigator",3
+0x0538,"RB, AMT, DMT",3
+0x0541,"RB, AMT, DMT",3
+0x0548,"RB, DMT, DEET",3
 0x0578,RB,1
+0x0584,"AMT, Navigator",2
+0x0587,"RB, AMT, Navigator",3
+0x058A,"AMT, Navigator",2
 0x0593,Nebula-Galaxy,1
 0x0594,Nebula-Galaxy,1
 0x0595,Nebula-Galaxy,1
 0x059D,AMT,1
 0x05A5,AMT,1
+0x05A6,"Nebula-Galaxy, AMT",2
 0x05A7,AMT,1
 0x05A8,AMT,1
 0x05AD,AMT,1
+0x05AE,"AMT, DMT",2
+0x05AF,"Nebula-Galaxy, AMT, DMT",3
+0x05B0,"AMT, DMT",2
+0x05CC,"RB, AMT, Navigator",3
 0x05D1,Nebula-Galaxy,1
 0x05D2,Nebula-Galaxy,1
 0x05D3,Nebula-Galaxy,1
@@ -459,24 +418,38 @@ SPN,Platforms,Count
 0x05E3,Nebula-Galaxy,1
 0x05E4,Nebula-Galaxy,1
 0x05E5,Nebula-Galaxy,1
+0x05E9,"Nebula-Galaxy, DMT",2
+0x05EA,"Nebula-Galaxy, DMT",2
 0x05F1,Nebula-Galaxy,1
 0x05F2,Nebula-Galaxy,1
+0x05FA,"RB, AMT, DMT",3
 0x0617,AMT,1
 0x0618,AMT,1
 0x0619,AMT,1
+0x0622,"AMT, DMT",2
+0x0623,"AMT, DMT",2
+0x0624,"AMT, DMT",2
 0x0649,AMT,1
 0x064A,AMT,1
+0x064B,"AMT, DMT",2
 0x064F,Nebula-Galaxy,1
 0x0650,Nebula-Galaxy,1
 0x0651,Nebula-Galaxy,1
 0x0652,Nebula-Galaxy,1
 0x0653,Nebula-Galaxy,1
 0x0656,Nebula-Galaxy,1
+0x0661,"AMT, DMT",2
 0x0665,Nebula-Galaxy,1
 0x0670,AMT,1
+0x0671,"AMT, DMT",2
 0x0672,AMT,1
 0x0673,AMT,1
+0x0674,"AMT, DMT",2
 0x0675,AMT,1
+0x0678,"AMT, DMT",2
+0x0679,"AMT, DMT",2
+0x068B,"AMT, DMT",2
+0x068C,"AMT, DMT",2
 0x0698,Nebula-Galaxy,1
 0x0699,Nebula-Galaxy,1
 0x069A,Nebula-Galaxy,1
@@ -492,8 +465,10 @@ SPN,Platforms,Count
 0x06B8,AMT,1
 0x06CD,Nebula-Galaxy,1
 0x06E1,Nebula-Galaxy,1
+0x0700,"AMT, DMT",2
 0x074A,Nebula-Galaxy,1
 0x074B,Nebula-Galaxy,1
+0x076C,"AMT, APU, DMT",3
 0x076D,Nebula-Galaxy,1
 0x0771,Nebula-Galaxy,1
 0x0772,Nebula-Galaxy,1
@@ -503,6 +478,9 @@ SPN,Platforms,Count
 0x079E,DMT,1
 0x07B2,AMT,1
 0x07D6,AMT,1
+0x07DB,"AMT, DMT",2
+0x07DC,"AMT, DMT",2
+0x07DD,"AMT, DMT",2
 0x07DF,AMT,1
 0x07E3,AMT,1
 0x07E4,AMT,1
@@ -729,9 +707,17 @@ SPN,Platforms,Count
 0xF80A,DEET,1
 0xF80B,DEET,1
 0xF80C,DEET,1
+0xF80D,"RB, AMT, Navigator, DEET, Nebula-Galaxy, DMT",6
+0xF812,"RB, DMT, DEET",3
 0xF824,Nebula-Galaxy,1
+0xF832,"DMT, DEET",2
+0xF833,"AMT, DEET, Navigator",3
+0xF838,"RB, AMT, Navigator, DEET, DMT",5
+0xF839,"RB, AMT, Navigator, DEET, DMT",5
 0xF83A,DEET,1
 0xF83B,DEET,1
+0xF83C,"RB, AMT, Navigator, DEET, DMT",5
+0xF83D,"RB, AMT, Navigator, DEET, DMT",5
 0xF83E,DEET,1
 0xF83F,DEET,1
 0xF840,DEET,1
@@ -742,12 +728,16 @@ SPN,Platforms,Count
 0xF845,DEET,1
 0xF846,DEET,1
 0xF847,DEET,1
+0xF848,"RB, AMT, Navigator, DEET, DMT",5
 0xF84E,DEET,1
 0xF84F,DEET,1
 0xF850,DEET,1
 0xF851,DEET,1
+0xF87D,"RB, AMT, Navigator, DEET, DMT",5
 0xF888,DEET,1
 0xF889,DEET,1
+0xF89B,"AMT, DMT",2
+0xF89C,"RB, AMT, Navigator, DEET, DMT",5
 0xF89F,DEET,1
 0xF8A0,DEET,1
 0xF8A1,DEET,1
@@ -758,16 +748,26 @@ SPN,Platforms,Count
 0xF8A9,DEET,1
 0xF8AF,DEET,1
 0xF906,DEET,1
+0xF912,"RB, AMT, Navigator, DEET, DMT",5
+0xF96E,"RB, AMT, DEET, Navigator",4
+0xF96F,"RB, AMT, DEET, Navigator",4
 0xF9B5,Navigator,1
+0xF9CE,"Nebula-Galaxy, AMT, DMT",3
 0xF9E8,Nebula-Galaxy,1
 0xF9EB,Nebula-Galaxy,1
 0xF9EC,Nebula-Galaxy,1
 0xF9EE,Nebula-Galaxy,1
 0xFA01,AMT,1
+0xFA02,"AMT, DMT",2
+0xFA35,"AMT, DMT",2
 0xFAF0,Nebula-Galaxy,1
+0xFB69,"AMT, DMT",2
+0xFB6A,"AMT, DMT",2
+0xFB6C,"AMT, DMT",2
+0xFB83,"AMT, DMT",2
 0xFBC9,Nebula-Galaxy,1
 0xFBCA,Nebula-Galaxy,1
+n/a - model,DEET,1
 New,DMT,1
 No,RB,1
 TBD,Nebula-Galaxy,1
-n/a - model,DEET,1
