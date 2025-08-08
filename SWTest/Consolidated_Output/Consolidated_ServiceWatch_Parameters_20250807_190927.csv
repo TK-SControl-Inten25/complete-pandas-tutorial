@@ -1,0 +1,723 @@
+Platform,SPN,User Display Name,Display Types,TIME,Event,Config,Dependency,Access Level (Wintrac),Unit of Measurement,Event log when alarm code(s) set,Event Log When Parameter Changes?,Auto Log at Power ON?,Auto Log at Noon (12:05 PM)?,Additional Reqs,Documentation Notes
+DEET,0x0001,Software Major Version,Header,False,0.0,1.0,,Technician,,,,,,,
+Nebula-Galaxy,0x0001,Software Major Version,Header,False,0.0,1.0,,Technician,,,,0.0,0.0,,
+Railblazer,0x0001,Software Major Version,Header,FALSE ,0.0,1.0,No Dependency,Technician,,,,,,,
+DEET,0x0002,Software Minor Version,Header,False,0.0,1.0,,Technician,,,,,,,
+Nebula-Galaxy,0x0002,Software Minor Version,Header,False,0.0,1.0,,Technician,,,,0.0,0.0,,
+Railblazer,0x0002,Software Minor Version,Header,FALSE ,0.0,1.0,No Dependency,Technician,,,,,,,
+Nebula-Galaxy,0x0003,Software Release Number,Header,False,0.0,1.0,,Technician,,,,0.0,0.0,,
+DEET,0x0003,Software Release Number,Header,False,0.0,1.0,,Technician,,,,,,,
+Railblazer,0x0003,Software Release Number,Header,FALSE ,0.0,1.0,No Dependency,Technician,,,,,,,
+DEET,0x0004,Software Build Number,Header,False,0.0,1.0,,Technician,,,,,,,
+Nebula-Galaxy,0x0004,Software Build Number,Header,False,0.0,1.0,,Technician,,,,0.0,0.0,,
+Railblazer,0x0004,Software Build Number,Header,FALSE ,0.0,1.0,No Dependency,Technician,,,,,,,
+Railblazer,0x002D,ECU Engine RPM,Graph and Table,TRUE,0.0,0.0,Engine = ECO GOV,Technician,,"33, 48, 616",,,,,"P.Carr 21st July 23: since RB does not support alarm code 7, removed alarm code 7 from event log alarms list"
+AMT,0x002D,ECU Engine RPM,Graph and Table,True,0.0,0.0,Engine = ECO GOV,Technician,Frequencies (RPM),"7, 33, 48, 86, 87, 616",False,0.0,0.0,,
+DEET,0x002D,ECU Engine RPM,Graph and Table,True,0.0,0.0,Engine = ECO GOV OR Platform = DEET,Technician,,102:672; 102:55,,,,,
+Navigator,0x002D,ECU Engine RPM,Graph and Table,True,0.0,0.0,Engine = ECO GOV,Technician,,"7, 33, 48, 616",,,,,
+DEET,0x002E,Engine Speed Command,Table Only,True,0.0,0.0,,Technician,,,,,,,
+Railblazer,0x002E,Engine Speed Command,Graph (stepped) and Table (continuous columns),TRUE,0.0,0.0,No Dependency,Technician,,33,,,,,P.Carr 25th July - reviewed with RB team and agreed to make this timed log with graphical stepped view. 
+AMT,0x002E,Engine Speed Request,Graph (stepped) and Table (continuous columns),True,0.0,0.0,Engine = ECO GOV,Technician,Frequencies (RPM),"33, 616",False,0.0,0.0,,"P.Carr 1st Sept 2022 - updated SPN from 0x0181 (not applicable for AMT) to 0x002E (engine speed command)
+
+P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models "
+AMT,0x0030,Electric Motor RPM,Graph and Table,True,0.0,0.0,No Dependency,Technician,Frequencies (RPM),"7, 33, 36, 48, 56, 57, 58, 59, 86, 87, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",False,0.0,0.0,,
+Navigator,0x0030,Electric Motor RPM,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"7, 33, 48, 56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,
+Railblazer,0x0030,Electric Motor RPM,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"33, 48, 56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,"P.Carr 21st July 23: since RB does not support alarm code 7, removed alarm code 7 from event log alarms list"
+Nebula-Galaxy,0x0036,Hot Gas Bypass Valve,Table Only,False,1.0,0.0,,Technician,,45,,0.0,0.0,,
+Nebula-Galaxy,0x0037,Liquid Line Solenoid Zone 2,Table Only,False,1.0,0.0,,Technician,,67,,0.0,0.0,,
+Nebula-Galaxy,0x0039,Liquid Line Solenoid Zone 1,Table Only,False,1.0,0.0,,Technician,,67,,0.0,0.0,,
+DEET,0x0042,Safety Spare Output,Table Only,True,0.0,0.0,,User,,2:10; 42:10; 13:26; 42:93; 42:95; 42:99; 42:236,,,,Need to rename SPN to Compressor Enable,
+Nebula-Galaxy,0x0044,Combo Device On/Off Switch,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,ComboTrm15,
+Nebula-Galaxy,0x0047,Combo Device 12V DC Supply Voltage,Table and Graph,True,0.0,0.0,,Technician,Voltage (V),265,,0.0,0.0,ComboTrm30,
+AMT,0x004A,Engine Preheat Output,Table Only,False,1.0,0.0,No Dependency,Technician,,15,True,0.0,0.0,,Helpful for diagnosing fail to crank issues. 
+DEET,0x004A,Engine Preheat,Table Only,False,1.0,0.0,,Technician,,,True,,,Log event: when engine preheat status changes.,Helpful for diagnosing fail to crank issues. Will allow for determination of preheat time length
+Navigator,0x004A,Engine Preheat,Table Only,False,1.0,0.0,Engine Type = ECO or Mechanical ,Technician,,,True,,,Log event: when engine preheat status changes.,"Helpful for diagnosing fail to crank issues. Will allow for determination of preheat time length
+
+DB - 16th Jan2023 - Updated dependancy column from ""No Dependancy"" to ""Engine Type = ECO or Mechanical"" for PL3 & ELENA"
+Railblazer,0x004A,Engine Preheat,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Log event: when engine preheat status changes.,Helpful for diagnosing fail to crank issues. Will allow for determination of preheat time length
+AMT,0x004B,Engine Starter Solenoid Output,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Navigator,0x004D,Engine Speed Solenoid,Table Only,False,1.0,0.0,Engine = MECHANICAL,Technician,,40,True,,,Log event: when engine speed solenoid status changes or applicable alarm code sets,
+Nebula-Galaxy,0x004F,Main Heater Contactor Output Zone 1,Table Only,True,0.0,0.0,,Technician,,317,,0.0,0.0,,
+Nebula-Galaxy,0x0050,Main Heater Contactor Output Zone 2,Table Only,True,0.0,0.0,,Technician,,317,,0.0,0.0,,
+Railblazer,0x0058,Power On,Table Only,False,1.0,0.0,No Dependency,User,,,,1.0,, Log event at power on / off,
+Navigator,0x0058,Power On,Table Only,False,1.0,0.0,No Dependency,User,,,,1.0,,Log event at power on / off,
+AMT,0x0058,Power On,Table Only,False,1.0,0.0,No Dependency,User,,,False,1.0,0.0,,
+DEET,0x0058,Power On,Table Only,False,1.0,0.0,,User,,,,1.0,, Log event at power on / off,
+Railblazer,0x0093,Return Control,Graph and Table,TRUE,0.0,0.0,No Dependency,User,,3,,,,,
+AMT,0x0093,Return Air Temperature - Zone 1,Graph and Table,True,0.0,0.0,No Dependency,User,"Temperatures (◦C/◦F )
+MT Zone 1","3, 280",False,0.0,0.0,,
+DEET,0x0093,Return Control,Graph and Table,True,0.0,0.0,,User,,1:3,,,,,
+Navigator,0x0093,Return Control,Graph and Table,True,0.0,0.0,No Dependency,User,,3,,,,,
+Navigator,0x0093,Return Display,Graph and Table,True,0.0,0.0,No Dependency,Technician,,,,,,,DB 8th Oct 2024 - Added Return Display to address issue of jumbled columns in the servicewatch download. Dischage Display shall log same data as Discharge Control for PL6
+Nebula-Galaxy,0x0093,Return Air Temperature,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F ) MT Zone 1,3,,0.0,0.0,,
+Nebula-Galaxy,0x0093,Return Air Temperature Zone 1,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F ) MT Zone 1,3,,0.0,0.0,,
+Railblazer,0x0094,Discharge Control,Graph and Table,TRUE,0.0,0.0,No Dependency,User,,4,,,,,
+AMT,0x0094,Discharge Air Temperature - Zone 1,Graph and Table,True,0.0,0.0,No Dependency,User,"Temperatures (◦C/◦F )
+MT Zone 1","4, 280",False,0.0,0.0,,
+DEET,0x0094,Discharge Control,Graph and Table,True,0.0,0.0,,User,,1:4,,,,,
+Navigator,0x0094,Discharge Control,Graph and Table,True,0.0,0.0,No Dependency,User,,4,,,,,
+Navigator,0x0094,Discharge Display,Graph and Table,True,0.0,0.0,No Dependency,Technician,,,,,,,DB 8th Oct 2024 - Added Discharge Display to address issue of jumbled columns in the servicewatch download. Dischage Display shall log same data as Discharge Control for PL6
+Nebula-Galaxy,0x0094,Discharge Air Temperature,Table and Graph,True,0.0,0.0,,Technician,Temperatures (◦C/◦F ) MT Zone 1,4,,0.0,0.0,,
+Nebula-Galaxy,0x0094,Discharge Air Temperature Zone 1,Table and Graph,True,0.0,0.0,,Technician,Temperatures (◦C/◦F ) MT Zone 1,4,,0.0,0.0,,
+Railblazer,0x0095,Return Display,Graph and Table,TRUE,1.0,0.0,No Dependency,Technician,,203,,,,,
+Nebula-Galaxy,0x0095,Return Air Temperature Zone 2,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F )MT Zone 2,3,,0.0,0.0,,
+DEET,0x0095,Return Display,Graph and Table,True,0.0,0.0,,Technician,,1:203,,,,,
+DEET,0x0096,Discharge Display,Graph and Table,True,0.0,0.0,,Technician,,1:204,,,,,
+Nebula-Galaxy,0x0096,Coolant Water Temperature Sensor,Table and Graph,True,0.0,0.0,,Technician,Temperatures (◦C/◦F ) MT Zone 1,206,,0.0,0.0,WaterTempSensor,
+Railblazer,0x0096,Discharge Display,Graph and Table,TRUE,1.0,0.0,No Dependency,Technician,,204,,,,,
+AMT,0x0097,Evaporator Coil Temperature - Zone 1,Graph and Table,True,0.0,0.0,No Dependency,User,"Temperatures (◦C/◦F )
+MT Zone 1","2, 9, 280",False,0.0,0.0,,
+DEET,0x0097,Evaporator Coil,Graph and Table,True,0.0,0.0,,User,,1:2; 42:9,,,,,
+Navigator,0x0097,Evaporator Coil,Graph and Table,True,0.0,0.0,No Dependency,User,,"2, 9",,,,,
+Nebula-Galaxy,0x0097,Evaporator Coil Temperature,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F ) MT Zone 1,"2, 9",,0.0,0.0,,
+Nebula-Galaxy,0x0097,Evaporator Coil Temperature Zone 1,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F ) MT Zone 1,"2, 9",,0.0,0.0,,
+Railblazer,0x0097,Evaporator Coil,Graph and Table,TRUE,0.0,0.0,No Dependency,User,,"2, 9",,,,,
+AMT,0x0098,Ambient Temperature,Graph and Table,True,0.0,0.0,No Dependency,User,"Temperatures (◦C/◦F )
+MT Zone 1","5, 10",False,0.0,0.0,,
+DEET,0x0098,Ambient,Graph and Table,True,0.0,0.0,,User,,1:5,,,,,
+Navigator,0x0098,Ambient,Graph and Table,True,0.0,0.0,No Dependency,User,,5,,,,,
+Nebula-Galaxy,0x0098,Ambient Temperature,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F ) MT Zone 1,"5, 10",,0.0,0.0,,
+Railblazer,0x0098,Ambient Temperature,Graph and Table,TRUE,0.0,0.0,No Dependency,User,,5,,,,,
+Nebula-Galaxy,0x0099,Drain Pan Temperature,Table and Graph,True,0.0,0.0,,Technician,,202,,0.0,0.0,,
+DEET,0x009A,Refrigerant Discharge Temperature,Graph and Table,True,0.0,0.0,,,,42:80; 10:121,,,,,
+Nebula-Galaxy,0x009A,Compressor Discharge Temperature,Table and Graph,True,0.0,0.0,,Technician,"Temperatures (◦C/◦F )
+MT Zone 2","80, 121",,0.0,0.0,,
+Railblazer,0x009B,Suction Pressure,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"87, 89",,,,,
+Navigator,0x009B,Suction Pressure,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"87, 89",,,,,
+Nebula-Galaxy,0x009B,Compressor Suction Pressure,Table and Graph,True,0.0,0.0,,Technician,Pressures (PSI/Bar),"87, 89,93,95,99",,0.0,0.0,,
+AMT,0x009B,Compressor Suction Pressure,Graph and Table,True,0.0,0.0,No Dependency,Technician,Pressures (PSI/Bar),"87, 89",False,0.0,0.0,,
+DEET,0x009B,Suction Pressure,Graph and Table,True,0.0,0.0,,Technician,,2:87; 34:89; 42:93; 42:95; 42:99; 42:236,,,,,
+Railblazer,0x009C,Discharge Pressure,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"10, 86",,,,,
+Nebula-Galaxy,0x009C,Compressor Discharge Pressure,Table and Graph,True,0.0,0.0,,Technician,Pressures (PSI/Bar),"10, 86,93,95,99",,0.0,0.0,,
+Navigator,0x009C,Discharge Pressure,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"10, 86",,,,,
+AMT,0x009C,Compressor Discharge Pressure,Graph and Table,True,0.0,0.0,No Dependency,Technician,Pressures (PSI/Bar),"10, 86",False,0.0,0.0,,
+DEET,0x009C,Discharge Pressure,Graph and Table,True,0.0,0.0,,Technician,,2:10; 42:10; 2:86; 42:93; 42:95; 42:99; 42:236,,,,,
+AMT,0x00A1,ETV Current Position,Table Only,True,0.0,0.0,No Dependency,Technician,,"86, 87, 89",False,0.0,0.0,,
+DEET,0x00A1,ETV Position,Table Only,True,0.0,0.0,,Technician,,2:87; 34:89; 2:10; 42:10; 2:86; 42:93; 42:95; 42:99; 42:236,,,,,
+Navigator,0x00A1,ETV Position,Table Only,True,0.0,0.0,No Dependency,Technician,,"87, 89",,,,,
+Railblazer,0x00A1,ETV Current Position,Table Only,TRUE,0.0,0.0,No Dependency,Technician,,"87, 89",,,,,
+AMT,0x00AA,Engine Oil Pressure Switch,Table Only,False,1.0,0.0,No Dependency,Technician,,"19 , 31, 66",False,0.0,0.0,,
+Navigator,0x00AA,Engine Oil Pressure Switch,Table Only,False,1.0,0.0,No Dependency,Technician,,"19 , 31",,,,Log when applicable alarm code is set,
+AMT,0x00AB,High Pressure Cut Out ,Table Only,False,1.0,0.0,No Dependency,Technician,,"10, 86",True,0.0,0.0,,
+DEET,0x00AB,High Pressure Cut Out ,Table Only,False,1.0,0.0,,Technician,,2:10; 42:10; 2:86,True,,,Log when applicable alarm code is set OR log event whenever parameter value changes,
+Navigator,0x00AB,High Pressure Cut Out ,Table Only,False,1.0,0.0,No Dependency,Technician,,"10, 86",True,,,Log when applicable alarm code is set OR log event whenever parameter value changes,
+Nebula-Galaxy,0x00AB,High Pressure Cut Out,Table Only,False,1.0,0.0,,Technician,,10,,0.0,0.0,,
+Railblazer,0x00AB,High Pressure Cut Out ,Table Only,False,1.0,0.0,No Dependency,Technician,,"10, 86",True,,,Log when applicable alarm code is set OR log event whenever parameter value changes,
+AMT,0x00AC,Oil Level,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,"19, 31, 66, 63",True,0.0,0.0,,"P.Carr 26th August 2024: 
+added dependency to event log only when engine selection is ECO GOV. "
+Navigator,0x00AC,Oil Level,Table Only,False,1.0,0.0,Engine Type = ECO or Mechanical ,Technician,,"66, 31, 63, ",True,,,Event log: when Oil level status changes,"DB - 16th Jan2023 - Updated dependancy column from ""No Dependancy"" to ""Engine Type = ECO or Mechanical"" for PL3 & ELENA"
+Navigator,0x00AE,Electric Standby Motor Overload,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 266, 90",True,,,Event log: when EOL status changes,
+Railblazer,0x00AE,Electric Standby Motor Overload,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 266, 90",True,,,Event log: when EOL status changes,
+AMT,0x00AE,Electric Standby Motor Overload,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 266, 90",True,0.0,0.0,,
+AMT,0x00AF,Electric Ready,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 266, 91",True,0.0,0.0,,
+DEET,0x00AF,Electric Ready,Table Only,False,1.0,0.0,,Technician,,33:91; 33:366,True,,,Log Event: when ER status changes,
+Navigator,0x00AF,Electric Ready,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 266, 91",True,,,Log Event: when ER status changes,
+Railblazer,0x00AF,Electric Ready,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 266, 91",True,,,Log Event: when ER status changes,
+DEET,0x00B1,Engine Coolant Level Switch,Table Only,True,0.0,0.0,,Technician,,102:37,,,,,
+Railblazer,0x00B1,Engine Coolant Level Switch,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,102:37,,,,,
+DEET,0x00B2,Service Switch,Table Only,True,0.0,0.0,,Technician,,,,,,,
+Railblazer,0x00B2,Service Switch,Table Only,FALSE ,1.0,0.0,No Dependency,User,,"89, 10, 272, 631",,,,,
+AMT,0x00B2,Service Switch,Table Only,False,1.0,0.0,No Dependency,User,,"89, 10, 272, 631",True,0.0,0.0,,16 Aug 22 - removed code 270 from list of alarm codes which result in event log. Related to Defect ID 2276
+Nebula-Galaxy,0x00B3,Heater Limit Switch Feedback Zone 1,Table Only,True,0.0,0.0,,Technician,,201,,0.0,0.0,,
+Nebula-Galaxy,0x00B6,Heater Limit Switch Feedback Zone 2,Table Only,True,0.0,0.0,,Technician,,201,,0.0,0.0,,
+Navigator,0x00B8,Engine Coolant Temperature,Graph and Table,True,0.0,0.0,Engine = MECHANICAL,Technician,,"6, 18, 63",,,,,Coolant temperature if engine is MECHANICAL
+Railblazer,0x00BB,Shunt Current,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"45, 52, 61",,,,,"P.Carr 21st July 23: since RB does not support alarm code 40, removed alarm code 40 from event log alarms list"
+AMT,0x00BB,Shunt Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,Currents (A),"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265",False,0.0,0.0,,
+DEET,0x00BB,Shunt Current,Graph and Table,True,0.0,0.0,,Technician,,10:45; 10:53; 34:89; 10:121; 24:529; 102:816,,,,,
+Navigator,0x00BB,Shunt Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"40, 45, 52, 61",,,,,
+Railblazer,0x00BC,Battery Voltage,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"45, 52, 61, 265",,,,,"P.Carr 21st July 23: since RB does not support alarm code 40, removed alarm code 40 from event log alarms list"
+Nebula-Galaxy,0x00BC,TRU Battery Voltage Reported by Synergy,Table and Graph,True,0.0,0.0,,Technician,Voltage (V),61,,0.0,0.0,,
+Navigator,0x00BC,Battery Voltage,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"40, 45, 52, 61, 265",,,,,
+AMT,0x00BC,Battery Voltage,Graph and Table,True,0.0,0.0,No Dependency,Technician,Voltage (V),"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 265, 522",False,0.0,0.0,,
+DEET,0x00BC,Battery Voltage,Graph and Table,True,0.0,0.0,,Technician,,10:45; 10:53; 14:61; 34:89; 10:121; 24:529; 102:816; 216:520; 216:545,,,,,
+AMT,0x00BD,Battery Current - Raw,Graph and Table,True,0.0,0.0,No Dependency,Technician,Currents (A),"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",False,0.0,0.0,,Raw Unfiltered Battery Current
+DEET,0x00BD,Battery Current,Graph and Table,True,0.0,0.0,,Technician,,10:45; 10:53; 34:89; 10:121; 24:529; 102:816,,,,,
+Navigator,0x00BD,Battery Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"40, 45, 52, 61",,,,,
+Railblazer,0x00BD,Battery Current,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,," 45, 52, 61",,,,,"P.Carr 21st July 23: since RB does not support alarm code 40, removed alarm code 40 from event log alarms list"
+DEET,0x00BF,ETV State,Table Only,True,0.0,0.0,,Engineering,,34:89,,,,Log Enumeration only - not descriptor,
+Navigator,0x00BF,ETV State,Table Only,True,0.0,0.0,No Dependency,Engineering,,89,,,,Log Enumeration only - not descriptor,
+Railblazer,0x00BF,ETV State,Table Only,TRUE,0.0,0.0,No Dependency,Engineering,,89,,,,Log Enumeration only - not descriptor,
+AMT,0x00C1,ECU Coolant Temperature,Graph and Table,True,0.0,0.0,Engine = ECO GOV,Technician,"Temperatures (◦C/◦F )
+MT Zone 1","6, 18, 63",False,0.0,0.0,,Coolant temperature if engine is ECO GOV
+DEET,0x00C1,ECU Coolant Temperature,Graph and Table,True,0.0,0.0,Engine = ECO GOV OR Platform = DEET,Technician,,11:18; 102:604; 102:704,,,,,Coolant temperature if engine is ECO GOV
+Navigator,0x00C1,ECU Coolant Temperature,Graph and Table,True,0.0,0.0,Engine = ECO GOV,Technician,,"6, 18, 63",,,,,Coolant temperature if engine is ECO GOV
+Railblazer,0x00C1,ECU Coolant Temperature,Graph and Table,TRUE,0.0,0.0,Engine = ECO GOV,Technician,,"18, 63, 604, 704",,,,,"Coolant temperature if engine is ECO GOV
+P.Carr 21st July 23: since RB does not support alarm code 6, removed alarm code 6 from event log alarms list. Adding alarms 604 and 704 as replacements (water temp. sensor fault)"
+Navigator,0x00C2,Engine ECU Temperature,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,629,,,,Event log whenever alarm code 629 is set,
+AMT,0x00C2,Engine ECU Temperature,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,629,False,0.0,0.0,,
+Navigator,0x00C5,ECU Preheat State,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,15,True,,,Event log whenever state changes or applicable alarm code is set. ,
+DEET,0x00C5,ECU Preheat State,Table Only,False,1.0,0.0,Engine = ECO GOV OR Platform = DEET,Technician,,102:816,True,,,Event log whenever state changes or applicable alarm code is set. ,
+AMT,0x00C5,ECU Preheat State,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,15,True,0.0,0.0,,
+AMT,0x00C6,ECU Engine State,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,"17, 20, 63",True,0.0,0.0,,
+DEET,0x00C6,ECU Engine Operating State,Table Only,False,1.0,0.0,Engine = ECO GOV OR Platform = DEET,Engineering,,102:63,True,,,Event log whenever state changes or applicable alarm code is set. ,
+Navigator,0x00C6,ECU Engine Operating State,Table Only,False,1.0,0.0,Engine = ECO GOV,Engineering,,"17, 20, 63",True,,,Event log whenever state changes or applicable alarm code is set. ,
+AMT,0x00C7,ECU Engine % Load,Table Only,True,0.0,0.0,Engine = ECO GOV,Technician,,,False,0.0,0.0,,
+DEET,0x00C7,ECU Engine % Load,Table Only,True,0.0,0.0,Engine = ECO GOV OR Platform = DEET,Technician,,,,,,,
+Navigator,0x00C7,ECU Engine % Load,Table Only,True,0.0,0.0,Engine = ECO GOV,Technician,,,,,,,
+Railblazer,0x00C7,ECU Engine % Load,Table Only,TRUE,0.0,0.0,Engine = ECO GOV,Technician,,,,,,,
+Navigator,0x00CE,Timed Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,,Log event if parameter value changes. ,Event log which indicates defrost request
+AMT,0x00CE,Timed Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+DEET,0x00CE,Timed Defrost,Table Only,False,1.0,0.0,,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+Railblazer,0x00CE,Timed Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+DEET,0x00CF,Manual Defrost,Table Only,False,1.0,0.0,,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+Navigator,0x00CF,Manual Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,,Log event if parameter value changes. ,Event log which indicates defrost request
+AMT,0x00CF,Manual Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+Railblazer,0x00CF,Manual Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+DEET,0x00D0,Low Coil Temperature Demand Defrost,Table Only,False,1.0,0.0,,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+Railblazer,0x00D0,Low Coil Temperature Demand Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+Navigator,0x00D0,Low Coil Temperature Demand Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,,Log event if parameter value changes. ,Event log which indicates defrost request
+AMT,0x00D0,Low Coil Temperature Demand Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+DEET,0x00D1,Variable Temp. Differential Demand Defrost,Table Only,False,1.0,0.0,,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+Navigator,0x00D1,Variable Temp. Differential Demand Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,,Log event if parameter value changes. ,Event log which indicates defrost request
+Railblazer,0x00D1,Variable Temp. Differential Demand Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+AMT,0x00D1,Variable Temp. Differential Demand Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+Railblazer,0x00D2,Modulation Demand Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+Navigator,0x00D2,Modulation Demand Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,,Log event if parameter value changes. ,Event log which indicates defrost request
+AMT,0x00D2,Modulation Demand Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+DEET,0x00D2,Modulation Demand Defrost,Table Only,False,1.0,0.0,,User,,,True,,, Log event if parameter value changes. ,Event log which indicates defrost request
+AMT,0x00D3,Coolant Level Switch,Table Only,False,1.0,0.0,No Dependency,Technician,,37,False,0.0,0.0,,
+DEET,0x00EB,System Operating State,Table Only,True,0.0,0.0,,User,,217:24; 13:26; 13:32;,,,,,
+Navigator,0x00EB,System Operating State,Table Only,True,0.0,0.0,No Dependency,User,,"21, 22, 23, 24, 26, 32",,,,,
+Railblazer,0x00EB,System Operating State,Table Only,TRUE,0.0,0.0,No Dependency,User,,"21, 22, 23, 24, 26, 32",,,,,
+AMT,0x00F0,Temperature Control Mode,Table Only,True,1.0,0.0,No Dependency,User,,,True,1.0,0.0,,P.Carr 28th Feb 23: changed SPN from FunctionSelection<0xF812> to DebugControlAlgorithmActive<0x00F0>
+Railblazer,0x00F0,Temperature Control Mode,Table Only,TRUE,1.0,0.0,No Dependency,User,,,,,,,"P.Carr 21st July 23 - following a learning from AST/AMT in recent months,adding to RB to report/determine the true CS/CONT setting. "
+AMT,0x00FC,ECU Speed Sensor Error,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,7,False,0.0,0.0,,
+Navigator,0x00FC,ECU Speed Sensor Error,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,7,,,,Event log whenever alarm code 7 is set,
+AMT,0x0105,Active Rectifier DC Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,Currents (A),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI
+Navigator,0x0105,Active Rectifier DC Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI
+Railblazer,0x0105,Active Rectifier DC Current,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI
+AMT,0x0106,Active Rectifier DC Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.
+Navigator,0x0106,Active Rectifier DC Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set. Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.,
+Railblazer,0x0106,Active Rectifier DC Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set. Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.,
+Navigator,0x0108,Active Rectifier Motor Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Railblazer,0x0108,Active Rectifier Motor Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+AMT,0x0108,Active Rectifier Motor Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,
+AMT,0x0109,ACR Board Temperature 1,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",False,0.0,0.0,,
+Navigator,0x0109,ACR Board Temperature 1,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Railblazer,0x0109,ACR Board Temperature 1,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+AMT,0x010A,ACR Board Temperature 2,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",False,0.0,0.0,,
+Navigator,0x010A,ACR Board Temperature 2,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Railblazer,0x010A,ACR Board Temperature 2,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Navigator,0x010C,ACR Generator LL AC RMS Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Railblazer,0x010C,ACR Generator LL AC RMS Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+AMT,0x010C,ACR Generator LL AC RMS Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",False,0.0,0.0,,
+AMT,0x010D,ACR Generator LN AC RMS Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",False,0.0,0.0,,
+Navigator,0x010D,ACR Generator LN AC RMS Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Railblazer,0x010D,ACR Generator LN AC RMS Voltage,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+AMT,0x010F,ACR Generator AC RMS Current,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",False,0.0,0.0,,
+Navigator,0x010F,ACR Generator AC RMS Current,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+Railblazer,0x010F,ACR Generator AC RMS Current,Table Only,False,1.0,0.0,No Dependency,Technician,,"264, 273, 274, 275, 276, 277, 278, 526, 555",,,,Log when applicable alarm code is set,
+AMT,0x0116,DCDC 48V Voltage,Graph and Table,True,0.0,0.0,No Dependency,Technician,Voltage (V),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.
+Railblazer,0x0116,DCDC 48V Voltage,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.
+Navigator,0x0116,DCDC 48V Voltage,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,Graphing either ACRDCVOLT or DCDC48VMSRV will give the same (or very similar) voltage measurement.
+Railblazer,0x0117,DCDC 48V Current,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI. Event Log only when applicable alarm code is set. ,
+Navigator,0x0117,DCDC 48V Current,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI. Event Log only when applicable alarm code is set. ,
+AMT,0x0117,DCDC 48V Current,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,Active Rectifier current is the total DC bus current. DCDC current is only that consumed by the DCDC. Eng. Team do not require timed logging of DCDC48VMSRI.
+AMT,0x0118,DCDC 12V Voltage,Graph and Table,True,0.0,0.0,No Dependency,Technician,Voltage (V),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",False,0.0,0.0,,
+Navigator,0x0118,DCDC 12V Voltage,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,
+Railblazer,0x0118,DCDC 12V Voltage,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,
+AMT,0x0119,DCDC 12V Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,Currents (A),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",False,0.0,0.0,,
+Navigator,0x0119,DCDC 12V Current,Graph and Table,True,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,
+Railblazer,0x0119,DCDC 12V Current,Graph and Table,TRUE,0.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,,
+AMT,0x0120,Battery Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,"17, 20, 61, 159, 265, 522",False,0.0,1.0,Event log whenever BATTERYSTATE<0xA054> changes. ,
+Navigator,0x0120,Battery Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,"61, 159, 265",True,,,Log when applicable alarm code is set OR Log whenever BATTERYSTATE (0xA054) changes. ,
+Railblazer,0x0120,Battery Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,"763, 61, 159, 265, 522",True,,,Log when applicable alarm code is set OR whenever BATTERYSTATE<0xA054> changes. ,"P.Carr 21st July 23 - removing alarms 17 and 20 from event log list, and replacing with alarm 763. "
+AMT,0x0121,DCDC Operation State,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",True,0.0,0.0,,
+Railblazer,0x0121,DCDC Operation State,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",,,,,"P.Carr 21st July 23: since RB does not support alarm code 520, removed alarm code 520 from event log alarms list"
+Navigator,0x012D,Engine RPM,Graph and Table,True,0.0,0.0,Engine = MECHANICAL,Technician,,"7, 33, 48",,,,,
+DEET,0x012F,System Operating Mode,Table Only,True,0.0,0.0,,User,,217:24; 13:26; 13:32;,,,,,
+Railblazer,0x012F,System Operating Mode,Table Only,TRUE,0.0,0.0,No Dependency,User,,"21, 22, 23, 24, 26, 32",,,,,
+Navigator,0x012F,System Operating Mode,Table Only,True,0.0,0.0,No Dependency,User,,"21, 22, 23, 24, 26, 32",,,,,
+Railblazer,0x0130,System Control Constraint State,Table Only,TRUE,0.0,0.0,No Dependency,Engineering,,"21, 22, 23, 24, 26, 32",,,,Log Enumeration only - not descriptor,
+Navigator,0x0130,System Control Constraint State,Table Only,True,0.0,0.0,No Dependency,Engineering,,"21, 22, 23, 24, 26, 32",,,,Log Enumeration only - not descriptor,
+AMT,0x0130,System Control Constraint State,Table Only,True,0.0,0.0,No Dependency,Technician,,"21, 22, 23, 24, 26, 32",False,0.0,0.0,,
+AMT,0x0131,Defrost Controlling Sensor - Zone 1,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Navigator,0x0131,Defrost Controlling Sensor,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Event log whenever state changes,
+Railblazer,0x0131,Defrost Controlling Sensor,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Event log whenever state changes,
+AMT,0x0132,Defrost Termination Method - Zone 1,Table Only,False,1.0,0.0,No Dependency,Technician,,,False,0.0,0.0,Event log after defrost completion (defrost complete when DefrostFraction<0x0154> = 1 ),
+Navigator,0x0132,Defrost Termination Method,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,Event log after defrost termination,
+Railblazer,0x0132,Defrost Termination Method,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,Event log after defrost termination,
+DEET,0x0133,Engine Run Hours,Table Only,False,1.0,0.0,,Technician,,26:64; 26:128; 26:129,,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request"
+AMT,0x0133,Engine Run Hours,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,"64, 128, 129",False,0.0,1.0,,"Service team desire to also power hours at log up, but no more than once per day - future request
+
+P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models "
+Navigator,0x0133,Engine Run Hours,Table Only,False,1.0,0.0,Engine Type = ECO or Mechanical ,Technician,,"64, 128, 129",,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request
+
+DB - 16th Jan2023 - Updated dependancy column from ""No Dependancy"" to ""Engine Type = ECO or Mechanical"" for PL3 & ELENA"
+Railblazer,0x0133,Engine Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 128, 129",,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request"
+AMT,0x0134,Motor Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 130, 131",NO,0.0,1.0,,"Service team desire to also power hours at log up, but no more than once per day - future request"
+Navigator,0x0134,Motor Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 130, 131",,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request"
+Railblazer,0x0134,Motor Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 130, 131",,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request"
+DEET,0x0135,Total Run Hours (Total Compressor Run Hours - for DEET),Table Only,False,1.0,0.0,,Technician,,26:64; 26:132; 26:133,,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request
+
+Note:  On DEET, this refers to total compressor run hours"
+Navigator,0x0135,Total Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 132, 133",,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request"
+AMT,0x0135,Total Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 132, 133",False,0.0,1.0,,"Service team desire to also power hours at log up, but no more than once per day - future request"
+Railblazer,0x0135,Total Run Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,"64, 132, 133",,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"Service team desire to also power hours at log up, but no more than once per day - future request"
+AMT,0x0155,Control Mode,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x0155,Control Mode,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+Railblazer,0x016F,Calculated Power,Table Only,TRUE,0.0,0.0,No Dependency,Engineering,,,,,,,
+Navigator,0x016F,Calculated Power,Table Only,True,0.0,0.0,No Dependency,Engineering,,,,,,,
+AMT,0x016F,Calculated Power,Table Only,True,0.0,0.0,No Dependency,Technician,,,False,0.0,0.0,,
+DEET,0x0176,Temperature Control Mode,Table Only,True,0.0,0.0,,Technician,,217:24; 13:26; 13:32;,,,,,
+Navigator,0x0176,Temperature Control Mode,Table Only,True,0.0,0.0,No Dependency,Technician,,"21, 22, 23, 24, 26, 32",,,,,
+Nebula-Galaxy,0x0177,HMI Mode Selection,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+AMT,0x017B,DCDC Operation Command,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 520, 526, 555",True,0.0,0.0,,
+Navigator,0x017B,DCDC Operation Command,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",True,,,Event log whenever state changes or applicable alarm code is set. ,
+Railblazer,0x017B,DCDC Operation Command,Table Only,False,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",True,,,Event log whenever state changes or applicable alarm code is set. ,
+Navigator,0x017D,Engine Operating State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"17, 20, 63",True,,,Event log whenever state changes or applicable alarm code is set. ,
+AMT,0x017D,Engine State,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,"17, 20, 63",True,0.0,0.0,,P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models 
+Railblazer,0x017D,Engine Operating State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"763, 63",True,,,Event log whenever state changes or applicable alarm code is set. ,"P.Carr 21st July 23 - removing alarms 17 and 20 from event log list, and replacing with alarm 763. "
+AMT,0x017E,Electric Motor State,Table Only,False,1.0,0.0,No Dependency,Technician,,"36, 90, 266",True,0.0,0.0,,
+Navigator,0x017E,Electric Motor State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"36, 90, 266",True,,,Event log whenever state changes or applicable alarm code is set. ,
+Railblazer,0x017E,Electric Motor State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"36, 90, 266",True,,,Event log whenever state changes or applicable alarm code is set. ,
+Navigator,0x017F,Drive Operating State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"17, 20, 63",True,,,"Log Enumeration only - not descriptor , Event log whenever state changes or applicable alarm code is set. ",
+DEET,0x017F,Drive Operating State,Table Only,False,1.0,0.0,,Engineering,,102:63,True,,,"Log Enumeration only - not descriptor , Event log whenever state changes or applicable alarm code is set. ",
+Railblazer,0x017F,Drive Operating State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"763, 63",True,,,"Log Enumeration only - not descriptor , Event log whenever state changes or applicable alarm code is set. ","P.Carr 21st July 23 - removing alarms 17 and 20 from event log list, and replacing with alarm 763. "
+AMT,0x017F,Drive State,Table Only,False,1.0,0.0,No Dependency,Technician,,"17, 20, 36, 63, 90, 266",True,0.0,0.0,,
+Railblazer,0x0180,Drive Selection,Table Only,TRUE,1.0,0.0,No Dependency,User,,66,True,,,Event log whenever state changes or applicable alarm code is set. ,
+Navigator,0x0180,Drive Selection,Table Only,True,1.0,0.0,No Dependency,User,,66,True,,,Event log whenever state changes or applicable alarm code is set. ,
+AMT,0x0180,Drive Selection,Table Only,True,1.0,0.0,No Dependency,User,,66,True,0.0,0.0,,
+Navigator,0x0181,Speed Request,Graph (stepped) and Table (continuous columns),True,0.0,0.0,No Dependency,Technician,,33,,,,,
+AMT,0x0182,Fuel Level,Table Only,True,0.0,0.0,"FuelLvlSensConfig<0xF89B> is NOT ""NONE<0>""",Technician,,"44, 96, 98, 63",False,0.0,0.0,"Log to nearest 0.1% increment if possible, if not then nearest 1% increment",Bluebox to MAC fuel level
+DEET,0x0182,Fuel Level (bluebox),Table Only,True,0.0,0.0,Fuel Level Sensor Type = Solid State or Float,Technician,,24:44; 24:96; 24:98,,,,"Log to nearest 0.1% increment if possible, if not then nearest 1% increment",Bluebox to MAC fuel level
+Navigator,0x0182,Fuel Level (bluebox),Table Only,True,0.0,0.0,Fuel Level Sensor Type = Solid State or Float,Technician,,"44, 96, 98",,,,"Log to nearest 0.1% increment if possible, if not then nearest 1% increment",Bluebox to MAC fuel level
+Railblazer,0x0182,Fuel Level (TKv5),Table Only,TRUE,0.0,0.0,Fuel Level Sensor Type = Solid State or Float,Technician,,"44, 96, 98",,,,"Log to nearest 0.1% increment if possible, if not then nearest 1% increment",Bluebox to MAC fuel level
+AMT,0x0183,Door Status - Zone 1,Table Only,False,1.0,0.0,DoorSwitchConfigured<0xF89C> = ENABLE<1>,User,,108,True,1.0,0.0,,
+Navigator,0x0183,Door 1,Table Only,False,1.0,0.0,{ SPN: DRSWC - Compartment Door Switch} configuration = Enabled,User,,108,True,,,Event log: log door status at start sequence and thereafter whenever door status changes,
+Nebula-Galaxy,0x0183,Door Status,Table Only,False,1.0,0.0,DoorSwitchConfigured<0xF89C> = ENABLE<1>,User,,108,True,0.0,0.0,Event log: log door status at start sequence and thereafter whenever door status changes,
+Nebula-Galaxy,0x0183,Door Status Zone 1,Table Only,False,1.0,0.0,DoorSwitchConfigured<0xF89C> = ENABLE<1>,User,,108,True,0.0,0.0,Event log: log door status at start sequence and thereafter whenever door status changes,
+Railblazer,0x0183,Door 1,Table Only,False,1.0,0.0,{ SPN: DRSWC - Compartment Door Switch} configuration = Enabled,User,,108,True,,,Event log: log door status at start sequence and thereafter whenever door status changes,
+Nebula-Galaxy,0x0184,Door Status Zone 2,Table Only,False,1.0,0.0,DoorSwitchConfigured<0xFA35> = ENABLE<1>,User,,108,True,0.0,0.0,Event log: log door status at start sequence and thereafter whenever door status changes,
+AMT,0x0184,Door Status - Zone 2,Table Only,False,1.0,0.0,DoorSwitchConfiguredZ2<0xFA35> = ENABLE<1>,User,,108,True,1.0,0.0,,
+DEET,0x0185,Door 3,Table Only,False,1.0,0.0,,User,,20:108,True,,,Event log: log door status at start sequence and thereafter whenever door status changes,
+AMT,0x0185,Door Status - Zone 3,Table Only,False,1.0,0.0,DoorSwitchConfiguredZ3<0xFB83> = ENABLE<1>,User,,108,True,1.0,0.0,,
+Railblazer,0x0186,Unit Serial Number,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Event log whenever Unit Serial Number changes,
+Navigator,0x0186,Unit Serial Number,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Event log whenever Unit Serial Number changes,
+Nebula-Galaxy,0x0186,Unit Serial Number,Header,False,1.0,1.0,,Technician,,,,0.0,0.0,,
+DEET,0x0186,Unit Serial Number,Table Only,False,1.0,0.0,,Technician,,,False,,,Event log whenever Unit Serial Number changes,
+AMT,0x018A,DCDC AC Firmware PN First,Table Only,False,1.0,0.0,No Dependency,Technician,,111,False,0.0,0.0,,
+AMT,0x018B,DCDC AC Firmware PN Last,Table Only,False,1.0,0.0,No Dependency,Technician,,111,False,0.0,0.0,,
+AMT,0x0192,Battery Operating State,Table Only,False,1.0,0.0,No Dependency,Technician,,"61, 159",True,0.0,0.0,,
+Navigator,0x0192,Battery Operating State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"61, 159",True,,,Event log whenever state changes or applicable alarm code is set. ,
+Railblazer,0x0192,Battery Operating State,Table Only,False,1.0,0.0,No Dependency,Engineering,,"61, 159",True,,,Event log whenever state changes or applicable alarm code is set. ,
+Navigator,0x0196,Condenser Fan 2 (Left),Graph and Table,True,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+AMT,0x0196,Condenser Left Fan Feedback,Graph and Table,True,0.0,0.0,No Dependency,Technician,Frequencies (RPM),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Railblazer,0x0196,Condenser Left Fan Feedback,Graph and Table,TRUE,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+AMT,0x0197,Condenser Right Fan Feedback,Graph and Table,True,0.0,0.0,No Dependency,Technician,Frequencies (RPM),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Navigator,0x0197,Condenser Fan 1 (Right),Graph and Table,True,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Railblazer,0x0197,Condenser Right Fan Feedback,Graph and Table,TRUE,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Railblazer,0x0198,Evaporator Fan 2 (Left),Graph and Table,TRUE,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+AMT,0x0198,Evaporator Left Fan Feedback - Zone 1,Graph and Table,True,0.0,0.0,No Dependency,Technician,Frequencies (RPM),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Navigator,0x0198,Evaporator Fan 2 (Left),Graph and Table,True,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Railblazer,0x0199,Evaporator Fan 1 (Right),Graph and Table,TRUE,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+Navigator,0x0199,Evaporator Fan 1 (Right),Graph and Table,True,1.0,0.0,No Dependency,Technician,,"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 526, 555",,,,Event log only when applicable alarm code is set,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+AMT,0x0199,Evaporator Right Fan Feedback - Zone 1,Graph and Table,True,0.0,0.0,No Dependency,Technician,Frequencies (RPM),"56, 57, 58, 59, 264, 265, 267, 268, 273, 274, 275, 276, 277, 278, 281, 282, 526, 555",False,0.0,0.0,,"PC 13th Nov 20: changed ""ST Name"" to correct nomenclature as requested by field team. System requirement #298, FRACAS TBC"
+DEET,0x0200,Roadside Condenser Fan Motor,Table Only,True,0.0,0.0,,User,,11:18; 102:604; 102:704; 2:10; 42:10,,,,,
+Nebula-Galaxy,0x0200,Auxiliary Heater Contactor Output Zone 2,Table Only,True,0.0,0.0,,Technician,,317,,0.0,0.0,"When the high voltage is active in the unit, the Synergy will give 12V to this auxiliary circuit",
+DEET,0x0201,Curbside Condenser Fan Motor,Table Only,True,0.0,0.0,,User,,11:18; 102:604; 102:704; 2:10; 42:10,,,,,
+Nebula-Galaxy,0x0201,Auxiliary Heater Contactor Output Zone 1,Table Only,True,0.0,0.0,,Technician,,317,,0.0,0.0,"When the high voltage is active in the unit, the Synergy will give 12V to this auxiliary circuit",
+DEET,0x0202,Evaporator Low Speed Fan Motor,Table Only,True,0.0,0.0,,User,,217:24; 13:26; 13:32; 219:46; ,,,,,
+Nebula-Galaxy,0x0202,Evaporator Fan Relay Zone 1,Table Only,False,1.0,0.0,,Technician,,112,,0.0,0.0,,
+DEET,0x0203,Evaporator High Speed Fan Motor,Table Only,True,0.0,0.0,,User,,217:24; 13:26; 13:32; 219:46; ,,,,,
+Nebula-Galaxy,0x0203,Evaporator Fan Relay Zone 2,Table Only,False,1.0,0.0,,Technician,,112,,0.0,0.0,,
+AMT,0x0205,Spare #1,Graph and Table,True,0.0,0.0,No Dependency,User,"Temperatures (◦C/◦F )
+MT Zone 1",49,False,0.0,0.0,,"P.Carr 11th July 22: 
+No dependency at production launch. 
+
+Future Scope (post launch): allow ""spare sensor"" to be configurable as ""installed/not installed"" via HMI/wintrac. Dependency: only display this parameter in SW data log when Spare temp. sensor is configured as installed"
+DEET,0x0205,Spare #1,Graph and Table,True,0.0,0.0,Spare 1 Temperature Sensor configuration = connected/enabled,User,,1:49,True,,,This parameter shall default not display. ,No Spare temp. sensor installed as default on Navi. Not initially supported at production launch. 
+Navigator,0x0205,Spare #1,Graph and Table,True,0.0,0.0,Spare 1 Temperature Sensor configuration = connected/enabled,User,,49,,,,This parameter shall default not display. ,No Spare temp. sensor installed as default on Navi. Not initially supported at production launch. 
+Nebula-Galaxy,0x0205,Evaporator Coil Temperature Zone 2,Table and Graph,True,0.0,0.0,,User,Temperatures (◦C/◦F )MT Zone 2,"2, 9",,0.0,0.0,,
+DEET,0x0206,EngineStarterSolStatus,Table Only,False,1.0,0.0,,Technician,,,True,,,Log event: when starter output changes states,
+Railblazer,0x0206,Engine Starter Solenoid Status,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,,,,,,"P.Carr 21st July 23 - this should be included in RB. 
+RB team initially removed  - I am adding back. 
+It is very helpful for AMT to confirm during start sequence that starter motor engaged and is used on RB. "
+Railblazer,0x0209,Active Alarm,Graph and Table,FALSE ,1.0,0.0,No Dependency,User,,,,,,,
+DEET,0x0209,Active Alarm,Table Only,True,0.0,0.0,,User,,,,,,,
+DEET,0x0260,Compressor State,Table Only,True,0.0,0.0,,User,,2:10; 42:10; 13:26; 42:93; 42:95; 42:99; 42:236,,,,,
+DEET,0x028C,HGBV Duty Cycle,Table Only,True,0.0,0.0,,Technician,,2:10; 42:10; 13:26; 42:93; 42:95; 42:99; 42:236,,,,,
+DEET,0x028D,LIV Duty Cycle,Table Only,True,0.0,0.0,,Technician,,2:10; 42:10; 13:26; 42:93; 42:95; 42:99; 42:236,,,,,
+Nebula-Galaxy,0x02DE,Economizer Pressure,Table and Graph,True,0.0,0.0,,Technician,Pressures (PSI/Bar),88,,0.0,0.0,,
+DEET,0x02DE,Economizer Pressure,Graph and Table,True,0.0,0.0,,Technician,,,,,,,
+DEET,0x02E0,Battery Charger Input Frequency,Table Only,True,0.0,0.0,,Technician,,,,,,,
+DEET,0x02E1,Battery Charger AC Input Voltage,Table Only,True,0.0,0.0,,Technician,,,,,,,
+DEET,0x02EA,Battery Charger Status,Table Only,True,0.0,0.0,,Technician,,,,,,,
+DEET,0x02FB,Economizer Bypass Valve Cmd,Table Only,True,0.0,0.0,,Technician,,2:10; 42:10; 13:26; 42:93; 42:95; 42:99;,,,,,
+Nebula-Galaxy,0x02FC,Economizer Liquid Line Solenoid Command,Table Only,False,1.0,0.0,,Technician,,"10,26,93,95",,0.0,0.0,EconLLS,
+DEET,0x02FC,Economizer Liquid Line Solenoid Cmd,Table Only,True,0.0,0.0,,Technician,,2:10; 42:10; 13:26; 42:93; 42:95; 42:99;,,,,,
+DEET,0x02FD,Heater1 Cmd,Table Only,True,0.0,0.0,,Technician,,217:24; 217:530: 217:531,,,,,
+DEET,0x02FE,Heater2 Cmd,Table Only,True,0.0,0.0,,Technician,,217:24; 217:530: 217:531,,,,,
+Nebula-Galaxy,0x02FF,Liquid Injection Valve Command,Table Only,False,1.0,0.0,,Technician,,121,,0.0,0.0,Liquid Injection Valve,
+AMT,0x0310,Restart Attempts Counter Code10 FMI4,Table Only,False,1.0,0.0,No Dependency,Technician,,10,True,0.0,0.0,,8th Sept 22: Added by P.Carr to aid in diagnosis of code 10-4 probation duration suspect issues (following discussion/review with ETC Dev. Team on how to diagnose further and for potential field reported issues)
+DEET,0x0350,RTC Current Time,Table Only,True,0.0,0.0,,User,,,,,,,
+AMT,0x0356,Door Open Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+DEET,0x0360,Heater1 Duty Cycle,Table Only,True,0.0,0.0,,User,,217:24; 217:530: 217:531,,,,,
+DEET,0x0361,Heater2 Duty Cycle,Table Only,True,0.0,0.0,,User,,217:24; 217:530: 217:531,,,,,
+DEET,0x0380,Pretrip Status,Table Only,False,1.0,0.0,,User,,,,,,Log event when Pretrip Status is entered & exited/completed (more Pretrip status's may be logged if applicable),"For DEET, this tracks the running pretrip status only"
+AMT,0x0380,Pretrip Status,Table Only,False,1.0,0.0,No Dependency,User,,28,True,0.0,0.0,,
+Navigator,0x0380,Pretrip Status,Table Only,False,1.0,0.0,No Dependency,User,,,,,,Log event when Pretrip Status is entered & exited/completed (more Pretrip status's may be logged if applicable),
+Nebula-Galaxy,0x0380,Pretrip Status,Table Only,False,1.0,0.0,,Technician,,28,,0.0,0.0,,
+Railblazer,0x0380,Pretrip Status,Table Only,False,1.0,0.0,No Dependency,User,,,,,,Log event when Pretrip Status is entered & exited/completed (more Pretrip status's may be logged if applicable),
+AMT,0x0387,Pretrip Test Step,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Nebula-Galaxy,0x0387,Pretrip Test Step,Table Only,False,1.0,0.0,Pretrip Status (0x0380) == True,Technician,,28,,0.0,0.0,,
+Railblazer,0x0387,Pretrip Test Step,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+AMT,0x0397,Flashload Status,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x0397,Flashload Status,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+Railblazer,0x03A3,Pilot Solenoid Current Draw,Table Only,False,1.0,0.0,No Dependency,Technician,,52,,,,"Event log only when applicable alarm code is set
+Units = Amps","DB - Added requirement on 28th July 2021
+DB - Added additional Requirement for measurement to be logged in Amps (18th Nov 2021)"
+Navigator,0x03A3,Pilot Solenoid Current Draw,Table Only,False,1.0,0.0,No Dependency,Technician,,52,,,,"Event log only when applicable alarm code is set
+Units = Amps","DB - Added requirement on 28th July 2021
+DB - Added additional Requirement for measurement to be logged in Amps (18th Nov 2021)"
+AMT,0x03A3,Hot Gas Solenoid Z1 Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,52,False,0.0,0.0,,
+AMT,0x03A4,HGBV Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,45,False,0.0,0.0,,
+DEET,0x03A4,HGBV Current Drawn,Table Only,False,1.0,0.0,,Technician,,10:45,,,,"Log on event based on the fault being set, as defined in column ""I""",
+Navigator,0x03A4,HGBV Current Draw,Table Only,False,1.0,0.0,No Dependency,Technician,,45,,,,"Event log only when applicable alarm code is set
+Units = Amps","DB - Added requirement on 28th July 2021
+DB - Added additional Requirement for measurement to be logged in Amps (18th Nov 2021)"
+Nebula-Galaxy,0x03A4,Hot Gas Bypass Valve Current Drawn,Table and Graph,True,0.0,0.0,,Technician,,45,,0.0,0.0,,
+Railblazer,0x03A4,HGBV Current Draw,Table Only,False,1.0,0.0,No Dependency,Technician,,45,,,,"Event log only when applicable alarm code is set
+Units = Amps","DB - Added requirement on 28th July 2021
+DB - Added additional Requirement for measurement to be logged in Amps (18th Nov 2021)"
+DEET,0x03A5,Fuel Solenoid Current Drawn,Table Only,False,1.0,0.0,,Technician,,24:529,,,,"Log on event based on the fault being set, as defined in column ""I""",
+Railblazer,0x03A5,Fuel Solenoid Current Drawn,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,24:529,,,,,
+Navigator,0x03A6,Engine Speed Solenoid Current Draw,Table Only,False,1.0,0.0,No Dependency,Technician,,40,,,,"Event log only when applicable alarm code is set
+Units = Amps","DB - Added requirement on 28th July 2021
+DB - Added additional Requirement for measurement to be logged in Amps (18th Nov 2021)"
+AMT,0x03A7,Intake Air Heater Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,15,False,0.0,0.0,,
+DEET,0x03A7,Intake Air Heater Current Drawn,Table Only,False,1.0,0.0,,Technician,,102:816,,,,"Log on event based on the fault being set, as defined in column ""I""",
+Navigator,0x03A7,Intake Air Heater Current Draw,Table Only,False,1.0,0.0,No Dependency,Technician,,15,,,,"Event log only when applicable alarm code is set
+Units = Amps","DB - Added requirement on 28th July 2021
+DB - Added additional Requirement for measurement to be logged in Amps (18th Nov 2021)"
+Railblazer,0x03B3,Engine Operating State,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,"63, 763",,,,,P.Carr 21st July 23 - added alarm code 763 to list of alarm codes to event log parameter when alarm is set.
+DEET,0x03B3,Engine Operating State,Table Only,True,0.0,0.0,,Technician,,102:63,,,,,
+Railblazer,0x03B5,ECU Engine Oil Level Switch,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,"19, 31, 63, 66",,,,,"P.Carr 24th July 23 - added alarm code 19, 31, 63, 66  to list of alarm codes to event log parameter when alarm is set. "
+DEET,0x03B5,ECU Engine Oil Level Switch,Table Only,True,0.0,0.0,,Technician,,,,,,,
+Railblazer,0x03B6,ECU Engine Oil Pressure Switch,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,"19, 31",,,,Log when applicable alarm code is set,"P.Carr 21st July 23 - added alarm code 19 to list of alarm codes to event log parameter when alarm is set. This parameter is only truly needed to log when alarms are set (refer to ""additional reqs"")"
+DEET,0x03B6,ECU Engine Oil Pressure Switch,Table Only,True,0.0,0.0,,Technician,,,,,,,
+Nebula-Galaxy,0x03B7,Heater Contactor Feedback Zone 2,Table Only,True,0.0,0.0,,Technician,,317,,0.0,0.0,,
+Nebula-Galaxy,0x03B8,Heater Contactor Feedback Zone 1,Table Only,True,0.0,0.0,,Technician,,317,,0.0,0.0,,
+Nebula-Galaxy,0x03C4,Active Control Mode,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+DEET,0x042B,Engine Ambient Air Temperature,Table Only,True,0.0,0.0,,Technician,,,,,,,
+DEET,0x042E,Barometric Pressure,Table Only,True,0.0,0.0,,Technician,,,,,,,
+Railblazer,0x042F,Barometric Pressure,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,Not available,,,,,
+DEET,0x0430,Fuel Temperature,Table Only,True,0.0,0.0,,Technician,,102:607; 102:707,,,,,
+Railblazer,0x0430,Fuel Temperature,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,102:607; 102:707,,,,,
+DEET,0x0432,Engine Starter Mode,Table Only,False,1.0,0.0,,Technician,,,True,,,"Event log: when value changes, log new value",comes from ECU
+Railblazer,0x0432,Engine Starter Mode,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,Not available,,,,,
+AMT,0x0437,Bluebox Noise Constraint,Table Only,False,1.0,0.0,NoiseConstraintConfig<0xF911> = PIEK<1>,Technician,,,True,1.0,0.0,,
+AMT,0x043B,Battery Current - Filtered,Graph and Table,True,0.0,0.0,No Dependency,Technician,Currents (A),"15, 45, 52, 61, 67, 105, 106, 107, 110, 112, 143, 522",False,0.0,0.0,,Filtered Battery Current
+Nebula-Galaxy,0x043C,Truck/Trailer ID,Header,False,1.0,1.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x0469,Total Temperature Control Protection Hours,Table and Graph,False,0.0,0.0,,Technician,,,,0.0,1.0,,
+Railblazer,0x048F,Auto Ambient Mode,Table Only,False,1.0,0.0,No Dependency,User,,,,,,Log entry and exit from constraint of this feature (ID 266),
+AMT,0x048F,Auto Ambient (Mode) Active,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,
+Navigator,0x048F,Auto Ambient Mode,Table Only,False,1.0,0.0,No Dependency,User,,,,,,Log entry and exit from constraint of this feature (ID 266),
+Navigator,0x0490,Charge Equalization Active,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Event log whenever parameter SPN state changes (ID 350)   ,event log which indicates when battery charge equalisation procedure has initiated/completed. 
+Railblazer,0x0490,Charge Equalization Active,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,,,Event log whenever parameter SPN state changes (ID 350)   ,event log which indicates when battery charge equalisation procedure has initiated/completed. 
+AMT,0x0490,Charge Equalization Active,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,event log which indicates when battery charge equalisation procedure has initiated/completed. 
+AMT,0x049C,Pretrip Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,"Event log which indicates defrost request
+FUTURE (post launch scope)"
+AMT,0x049E,Start of Trip,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,
+Railblazer,0x049E,Start of Trip,Table Only,False,1.0,0.0,No Dependency,User,,,,,, Log event if SOT (start of trip) slected,
+DEET,0x049F,Water in Fuel Status,Table Only,False,1.0,0.0,,User,,TBD,True,,,Event log: when status changes,
+Railblazer,0x049F,Water in Fuel Status,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,"516, 517",,,,,
+AMT,0x04AE,UFD Detected,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x04AE,UFD Detected,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+AMT,0x04B2,Service Test Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,"Event log which indicates defrost request
+FUTURE (post launch scope)"
+AMT,0x04C0,SW Download Status,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x04C0,SW Download Status,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+AMT,0x04D2,Third Party 3A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",False,0.0,0.0,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+Navigator,0x04D2,Third Party 3A Current Draw ,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",,,,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). 
+Added SPN allocation on 18th Nov 20 alongside code implementation for PL2 release. 
+DB - Updated name to include '3A'  on 28th July 2021"
+Railblazer,0x04D2,Third Party 3A Current Draw ,Table Only,TRUE,0.0,0.0,No Dependency,Technician,,"61, 159",,,,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). 
+Added SPN allocation on 18th Nov 20 alongside code implementation for PL2 release. 
+DB - Updated name to include '3A'  on 28th July 2021"
+DEET,0x04D3,LIV Current Drawn,Table Only,False,1.0,0.0,,Technician,,10:121,,,,"Log on event based on the fault being set, as defined in column ""I""",
+Nebula-Galaxy,0x04D3,Liquid Injection Valve Current Drawn,Table and Graph,True,0.0,0.0,,Technician,,121,,0.0,0.0,,
+DEET,0x04E1,System Phase 1 True Current,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E2,System Phase 2 True Current,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E3,System Phase 3 True Current,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E4,Motor Phase 1 True Current,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E5,Motor Phase 2 True Current,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E6,Motor Phase 3 True Current,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E7,System Phase Pair Shift,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04E8,Motor Phase Pair Shift,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04EB,System Phase Pair Average Frequency,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+DEET,0x04EE,Motor Phase Pair Average Frequency,Table Only,True,0.0,0.0,,Technician,,23:527; 220:321; 220:323; 220:324; 220:326; 220:327; 33:366,,,,,
+AMT,0x04FF,OSP Profile Active,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x04FF,OSP Profile Active,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+DEET,0x0514,Pretrip Status (non-running),Table Only,False,1.0,0.0,,User,,,,,,Log event when Pretrip Status is entered & exited/completed (more Pretrip status's may be logged if applicable),"For DEET, this tracks the non-running pretrip status only"
+AMT,0x0517,Alert Defrost - zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+Navigator,0x0517,Alert Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,,Log event if parameter value changes. ,DB - Added 28th July 2021
+Railblazer,0x0517,Alert Defrost,Table Only,False,1.0,0.0,No Dependency,User,,,True,,, Log event if parameter value changes. ,"DB - Added 28th July 2021
+P.Carr 21st July 23: added missing acronym to list - ALTDF "
+AMT,0x0538,Wake Reason,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,1.0,0.0,,
+Railblazer,0x0538,Wake Reason,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+AMT,0x0541,Component Flashload Selection,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x0541,Component Flashload Selection,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+Railblazer,0x0548,EngineBreakInMode,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,Not available,,,,,
+DEET,0x0548,Engine Break-In Status,Table Only,False,1.0,0.0,,Technician,,,,,,"Log event when a change in engine break-in status only for failed, completed, or timed out. ","Did not include enumerations for 0, 1, or 2 (unavilable, ready, and loading). 
+3	FAILED
+4	COMPLETED
+5	TIMED_OUT"
+Railblazer,0x0578,Engine Break-in Complete,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,Log completed time when event log for Engine Break-in Status (0x0548) occurs.,
+Navigator,0x0584,Third Party 10A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",,,,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). 
+Added SPN on 14thJune 2021 as part of PL2.2"
+AMT,0x0584,Third Party 10A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",False,0.0,0.0,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+AMT,0x0587,Third Party 15A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",False,0.0,0.0,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+Navigator,0x0587,Third Party 15A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",,,,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). 
+Added SPN on 14thJune 2021 as part of PL2.2"
+Railblazer,0x0587,Third Party 15A Current Draw,Table Only,TRUE,0.0,0.0,No Dependency,Technician,,"61, 159",,,,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). 
+Added SPN on 14thJune 2021 as part of PL2.2"
+AMT,0x058A,Third Party 2A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",False,0.0,0.0,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). "
+Navigator,0x058A,Third Party 2A Current Draw,Table Only,True,0.0,0.0,No Dependency,Technician,,"61, 159",,,,,"Timed log event, very helpful for diagnosis on battery faults on short cycling cycle sentry (to determine if third party devices are connected to the dedicated power connection source). 
+Added SPN on 14thJune 2021 as part of PL2.2"
+Nebula-Galaxy,0x0593,Radiator Coolant Level Switch ,Table Only,False,1.0,0.0,,Technician,,37,,0.0,0.0,,
+Nebula-Galaxy,0x0594,Damper Solenoid ,Table Only,False,1.0,0.0,,Technician,,TBD,,0.0,0.0,,
+Nebula-Galaxy,0x0595,Water Pump On/Off Switch,Table Only,False,1.0,0.0,,Technician,,205,,0.0,0.0,,
+AMT,0x059D,Delta T Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x05A5,Condenser Inlet Solenoid Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,107,False,0.0,0.0,,
+AMT,0x05A6,Liquid Line Solenoid Z1 Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,67,False,0.0,0.0,,
+Nebula-Galaxy,0x05A6,Liquid Line Solenoid Current Drawn Zone 1,Table and Graph,True,0.0,0.0,,Technician,,67,,0.0,0.0,,
+AMT,0x05A7,Suction Line Solenoid Z1 Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,110,False,0.0,0.0,,
+AMT,0x05A8,Receiver Tank Pressure Solenoid Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,105,False,0.0,0.0,,
+AMT,0x05AD,Purge Valve Current Drawn,Table Only,False,1.0,0.0,No Dependency,Technician,,106,False,0.0,0.0,,
+AMT,0x05AE,Return Air Temperature - Zone 2,Graph and Table,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,"Temperatures (◦C/◦F )
+MT Zone 2","3, 280",False,0.0,0.0,,
+Nebula-Galaxy,0x05AF,Discharge Air Temperature Zone 2,Table and Graph,True,0.0,0.0,,Technician,Temperatures (◦C/◦F )MT Zone 2,4,,0.0,0.0,,
+AMT,0x05AF,Discharge Air Temperature - Zone 2,Graph and Table,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,"Temperatures (◦C/◦F )
+MT Zone 2","4, 280",False,0.0,0.0,,
+AMT,0x05B0,Evaporator Coil Temperature - Zone 2,Graph and Table,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,"Temperatures (◦C/◦F )
+MT Zone 2","2, 9, 280",False,0.0,0.0,,
+AMT,0x05CC,Electric Motor Rotation,Table Only,False,1.0,0.0,No Dependency,Technician,,"7, 21, 22, 23, 24, 26, 32, 36, 48, 273, 274, 276, 277, 526, 555",True,0.0,0.0,,"Positive (0)   - represents counter clockwise rotation (default setting)
+Negative (1) - represents clockwise rotation"
+Navigator,0x05CC,Electric Motor Rotation,Table Only,False,1.0,0.0,No Dependency,Technician,,"10, 21, 22, 23, 24, 26, 32, 48, 273, 274, 276, 277, 526, 555",,,,PC 27th May 2021 - new SPN to be logged as event log to support HPE req. ID 5236 (421 - Electric Motor Rotation - Logging/Reporting),"Positive (0)   - represents counter clockwise rotation (default setting)
+Negative (1) - represents clockwise rotation"
+Railblazer,0x05CC,Electric Motor Rotation,Table Only,False,1.0,0.0,No Dependency,Technician,,"10, 21, 22, 23, 24, 26, 32, 48, 273, 274, 276, 277, 526, 555",,,,PC 27th May 2021 - new SPN to be logged as event log to support HPE req. ID 5236 (421 - Electric Motor Rotation - Logging/Reporting),"Positive (0)   - represents counter clockwise rotation (default setting)
+Negative (1) - represents clockwise rotation"
+Nebula-Galaxy,0x05D1,Combo Device Control DC/AC Converter,Table Only,False,1.0,0.0,,Technician,,579,,0.0,0.0,,
+Nebula-Galaxy,0x05D2,Combo Device DC/AC Requested Speed,Table and Graph,True,0.0,0.0,,Technician,,579,,0.0,0.0,Compressor Speed,
+Nebula-Galaxy,0x05D3,Combo Device System Enable,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,MobileSystemEnable`,
+Nebula-Galaxy,0x05D6,Combo Device Control DC/DC Converter,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,,
+Nebula-Galaxy,0x05D7,Combo Device Low Voltage Setpoint,Table and Graph,True,0.0,0.0,,Technician,,265,,0.0,0.0,,
+Nebula-Galaxy,0x05D9,Combo Device Communitcation Status,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,DCDCCommsStatus,
+Nebula-Galaxy,0x05DA,Combo Device Inverter Status,Table Only,False,1.0,0.0,,Technician,,579,,0.0,0.0,,
+Nebula-Galaxy,0x05DB,Combo Device Inverter Ready,Table Only,False,1.0,0.0,,Technician,,579,,0.0,0.0,,
+Nebula-Galaxy,0x05DC,Combo Device DCDC Error Status,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,DCDCErrorStatus,
+Nebula-Galaxy,0x05DD,Combo Device DC/DC Current,Table and Graph,True,0.0,0.0,,Technician,Currents (A),265,,0.0,0.0,DCDCCurrent,
+Nebula-Galaxy,0x05DE,Combo Device DC/DC Power,Table and Graph,True,0.0,0.0,,Technician,,265,,0.0,0.0,DCDCPower,
+Nebula-Galaxy,0x05DF,Combo Device DC/AC Temp,Table and Graph,True,0.0,0.0,,Technician,Temperatures (◦C/◦F ) MT Zone 1,579,,0.0,0.0,InverterTemp,
+Nebula-Galaxy,0x05E0,Combo Device DC/DC Voltage,Table and Graph,True,0.0,0.0,,Technician,Voltage (V),265,,0.0,0.0,DCDCVoltage,
+Nebula-Galaxy,0x05E1,Combo Device DC/AC Inverter Status,Table Only,False,1.0,0.0,,Technician,,579,,0.0,0.0,InverterStatus,
+Nebula-Galaxy,0x05E2,Combo Device DC/AC Inverter Ready,Table Only,False,1.0,0.0,,Technician,,579,,0.0,0.0,InverterReady,
+Nebula-Galaxy,0x05E3,Combo Device DC/AC Error Status,Table Only,False,1.0,0.0,,Technician,,579,,0.0,0.0,InverterErrorStatus,
+Nebula-Galaxy,0x05E4,Combo Device DC/AC Speed,Table and Graph,True,0.0,0.0,,Technician,,579,,0.0,0.0,Compressor Actual Speed,
+Nebula-Galaxy,0x05E5,Combo Device DC/AC Power,Table and Graph,True,0.0,0.0,,Technician,,579,,0.0,0.0,,
+Nebula-Galaxy,0x05E9,System State,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x05E9,System State Zone1,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824>=1 OR ZoneConfiguration<0xF824>=2,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x05EA,System State Zone2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824>=2,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x05F1,Evaporator Fan Usage Zone 1,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x05F1,Evaporator Fan Usage,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x05F2,Restart Differential,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x05F2,Restart Differential Zone 1,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+AMT,0x05FA,FlashLoad Source,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Railblazer,0x05FA,FlashLoad Source,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,,,
+AMT,0x0617,System Output State,Table Only,True,0.0,0.0,No Dependency,Technician,,"21, 22, 23, 24, 26, 32",False,0.0,0.0,,
+AMT,0x0618,Zone 1 Output State,Table Only,True,0.0,0.0,No Dependency,Technician,,"21, 22, 23, 24, 26, 32",False,0.0,0.0,,
+AMT,0x0619,Zone 2 Output State,Table Only,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,"21, 22, 23, 24, 26, 32",False,0.0,0.0,,"P.Carr 29th Jan 24: 
+updating dependency (previously had no dependency). "
+AMT,0x0622,Return Air Temperature - Zone 3,Graph and Table,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,"Temperatures (◦C/◦F )
+MT Zone 3","3, 280",False,0.0,0.0,,
+AMT,0x0623,Discharge Air Temperature - Zone 3,Graph and Table,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,"Temperatures (◦C/◦F )
+MT Zone 3","4, 280",False,0.0,0.0,,
+AMT,0x0624,Evaporator Coil Temperature - Zone 3,Graph and Table,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,"Temperatures (◦C/◦F )
+MT Zone 3","2, 9, 280",False,0.0,0.0,,
+AMT,0x0649,Zone 1 Run Time Hours,Table Only,False,1.0,0.0,No Dependency,Technician,,64,False,0.0,1.0,,
+AMT,0x064A,Zone 2 Run Time Hours,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,64,False,0.0,1.0,,
+AMT,0x064B,Remote Evap. Type - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,"52, 67, 110, 112, 143",True,0.0,0.0,,
+Nebula-Galaxy,0x064F,Combo Device Temperature,Table and Graph,True,0.0,0.0,,Technician,Temperatures (◦C/◦F ) MT Zone 1,"206, 265, 579",,0.0,0.0,ComboDeviceTemp,
+Nebula-Galaxy,0x0650,Combo Device DC Bus Voltage,Table and Graph,True,0.0,0.0,,Technician,Voltage (V),265,,0.0,0.0,,
+Nebula-Galaxy,0x0651,Combo Device DC Bus Power,Table and Graph,True,0.0,0.0,,Technician,,265,,0.0,0.0,,
+Nebula-Galaxy,0x0652,Combo Device State,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,ComboDeviceState,
+Nebula-Galaxy,0x0653,Combo Device Error Lamp,Table Only,False,1.0,0.0,,Technician,,265,,0.0,0.0,,
+Nebula-Galaxy,0x0656,Combo Device Precharge Status,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,"enum values: 0 - Precharge_active
+1 - Precharge_completed",
+AMT,0x0661,Zone 2 - Fan Motor 1 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,112,False,0.0,0.0,,
+Nebula-Galaxy,0x0665,Economizer Liquid Line Solenoid Current Drawn,Table and Graph,True,0.0,0.0,,Technician,,"10,26,93,95",,0.0,0.0,,
+AMT,0x0670,Suction Line Solenoid Z2 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,110,False,0.0,0.0,,
+AMT,0x0671,Liquid Line Solenoid Z2 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,67,False,0.0,0.0,,
+AMT,0x0672,Hot Gas Solenoid Z2 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,52,False,0.0,0.0,,
+AMT,0x0673,Suction Line Solenoid Z3 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,110,False,0.0,0.0,,
+AMT,0x0674,Liquid Line Solenoid Z3 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,67,False,0.0,0.0,,
+AMT,0x0675,Hot Gas Solenoid Z3 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,52,False,0.0,0.0,,
+AMT,0x0678,Zone 2 - Drain Hose Heater Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,143,False,0.0,0.0,,
+AMT,0x0679,Zone 3 - Drain Hose Heater Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,143,False,0.0,0.0,,
+AMT,0x068B,Zone 2 - Fan Motor 2 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,112,False,0.0,0.0,,
+AMT,0x068C,Zone 2 - Fan Motor 3 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,112,False,0.0,0.0,,
+Nebula-Galaxy,0x0698,Truck Low Voltage Command,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x0699,PDU Heater Requested Duty Cycle Command,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,This duty cycle is the requested duty cycle,
+Nebula-Galaxy,0x069A,High Voltage Power Source Command,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x069E,Pull Down Time,Table Only,True,0.0,0.0,Temp control mode (0x0176)  == Pulldown,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x069E,Pull Down Time Zone 1,Table Only,True,0.0,0.0,Temp control mode (0x0176)  == Pulldown,Technician,,,,0.0,0.0,,
+AMT,0x06A7,Defrost Controlling Sensor - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,,True,0.0,0.0,,
+AMT,0x06A8,Defrost Termination Method - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,Technician,,,False,0.0,0.0,Event log after defrost completion (defrost complete when DefrostFractionZ2<0x05EF> = 1 ),"P.Carr 14th June 22: 
+Updated the additional requirement to clarify the correct SPN which defines defrost completion for zone 2 (DefrostFractionZ2<0x05EF>)"
+AMT,0x06B2,Timed Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x06B3,Manual Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x06B4,Low Coil Temperature Demand Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x06B5,Variable Temp. Differential Demand Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x06B6,Modulation Demand Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x06B7,Door Open Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x06B8,Alert Defrost - Zone 2,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,Event log which indicates defrost request
+Nebula-Galaxy,0x06CD,Close Heater Relay,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x06E1,Combo Device DC/AC Current,Table and Graph,True,0.0,0.0,,Technician,Currents (A),579,,0.0,0.0,InverterCurrent,
+AMT,0x0700,Power Down Reason,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,Event Log at Power OFF,17th June 22: Added by P.Carr
+Nebula-Galaxy,0x074A,Condenser Fan Current ,Table and Graph,True,0.0,0.0,,Technician,Currents (A),534,,0.0,0.0,,
+Nebula-Galaxy,0x074B,Evaporator Fan Current Zone 1,Table and Graph,True,0.0,0.0,,Technician,Currents (A),112,,0.0,0.0,,
+Nebula-Galaxy,0x074B,Evaporator Fan Current,Table and Graph,True,0.0,0.0,,Technician,Currents (A),590,,0.0,0.0,,
+AMT,0x076C,Reset Type,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,19th Sept 22: Added by P.Carr to aid in diagnosis of field issues by determining if unit config reset or cold reset has been performed (i.e. after flash loading)
+Nebula-Galaxy,0x076D,Pull down Time Remaining Zone 1,Table Only,True,0.0,0.0,Temp control mode (0x0176)  == Pulldown,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x076D,Pull down Time Remaining,Table Only,True,0.0,0.0,Temp control mode (0x0176)  == Pulldown,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x0771,Port Condenser Fan speed Request,Table and Graph,True,0.0,0.0,,Technician,,267,,0.0,0.0,,
+Nebula-Galaxy,0x0771,Roadside Condenser Fan speed Request,Table and Graph,True,0.0,0.0,,Technician,,267,,0.0,0.0,RoadCondFspdRequest,
+Nebula-Galaxy,0x0772,Roadside Evaporator Fan Speed Request,Table and Graph,True,0.0,0.0,,Technician,,267,,0.0,0.0,RoadEvapFspdRequest,
+Nebula-Galaxy,0x0772,Evaporator Fan speed Request Zone 1,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x0773,Star Condenser Fan speed Request,Table and Graph,True,0.0,0.0,,Technician,,268,,0.0,0.0,CurbCondFspdRequest,
+Nebula-Galaxy,0x0773,Curbside Condenser Fan speed Request,Table and Graph,True,0.0,0.0,,Technician,,268,,0.0,0.0,,
+Nebula-Galaxy,0x0774,Evaporator Fan speed Request Zone 2,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x0774,Curbside Evaporator Fan Speed Request,Table and Graph,True,0.0,0.0,,Technician,,268,,0.0,0.0,CurbEvapFspdRequest,
+AMT,0x0776,Fixed Delta Modulation Defrost - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,Event log which indicates defrost request - Added 19th October 2022 (Pcarr)
+AMT,0x07B2,Zone 3 Output State,Table Only,True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,"21, 22, 23, 24, 26, 32",False,0.0,0.0,,"P.Carr 6th December 23: 
+updating dependency so that this parameter is only logged when unit is configured with 3 zones. "
+AMT,0x07D6,Zone 3 Run Time Hours,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,64,False,0.0,1.0,,
+AMT,0x07DB,Zone 3 - Fan Motor 1 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,112,False,0.0,0.0,,
+AMT,0x07DC,Zone 3 - Fan Motor 2 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,112,False,0.0,0.0,,
+AMT,0x07DD,Zone 3 - Fan Motor 3 Current Drawn,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,112,False,0.0,0.0,,
+AMT,0x07DF,Variable Temp. Differential Demand Defrost - Zone 3,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x07E3,Timed Defrost - Zone 3,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x07E4,Manual Defrost - Zone 3,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,,,True,0.0,0.0,,Event log which indicates defrost request
+AMT,0x0806,App Fail Status,Table Only,False,1.0,0.0,,Technician,,68,True,0.0,0.0,,"P.Carr 10th May 23: 
+Added this parameter to aid in fault diagnosis for field units when code 68 sets. Refer to HPE ID 12992"
+Nebula-Galaxy,0x087D,Power Totalizer,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x091D,Evaporator Fan Current Zone 2,Table and Graph,True,0.0,0.0,,Technician,,112,,0.0,0.0,,
+Nebula-Galaxy,0x096C,Pull Down Time Zone 2,Table Only,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x096D,Evaporator Fan Usage Zone 2,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x096E,Restart Differential Zone 2,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x096F,Zone 1 Config,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x0970,Zone 2 Config,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x09EE,Liquid Line Solenoid Zone 2 Current Drawn,Table and Graph,True,0.0,0.0,,Technician,,67,,0.0,0.0,,
+Nebula-Galaxy,0x8005,PDU State,Table Only,False,1.0,0.0,Tru Ignition (0x802F) == True,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x8006,Chassis Truck State,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x8007,PDU HVIL State,Table Only,False,1.0,0.0,,Technician,,869,,0.0,0.0,,
+Nebula-Galaxy,0x800B,PDU High Voltage,Table and Graph,True,0.0,0.0,Tru Ignition (0x802F) == True,Technician,Voltage (V),861,,0.0,0.0,,
+Nebula-Galaxy,0x8013,Heater SSR Actual Duty Cycle,Table and Graph,False,1.0,0.0,Tru Ignition (0x802F) == True,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x8014,Heater SSR Temperature,Table and Graph,True,0.0,0.0,Tru Ignition (0x802F) == True,Technician,Temperatures (◦C/◦F ) MT Zone 1,867,,0.0,0.0,,
+Nebula-Galaxy,0x8028,Heater Enable,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x802A,PDU LV Power Enable,Table Only,False,1.0,0.0,,Technician,,"883, 868",,0.0,0.0,,
+Nebula-Galaxy,0x802B,PDU Control PCB Enable,Table Only,False,1.0,0.0,,Technician,,874,,0.0,0.0,,
+Nebula-Galaxy,0x802C,TRU HVIL Reset,Table Only,False,1.0,0.0,,Technician,,869,,0.0,0.0,,
+Nebula-Galaxy,0x802D,TRU Battery Charging Enable,Table Only,False,1.0,0.0,,Technician,,61,,0.0,0.0,,
+Nebula-Galaxy,0x802F,TRU PDU Enable,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x8031,ePTO Ignition,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x8032,PDU HVP Contactor Status,Table Only,False,1.0,0.0,,Technician,,861,,0.0,0.0,,
+Nebula-Galaxy,0x8033,PDU HVN Contactor Status,Table Only,False,1.0,0.0,,Technician,,861,,0.0,0.0,,
+Nebula-Galaxy,0x8035,Truck Crash Signal Status,Table Only,False,1.0,0.0,ePTO Ignition (0x8031) == True,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0x8036,PDU Internal Temperature,Table and Graph,True,0.0,0.0,Tru Ignition (0x802F) == True,Technician,Temperatures (◦C/◦F ) MT Zone 1,,,0.0,0.0,,
+Nebula-Galaxy,0x8037,PDU Gateway Temperature,Table and Graph,True,0.0,0.0,Tru Ignition (0x802F) == True,Technician,Temperatures (◦C/◦F ) MT Zone 1,,,0.0,0.0,,
+Nebula-Galaxy,0x8038,PDU Total Input Current,Table and Graph,True,0.0,0.0,,Technician,Currents (A),,,0.0,0.0,,
+Nebula-Galaxy,0x8039,PDU Heater Output Current,Table and Graph,True,0.0,0.0,,Technician,Currents (A),"864, 866",,0.0,0.0,,
+Nebula-Galaxy,0x803A,TRU Battery Voltage Reported by PDU,Table and Graph,True,0.0,0.0,,Technician,Voltage (V),61,,0.0,0.0,,
+Nebula-Galaxy,0x803B,ePTO Low Voltage,Table and Graph,True,0.0,0.0,ePTO Ignition (0x8031) == True,Technician,Voltage (V),868,,0.0,0.0,,
+Nebula-Galaxy,0x805E,PDU 12V Power Ready,Table Only,False,1.0,0.0,Tru Ignition (0x802F) == True,Technician,,"265, 883",,0.0,0.0,,
+Nebula-Galaxy,0x8060,Truck HV Battery SOC,Table Only,True,0.0,0.0,,Technician,,61,,0.0,0.0,,
+Nebula-Galaxy,0x8061,PDU Total Input Power,Table and Graph,True,0.0,0.0,,Technician,,871,,0.0,0.0,,
+Nebula-Galaxy,0x8064,PDU HVP Contactor Enable,Table Only,False,1.0,0.0,Tru Ignition (0x802F) == True,Technician,,861,,0.0,0.0,,
+Nebula-Galaxy,0x8065,PDU HVN Contactor Enable,Table Only,False,1.0,0.0,Tru Ignition (0x802F) == True,Technician,,861,,0.0,0.0,,
+Nebula-Galaxy,0x8066,PDU Precharging Enable,Table Only,False,1.0,0.0,Tru Ignition (0x802F) == True,Technician,,862,,0.0,0.0,,
+Nebula-Galaxy,0x8067,PDU HV HVIL Connector Break,Table Only,False,1.0,0.0,,Technician,,869,,0.0,0.0,,
+Nebula-Galaxy,0x8068,PDU Lid Switch HVIL Break,Table Only,False,1.0,0.0,,Technician,,869,,0.0,0.0,,
+Nebula-Galaxy,0x8069,PDU LV HVIL Connector Break,Table Only,False,1.0,0.0,,Technician,,869,,0.0,0.0,,
+Nebula-Galaxy,0x806A,TRU HVIL State,Table Only,False,1.0,0.0,,Technician,,869,,0.0,0.0,,
+Nebula-Galaxy,0x806C,ePTO Current Limit,Table and Graph,True,0.0,0.0,ePTO Ignition (0x8031) == True,Technician,Currents (A),"580, 581, 860",,0.0,0.0,,
+Nebula-Galaxy,0x806D,ePTO Power Limit,Table and Graph,True,0.0,0.0,ePTO Ignition (0x8031) == True,Technician,,871,,0.0,0.0,,
+Railblazer,0xF80D,Setpoint,Graph (stepped) and Table (continuous columns),TRUE,1.0,0.0,No Dependency,User,,127,,,,,
+AMT,0xF80D,Setpoint - Zone 1,Graph (stepped) and Table (continuous columns),True,0.0,0.0,No Dependency,User,"Temperatures (◦C/◦F )
+MT Zone 1",127,False,0.0,0.0,,
+Navigator,0xF80D,Setpoint,Graph (stepped) and Table (continuous columns),True,1.0,0.0,No Dependency,User,,127,,,,,
+Nebula-Galaxy,0xF80D,Setpoint,Table and Graph,True,0.0,0.0,,User,,127,,0.0,0.0,,
+Nebula-Galaxy,0xF80D,Setpoint Zone 1,Table and Graph,True,0.0,0.0,,User,,127,,0.0,0.0,,
+DEET,0xF812,Mode Selection,Table Only,False,1.0,0.0,,User,,102:66,True,1.0,,Event log whenever function selection changes - log at start up,
+Nebula-Galaxy,0xF824,Zone Configuration,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+DEET,0xF832,Electric Standby Mode,Table Only,True,0.0,0.0,,User,,,,,,,
+AMT,0xF833,Engine Selection,Table Only,False,1.0,0.0,No Dependency,Technician,,,True,0.0,0.0,,
+Navigator,0xF833,Engine Selection,Table Only,False,1.0,0.0,No Dependency,Technician,,111,True,,,Event log whenever Engine Selection changes or applicable alarm code is set. ,
+AMT,0xF838,CS Fresh Cool Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,True,1.0,0.0,,
+Railblazer,0xF838,CS Fresh Cool Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,1.0,,Event log each time Cycle Sentry Fresh operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+DEET,0xF838,CS Fresh Cool Null Restart Temperature,Table Only,False,1.0,0.0,,Technician,,,,1.0,,Event log each time Cycle Sentry Fresh operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Navigator,0xF838,CS Fresh Cool Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,,,Event log each time Cycle Sentry Fresh operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Railblazer,0xF839,CS Frozen Cool Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,1.0,,Event log each time Cycle Sentry Frozen operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+DEET,0xF839,CS Frozen Cool Null Restart Temperature,Table Only,False,1.0,0.0,,Technician,,,,1.0,,Event log each time Cycle Sentry Frozen operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Navigator,0xF839,CS Frozen Cool Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,,,Event log each time Cycle Sentry Frozen operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+AMT,0xF839,CS Frozen Cool Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,True,1.0,0.0,,
+AMT,0xF83C,CS Fresh Heat Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,True,1.0,0.0,,
+DEET,0xF83C,CS Fresh Heat Null Restart Temperature,Table Only,False,1.0,0.0,,Technician,,,,1.0,,Event log each time Cycle Sentry Fresh operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Navigator,0xF83C,CS Fresh Heat Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,,,Event log each time Cycle Sentry Fresh operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Railblazer,0xF83C,CS Fresh Heat Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,1.0,,Event log each time Cycle Sentry Fresh operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Railblazer,0xF83D,CS Frozen Heat Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,1.0,,Event log each time Cycle Sentry Frozen operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+DEET,0xF83D,CS Frozen Heat Null Restart Temperature,Table Only,False,1.0,0.0,,Technician,,,,1.0,,Event log each time Cycle Sentry Frozen operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+Navigator,0xF83D,CS Frozen Heat Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,,,,Event log each time Cycle Sentry Frozen operation is entered (i.e. setpoint change to fresh range or change from continuous to Cycle sentry mode). Event log includes start up if conditions are met. ,
+AMT,0xF83D,CS Frozen Heat Null Restart Temperature,Table Only,False,1.0,0.0,No Dependency,Technician,,159,True,1.0,0.0,,
+AMT,0xF848,Charging Stop Current,Table Only,False,1.0,0.0,DebugControlAlgorithmActive<0x00F0> =  CYCLESENTRY<0>,Technician,,159,False,0.0,0.0,,P.Carr 28th Feb 23: changed SPN dependency from FunctionSelection<0xF812> to DebugControlAlgorithmActive<0x00F0>
+Navigator,0xF848,Charging Stop Current,Table Only,False,1.0,0.0,Mode Selection = Cycle Sentry,Engineering,,159,True,,,Log event if parameter value changes. ,
+Railblazer,0xF848,Charging Stop Current,Table Only,False,1.0,0.0,Mode Selection = Cycle Sentry,Engineering,,159,True,,, Log event if parameter value changes. ,
+AMT,0xF87D,Charging Start Voltage,Table Only,False,1.0,0.0,DebugControlAlgorithmActive<0x00F0> =  CYCLESENTRY<0>,Technician,,159,True,0.0,0.0,,P.Carr 28th Feb 23: changed SPN dependency from FunctionSelection<0xF812> to DebugControlAlgorithmActive<0x00F0>
+Navigator,0xF87D,Charging Start Voltage,Table Only,False,1.0,0.0,Mode Selection = Cycle Sentry,Engineering,,159,True,,,Log event if parameter value changes. ,
+Railblazer,0xF87D,Charging Start Voltage,Table Only,False,1.0,0.0,Mode Selection = Cycle Sentry,Engineering,,159,True,,, Log event if parameter value changes. ,
+AMT,0xF89B,Fuel Level Sensor Configuration,Table Only,False,1.0,0.0,No Dependency,Technician,,98,True,0.0,0.0,,
+Railblazer,0xF89C,Compartment Door Switch,Table Only,False,1.0,0.0,No Dependency,User,,108,True,,,Log when applicable alarm code is set OR log event whenever parameter value changes,
+Navigator,0xF89C,Compartment Door Switch,Table Only,False,1.0,0.0,No Dependency,User,,108,True,,,Log when applicable alarm code is set OR log event whenever parameter value changes,
+AMT,0xF89C,Door Switch Configuration - Zone 1,Table Only,False,1.0,0.0,No Dependency,User,,108,True,0.0,0.0,,
+AMT,0xF912,TK Model,Table Only,False,1.0,0.0,No Dependency,Technician,,111,True,0.0,0.0,,
+Navigator,0xF912,TK Model,Table Only,False,1.0,0.0,No Dependency,Technician,,111,True,,,Event log whenever Unit/TK Model changes or applicable alarm code is set. ,
+Railblazer,0xF912,TK Model,Table Only,False,1.0,0.0,No Dependency,Technician,,111,True,,,Event log whenever Unit/TK Model changes or applicable alarm code is set. ,
+AMT,0xF96E,Electric Motor Start Counter,Table Only,False,1.0,0.0,No Dependency,Technician,,,False,0.0,1.0,,
+Navigator,0xF96E,Electric Motor Start Counter,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,
+Railblazer,0xF96E,Electric Motor Start Counter,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,
+AMT,0xF96F,Diesel Engine Start Counter,Table Only,False,1.0,0.0,Engine = ECO GOV,Technician,,,False,0.0,1.0,,P.Carr 4th Jan 24 - adding dependency to ensure parameter is not logged for ELENA MT unit models 
+Navigator,0xF96F,Diesel Engine Start Counter,Table Only,False,1.0,0.0,Engine Type = ECO or Mechanical ,Technician,,,,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,"DB - 16th Jan2023 - Updated dependancy column from ""No Dependancy"" to ""Engine Type = ECO or Mechanical"" for PL3 & ELENA"
+Railblazer,0xF96F,Diesel Engine Start Counter,Table Only,False,1.0,0.0,No Dependency,Technician,,,,,1.0,Event log conditions: log each day at 12:05 (midday) if control system is on. ,
+AMT,0xF9CE,Setpoint - Zone 2,Graph (stepped) and Table (continuous columns),True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,"Temperatures (◦C/◦F )
+MT Zone 2",127,False,0.0,0.0,,
+Nebula-Galaxy,0xF9CE,Setpoint Zone 2,Table and Graph,True,0.0,0.0,,User,"Temperatures (◦C/◦F )
+MT Zone 2",127,,0.0,0.0,,
+Nebula-Galaxy,0xF9E8,Discharge Limit,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0xF9EB,Discharge Control Active,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0xF9EC,Discharge Control Active Pull Down,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+Nebula-Galaxy,0xF9EE,Discharge Control Active Recovery,Table Only,False,1.0,0.0,,Technician,,,,0.0,0.0,,
+AMT,0xFA01,Zone 1 ON/OFF Status,Table Only,False,1.0,0.0,No Dependency,User,,,True,0.0,0.0,,
+AMT,0xFA02,Zone 2 ON/OFF Status,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 1,User,,,True,0.0,0.0,,
+AMT,0xFA35,Door Switch Configuration - Zone 2,Table Only,False,1.0,0.0,No Dependency,User,,108,True,0.0,0.0,,
+Nebula-Galaxy,0xFAF0,User Max Compressor Speed,Table and Graph,True,0.0,0.0,,Technician,,,,0.0,0.0,,
+AMT,0xFB69,Zone 3 ON/OFF Status,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,,,True,0.0,0.0,,
+AMT,0xFB6A,Remote Evap. Type - Zone 3,Table Only,False,1.0,0.0,ZoneConfiguration<0xF824> is greater than 2,Technician,,"52, 67, 110, 112, 143",True,0.0,0.0,,
+AMT,0xFB6C,Setpoint - Zone 3,Graph (stepped) and Table (continuous columns),True,0.0,0.0,ZoneConfiguration<0xF824> is greater than 2,User,"Temperatures (◦C/◦F )
+MT Zone 3",127,False,0.0,0.0,,
+AMT,0xFB83,Door Switch Configuration - Zone 3,Table Only,False,1.0,0.0,No Dependency,User,,108,True,0.0,0.0,,
+Nebula-Galaxy,0xFBC9,Chassis Configuration,Table Only,False,0.0,0.0,,Technician,,,,1.0,0.0,,
+Nebula-Galaxy,0xFBCA,Chassis Voltage,Table Only,False,0.0,0.0,,Technician,Voltage (V),111,,1.0,0.0,,
+Navigator,????,Start of Trip,Table Only,False,1.0,0.0,No Dependency,User,,,,,,Log event if SOT (start of trip) slected,
+Railblazer,No,"Can the current for the ""TouchLog"" channel be logged? This was pin HPM J7-8, and we are opening it up for more broad customer use",,,,,,,,,,,,,
+Railblazer,No,Engine Break-In Request,Table Only,FALSE ,1.0,0.0,No Dependency,Technician,,Not available,,,,,
+Nebula-Galaxy,TBD,Damper Solenoid Current Drawn,Table and Graph,True,0.0,0.0,,Technician,,TBD,,0.0,0.0,,
+Nebula-Galaxy,TBD,Zone 1 Total Temperature Control Protection Hours,Table and Graph,False,0.0,0.0,,Technician,,,,0.0,1.0,,
+Nebula-Galaxy,TBD,Zone 2 Total Temperature Control Protection Hours,Table and Graph,False,0.0,0.0,,Technician,,,,0.0,1.0,,
+Nebula-Galaxy,TBD,Pull Down Time Remaining Zone 2,Table and Graph,True,0.0,0.0,,Technician,,TBD,,0.0,0.0,,
+DEET,n/a - model,Engine Break-In Request,Table Only,False,1.0,0.0,,Technician,,,,,,Log event when engine break-in is entered or exited,
+DEET,,Engine Break-In Time Completed,Table Only,False,1.0,0.0,,Technician,,,,,,Log completed time when event log for Engine Break-in Status (0x0548) occurs.,
+DEET,,Flashload Event and Source,Table Only,False,1.0,0.0,,User,,Flashload,,,,"The Service Watch log shall indicate that a flashload has occurred and also log the source of the flashload.
+Flashload via USB = Source: USB FLASH DRIVE
+Flashload via Service Tool = Source: WINTRAC
+Flashload via FLOTA = Source: TK TELEMATICS",JR 8/5/2021 - updated to add the source of the flashload to be logged in SW
