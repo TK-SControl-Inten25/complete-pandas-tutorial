@@ -1,0 +1,13 @@
+All the code are contain within the SWTest.ipynb file. The Service Watch Common Requirement was developed in Jupyter Notebook using Python Pandas.
+
+Future Improvement:
+- Delete the content within "Additional Reqs" if they had already captured within column K,L,M,N (Event log when alarm code(s) set;	Event Log When Parameter Changes?; Auto Log at Power ON?; Auto Log at Noon (12:05 PM)?
+)
+- Fill in the Unit of Measurement column
+- Standardize the "Event log when alarm code(s) set" column, make sure the format is consistence whether to separate them with a comma or written them as a list using ":"
+- Based on the script: There are a total of 354 unique SPNs in consolidated file. However, I was only able to reduce 17 rows of out 651 with the goal of keeping the uniqueness of each SPN.
+
+I hope this will be helpful for the Control System Engineering team. Best of luck and it was my pleasure to get to know and work with all of you.
+
+-Quan Vo
+
